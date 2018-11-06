@@ -1,0 +1,81 @@
+//
+//  MetronomeViewController.swift
+//  MusiciansToolkit
+//
+//  Created by Mark Pizzutillo on 11/5/18.
+//  Copyright © 2018 Mark Pizzutillo. All rights reserved.
+//
+
+import UIKit
+
+class MetronomeViewController: UIViewController {
+    
+    let userDefaults = Model.sharedUserDefaults
+    let musicModel = Model.sharedInstance
+
+    let defaultTempo = 120
+    
+    var tempo : Int {
+        didSet {
+            tempoLabel.text = "\(tempo) BPM"
+            slider.value = Float(tempo)
+            tempoStepper.value = Double(tempo)
+            userDefaults.set(tempo, forKey: UserDefaultsKeys.tempo)
+        }
+    }
+    
+    var multiplier : Int
+    
+    @IBOutlet weak var tempoLabel: UILabel!
+    
+    @IBOutlet weak var tempoStepper: UIStepper!
+    
+    @IBOutlet weak var slider: UISlider!
+    
+    @IBOutlet weak var subdivisionSegmentedControl: UISegmentedControl!
+    
+    @IBOutlet weak var startButton: UIButton!
+    
+    required init?(coder aDecoder: NSCoder) {
+        let savedTempo = userDefaults.integer(forKey: UserDefaultsKeys.tempo)
+        if (savedTempo != 0) {
+            tempo = savedTempo
+        } else {
+            tempo = defaultTempo
+        }
+        multiplier = 1
+        super.init(coder: aDecoder)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func sliderValueChanged(_ sender: UISlider) {
+        tempo = Int(sender.value)
+    }
+    
+    @IBAction func stepperValueChanged(_ sender: UIStepper) {
+        tempo = Int(sender.value)
+    }
+    
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}

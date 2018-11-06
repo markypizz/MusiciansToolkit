@@ -13,6 +13,10 @@
 		238B2438218697CA00828CBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 238B2437218697CA00828CBF /* Assets.xcassets */; };
 		238B243B218697CA00828CBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 238B2439218697CA00828CBF /* LaunchScreen.storyboard */; };
 		238B2446218697CA00828CBF /* MusiciansToolkitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B2445218697CA00828CBF /* MusiciansToolkitTests.swift */; };
+		23A5B1612190E1DD00FD2898 /* HomePageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A5B1602190E1DD00FD2898 /* HomePageCollectionViewController.swift */; };
+		23A5B1642190E20600FD2898 /* MusiciansModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A5B1632190E20600FD2898 /* MusiciansModel.swift */; };
+		23EAFFA62190E8350091B0DC /* HomePageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EAFFA52190E8350091B0DC /* HomePageCell.swift */; };
+		23EAFFA82190F68D0091B0DC /* MetronomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EAFFA72190F68D0091B0DC /* MetronomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		238B2441218697CA00828CBF /* MusiciansToolkitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusiciansToolkitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		238B2445218697CA00828CBF /* MusiciansToolkitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusiciansToolkitTests.swift; sourceTree = "<group>"; };
 		238B2447218697CA00828CBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23A5B1602190E1DD00FD2898 /* HomePageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCollectionViewController.swift; sourceTree = "<group>"; };
+		23A5B1632190E20600FD2898 /* MusiciansModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusiciansModel.swift; sourceTree = "<group>"; };
+		23EAFFA52190E8350091B0DC /* HomePageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCell.swift; sourceTree = "<group>"; };
+		23EAFFA72190F68D0091B0DC /* MetronomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +85,12 @@
 		238B242F218697C700828CBF /* MusiciansToolkit */ = {
 			isa = PBXGroup;
 			children = (
+				23EAFFA92190F8B20091B0DC /* Metronome */,
 				238B2430218697C700828CBF /* AppDelegate.swift */,
 				238B2432218697C700828CBF /* ViewController.swift */,
 				238B2434218697C700828CBF /* Main.storyboard */,
+				23A5B1632190E20600FD2898 /* MusiciansModel.swift */,
+				23A5B1622190E1E200FD2898 /* HomePage */,
 				238B2437218697CA00828CBF /* Assets.xcassets */,
 				238B2439218697CA00828CBF /* LaunchScreen.storyboard */,
 				238B243C218697CA00828CBF /* Info.plist */,
@@ -94,6 +105,23 @@
 				238B2447218697CA00828CBF /* Info.plist */,
 			);
 			path = MusiciansToolkitTests;
+			sourceTree = "<group>";
+		};
+		23A5B1622190E1E200FD2898 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				23A5B1602190E1DD00FD2898 /* HomePageCollectionViewController.swift */,
+				23EAFFA52190E8350091B0DC /* HomePageCell.swift */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		23EAFFA92190F8B20091B0DC /* Metronome */ = {
+			isa = PBXGroup;
+			children = (
+				23EAFFA72190F68D0091B0DC /* MetronomeViewController.swift */,
+			);
+			path = Metronome;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,7 +225,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23A5B1642190E20600FD2898 /* MusiciansModel.swift in Sources */,
+				23EAFFA82190F68D0091B0DC /* MetronomeViewController.swift in Sources */,
+				23A5B1612190E1DD00FD2898 /* HomePageCollectionViewController.swift in Sources */,
 				238B2433218697C700828CBF /* ViewController.swift in Sources */,
+				23EAFFA62190E8350091B0DC /* HomePageCell.swift in Sources */,
 				238B2431218697C700828CBF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,6 +393,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CN827DJS65;
 				INFOPLIST_FILE = MusiciansToolkit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -379,6 +412,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CN827DJS65;
 				INFOPLIST_FILE = MusiciansToolkit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
