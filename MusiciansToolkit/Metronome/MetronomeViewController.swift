@@ -14,17 +14,33 @@ class MetronomeViewController: UIViewController {
     let musicModel = Model.sharedInstance
 
     let defaultTempo = 120
+    let cornerRadius : CGFloat = 6.0
     
     var tempo : Int {
         didSet {
             tempoLabel.text = "\(tempo) BPM"
             slider.value = Float(tempo)
             tempoStepper.value = Double(tempo)
-            userDefaults.set(tempo, forKey: UserDefaultsKeys.tempo)
+            userDefaults.set(tempo, forKey: UserDefaultsKeys.tempoKey)
+            
+            //Update tempo for metronome object
+            musicModel.metronome.metronome.tempo = Double(tempo * (subdivision+1))
         }
     }
     
-    var multiplier : Int
+    var subdivision : Int {
+        didSet {
+            userDefaults.set(subdivision, forKey: UserDefaultsKeys.subdivisionKey)
+            subdivisionSegmentedControl.selectedSegmentIndex = subdivision
+            
+            //Change metronome subdivision
+            musicModel.metronome.metronome.subdivision = (subdivision+1)
+            
+            //Double / Triple / Quadruple tempo to match new subdivison
+            musicModel.metronome.metronome.tempo = Double(tempo * (subdivision+1))
+            
+        }
+    }
     
     @IBOutlet weak var tempoLabel: UILabel!
     
@@ -37,18 +53,28 @@ class MetronomeViewController: UIViewController {
     @IBOutlet weak var startButton: UIButton!
     
     required init?(coder aDecoder: NSCoder) {
-        let savedTempo = userDefaults.integer(forKey: UserDefaultsKeys.tempo)
-        if (savedTempo != 0) {
-            tempo = savedTempo
-        } else {
-            tempo = defaultTempo
-        }
-        multiplier = 1
+        tempo = 120
+        subdivision = 1
         super.init(coder: aDecoder)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Remove the white offsets
+        startButton.layer.cornerRadius = cornerRadius
+        
+        subdivision = userDefaults.integer(forKey: UserDefaultsKeys.subdivisionKey)
+        
+        let savedTempo = userDefaults.integer(forKey: UserDefaultsKeys.tempoKey)
+        
+        if (savedTempo != 0) {
+            tempo = savedTempo
+        }
+        
+        if (musicModel.metronome.metronomeOn) {
+            startButton.setTitle("Stop", for: .normal)
+        }
 
         // Do any additional setup after loading the view.
     }
@@ -66,8 +92,22 @@ class MetronomeViewController: UIViewController {
         tempo = Int(sender.value)
     }
     
+    @IBAction func startButtonPressed(_ sender: UIButton) {
+        
+        if (musicModel.metronome.metronomeOn) {
+            musicModel.metronome.stopMetronome()
+            startButton.setTitle("Start", for: .normal)
+        } else {
+            musicModel.metronome.startMetronome()
+            startButton.setTitle("Stop", for: .normal)
+        }
+    }
     
-
+    @IBAction func subdivisionDidChange(_ sender: UISegmentedControl) {
+        //Set defaults
+        subdivision = Int(sender.selectedSegmentIndex)
+    }
+    
     /*
     // MARK: - Navigation
 

@@ -9,16 +9,18 @@
 import Foundation
 
 struct UserDefaultsKeys {
-    static let tempo = "tempo"
+    static let tempoKey = "tempo"
+    static let subdivisionKey = "subdivision"
 }
 
 class Model {
     static let sharedInstance = Model()
     static let sharedUserDefaults = UserDefaults.standard
+    let metronome = Metronome()
     
     let numberOfTools = 6
     
-    let backgroundImages = ["woodBG1","woodBG2"]
+    let backgroundImages = ["woodBG1","woodBG2","woodBG3","woodBG4"]
     
     let toolNames =
     ["Tuner",

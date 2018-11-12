@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1333929519F10E3859006536 /* Pods_MusiciansToolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C69AA564617942E90EC2D5C /* Pods_MusiciansToolkit.framework */; };
+		2356DA872197994800D7018A /* Metronome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2356DA862197994800D7018A /* Metronome.swift */; };
+		2356DA892197A66F00D7018A /* click.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2356DA882197A66F00D7018A /* click.wav */; };
 		238B2431218697C700828CBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B2430218697C700828CBF /* AppDelegate.swift */; };
 		238B2433218697C700828CBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B2432218697C700828CBF /* ViewController.swift */; };
 		238B2436218697C700828CBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 238B2434218697C700828CBF /* Main.storyboard */; };
@@ -17,6 +20,7 @@
 		23A5B1642190E20600FD2898 /* MusiciansModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A5B1632190E20600FD2898 /* MusiciansModel.swift */; };
 		23EAFFA62190E8350091B0DC /* HomePageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EAFFA52190E8350091B0DC /* HomePageCell.swift */; };
 		23EAFFA82190F68D0091B0DC /* MetronomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EAFFA72190F68D0091B0DC /* MetronomeViewController.swift */; };
+		2FCD986EEAA44962ED9152F1 /* Pods_MusiciansToolkitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8170211084ECC0D87012855C /* Pods_MusiciansToolkitTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C69AA564617942E90EC2D5C /* Pods_MusiciansToolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusiciansToolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2356DA862197994800D7018A /* Metronome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metronome.swift; sourceTree = "<group>"; };
+		2356DA882197A66F00D7018A /* click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = click.wav; sourceTree = "<group>"; };
 		238B242D218697C700828CBF /* MusiciansToolkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusiciansToolkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		238B2430218697C700828CBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		238B2432218697C700828CBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +51,11 @@
 		23A5B1632190E20600FD2898 /* MusiciansModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusiciansModel.swift; sourceTree = "<group>"; };
 		23EAFFA52190E8350091B0DC /* HomePageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCell.swift; sourceTree = "<group>"; };
 		23EAFFA72190F68D0091B0DC /* MetronomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeViewController.swift; sourceTree = "<group>"; };
+		8170211084ECC0D87012855C /* Pods_MusiciansToolkitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusiciansToolkitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DC4D9A874B19981F29540AE /* Pods-MusiciansToolkit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusiciansToolkit.debug.xcconfig"; path = "Target Support Files/Pods-MusiciansToolkit/Pods-MusiciansToolkit.debug.xcconfig"; sourceTree = "<group>"; };
+		9F87A25FE4706D6C3F5D25CF /* Pods-MusiciansToolkitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusiciansToolkitTests.release.xcconfig"; path = "Target Support Files/Pods-MusiciansToolkitTests/Pods-MusiciansToolkitTests.release.xcconfig"; sourceTree = "<group>"; };
+		E802975274F1A1E3926E4E91 /* Pods-MusiciansToolkitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusiciansToolkitTests.debug.xcconfig"; path = "Target Support Files/Pods-MusiciansToolkitTests/Pods-MusiciansToolkitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FE30C49992700F74E54EB02D /* Pods-MusiciansToolkit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusiciansToolkit.release.xcconfig"; path = "Target Support Files/Pods-MusiciansToolkit/Pods-MusiciansToolkit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1333929519F10E3859006536 /* Pods_MusiciansToolkit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FCD986EEAA44962ED9152F1 /* Pods_MusiciansToolkitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,8 @@
 				238B242F218697C700828CBF /* MusiciansToolkit */,
 				238B2444218697CA00828CBF /* MusiciansToolkitTests */,
 				238B242E218697C700828CBF /* Products */,
+				A738B33E355724291650519F /* Pods */,
+				DA31C021A77710CC567C7A51 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,9 +135,32 @@
 		23EAFFA92190F8B20091B0DC /* Metronome */ = {
 			isa = PBXGroup;
 			children = (
+				2356DA882197A66F00D7018A /* click.wav */,
 				23EAFFA72190F68D0091B0DC /* MetronomeViewController.swift */,
+				2356DA862197994800D7018A /* Metronome.swift */,
 			);
 			path = Metronome;
+			sourceTree = "<group>";
+		};
+		A738B33E355724291650519F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DC4D9A874B19981F29540AE /* Pods-MusiciansToolkit.debug.xcconfig */,
+				FE30C49992700F74E54EB02D /* Pods-MusiciansToolkit.release.xcconfig */,
+				E802975274F1A1E3926E4E91 /* Pods-MusiciansToolkitTests.debug.xcconfig */,
+				9F87A25FE4706D6C3F5D25CF /* Pods-MusiciansToolkitTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DA31C021A77710CC567C7A51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C69AA564617942E90EC2D5C /* Pods_MusiciansToolkit.framework */,
+				8170211084ECC0D87012855C /* Pods_MusiciansToolkitTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +170,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 238B244A218697CA00828CBF /* Build configuration list for PBXNativeTarget "MusiciansToolkit" */;
 			buildPhases = (
+				7BFE21EC2A47376D74B0BA88 /* [CP] Check Pods Manifest.lock */,
 				238B2429218697C700828CBF /* Sources */,
 				238B242A218697C700828CBF /* Frameworks */,
 				238B242B218697C700828CBF /* Resources */,
@@ -148,6 +188,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 238B244D218697CA00828CBF /* Build configuration list for PBXNativeTarget "MusiciansToolkitTests" */;
 			buildPhases = (
+				5B4683F309D943CCA8C1720C /* [CP] Check Pods Manifest.lock */,
 				238B243D218697CA00828CBF /* Sources */,
 				238B243E218697CA00828CBF /* Frameworks */,
 				238B243F218697CA00828CBF /* Resources */,
@@ -208,6 +249,7 @@
 				238B243B218697CA00828CBF /* LaunchScreen.storyboard in Resources */,
 				238B2438218697CA00828CBF /* Assets.xcassets in Resources */,
 				238B2436218697C700828CBF /* Main.storyboard in Resources */,
+				2356DA892197A66F00D7018A /* click.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +262,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5B4683F309D943CCA8C1720C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MusiciansToolkitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BFE21EC2A47376D74B0BA88 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MusiciansToolkit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		238B2429218697C700828CBF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -228,6 +317,7 @@
 				23A5B1642190E20600FD2898 /* MusiciansModel.swift in Sources */,
 				23EAFFA82190F68D0091B0DC /* MetronomeViewController.swift in Sources */,
 				23A5B1612190E1DD00FD2898 /* HomePageCollectionViewController.swift in Sources */,
+				2356DA872197994800D7018A /* Metronome.swift in Sources */,
 				238B2433218697C700828CBF /* ViewController.swift in Sources */,
 				23EAFFA62190E8350091B0DC /* HomePageCell.swift in Sources */,
 				238B2431218697C700828CBF /* AppDelegate.swift in Sources */,
@@ -388,6 +478,7 @@
 		};
 		238B244B218697CA00828CBF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DC4D9A874B19981F29540AE /* Pods-MusiciansToolkit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -407,6 +498,7 @@
 		};
 		238B244C218697CA00828CBF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE30C49992700F74E54EB02D /* Pods-MusiciansToolkit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -426,6 +518,7 @@
 		};
 		238B244E218697CA00828CBF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E802975274F1A1E3926E4E91 /* Pods-MusiciansToolkitTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -447,6 +540,7 @@
 		};
 		238B244F218697CA00828CBF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F87A25FE4706D6C3F5D25CF /* Pods-MusiciansToolkitTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

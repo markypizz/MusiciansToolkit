@@ -25,9 +25,6 @@ class HomePageCollectionViewController: UICollectionViewController {
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: model.backgroundImages[1])!.resizableImage(withCapInsets: UIEdgeInsets.zero, resizingMode: .stretch), for: .default)
         self.collectionView?.allowsSelection = true
-        
-        self.collectionView?.selectItem(at: IndexPath(row: 3, section: 0), animated: true, scrollPosition: .centeredVertically)
-        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
