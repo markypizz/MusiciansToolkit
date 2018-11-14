@@ -24,7 +24,7 @@ class MetronomeViewController: UIViewController {
             userDefaults.set(tempo, forKey: UserDefaultsKeys.tempoKey)
             
             //Update tempo for metronome object
-            musicModel.metronome.metronome.tempo = Double(tempo * (subdivision+1))
+            musicModel.metronome!.metronome.tempo = Double(tempo * (subdivision+1))
         }
     }
     
@@ -34,10 +34,10 @@ class MetronomeViewController: UIViewController {
             subdivisionSegmentedControl.selectedSegmentIndex = subdivision
             
             //Change metronome subdivision
-            musicModel.metronome.metronome.subdivision = (subdivision+1)
+            musicModel.metronome!.metronome.subdivision = (subdivision+1)
             
             //Double / Triple / Quadruple tempo to match new subdivison
-            musicModel.metronome.metronome.tempo = Double(tempo * (subdivision+1))
+            musicModel.metronome!.metronome.tempo = Double(tempo * (subdivision+1))
             
         }
     }
@@ -61,6 +61,11 @@ class MetronomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if (musicModel.metronome == nil) {
+            //Initialize
+            musicModel.metronome = Metronome()
+        }
+        
         //Remove the white offsets
         startButton.layer.cornerRadius = cornerRadius
         
@@ -72,7 +77,7 @@ class MetronomeViewController: UIViewController {
             tempo = savedTempo
         }
         
-        if (musicModel.metronome.metronomeOn) {
+        if (musicModel.metronome!.metronomeOn) {
             startButton.setTitle("Stop", for: .normal)
         }
 
@@ -94,11 +99,11 @@ class MetronomeViewController: UIViewController {
     
     @IBAction func startButtonPressed(_ sender: UIButton) {
         
-        if (musicModel.metronome.metronomeOn) {
-            musicModel.metronome.stopMetronome()
+        if (musicModel.metronome!.metronomeOn) {
+            musicModel.metronome!.stopMetronome()
             startButton.setTitle("Start", for: .normal)
         } else {
-            musicModel.metronome.startMetronome()
+            musicModel.metronome!.startMetronome()
             startButton.setTitle("Stop", for: .normal)
         }
     }

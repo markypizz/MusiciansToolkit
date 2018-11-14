@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1333929519F10E3859006536 /* Pods_MusiciansToolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C69AA564617942E90EC2D5C /* Pods_MusiciansToolkit.framework */; };
+		232191F3219B83C90008FD19 /* Tuner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232191F2219B83C90008FD19 /* Tuner.swift */; };
 		2356DA872197994800D7018A /* Metronome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2356DA862197994800D7018A /* Metronome.swift */; };
-		2356DA892197A66F00D7018A /* click.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2356DA882197A66F00D7018A /* click.wav */; };
 		238B2431218697C700828CBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B2430218697C700828CBF /* AppDelegate.swift */; };
 		238B2433218697C700828CBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B2432218697C700828CBF /* ViewController.swift */; };
 		238B2436218697C700828CBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 238B2434218697C700828CBF /* Main.storyboard */; };
@@ -18,6 +18,7 @@
 		238B2446218697CA00828CBF /* MusiciansToolkitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B2445218697CA00828CBF /* MusiciansToolkitTests.swift */; };
 		23A5B1612190E1DD00FD2898 /* HomePageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A5B1602190E1DD00FD2898 /* HomePageCollectionViewController.swift */; };
 		23A5B1642190E20600FD2898 /* MusiciansModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A5B1632190E20600FD2898 /* MusiciansModel.swift */; };
+		23AB80A1219BF596006458BF /* TunerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AB80A0219BF596006458BF /* TunerViewController.swift */; };
 		23EAFFA62190E8350091B0DC /* HomePageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EAFFA52190E8350091B0DC /* HomePageCell.swift */; };
 		23EAFFA82190F68D0091B0DC /* MetronomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EAFFA72190F68D0091B0DC /* MetronomeViewController.swift */; };
 		2FCD986EEAA44962ED9152F1 /* Pods_MusiciansToolkitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8170211084ECC0D87012855C /* Pods_MusiciansToolkitTests.framework */; };
@@ -35,8 +36,8 @@
 
 /* Begin PBXFileReference section */
 		0C69AA564617942E90EC2D5C /* Pods_MusiciansToolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusiciansToolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		232191F2219B83C90008FD19 /* Tuner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tuner.swift; sourceTree = "<group>"; };
 		2356DA862197994800D7018A /* Metronome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metronome.swift; sourceTree = "<group>"; };
-		2356DA882197A66F00D7018A /* click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = click.wav; sourceTree = "<group>"; };
 		238B242D218697C700828CBF /* MusiciansToolkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusiciansToolkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		238B2430218697C700828CBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		238B2432218697C700828CBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		238B2447218697CA00828CBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23A5B1602190E1DD00FD2898 /* HomePageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCollectionViewController.swift; sourceTree = "<group>"; };
 		23A5B1632190E20600FD2898 /* MusiciansModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusiciansModel.swift; sourceTree = "<group>"; };
+		23AB80A0219BF596006458BF /* TunerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerViewController.swift; sourceTree = "<group>"; };
 		23EAFFA52190E8350091B0DC /* HomePageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCell.swift; sourceTree = "<group>"; };
 		23EAFFA72190F68D0091B0DC /* MetronomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeViewController.swift; sourceTree = "<group>"; };
 		8170211084ECC0D87012855C /* Pods_MusiciansToolkitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusiciansToolkitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		232191F4219B83D00008FD19 /* Tuner */ = {
+			isa = PBXGroup;
+			children = (
+				232191F2219B83C90008FD19 /* Tuner.swift */,
+				23AB80A0219BF596006458BF /* TunerViewController.swift */,
+			);
+			path = Tuner;
+			sourceTree = "<group>";
+		};
 		238B2424218697C700828CBF = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +112,7 @@
 		238B242F218697C700828CBF /* MusiciansToolkit */ = {
 			isa = PBXGroup;
 			children = (
+				232191F4219B83D00008FD19 /* Tuner */,
 				23EAFFA92190F8B20091B0DC /* Metronome */,
 				238B2430218697C700828CBF /* AppDelegate.swift */,
 				238B2432218697C700828CBF /* ViewController.swift */,
@@ -135,7 +147,6 @@
 		23EAFFA92190F8B20091B0DC /* Metronome */ = {
 			isa = PBXGroup;
 			children = (
-				2356DA882197A66F00D7018A /* click.wav */,
 				23EAFFA72190F68D0091B0DC /* MetronomeViewController.swift */,
 				2356DA862197994800D7018A /* Metronome.swift */,
 			);
@@ -150,7 +161,6 @@
 				E802975274F1A1E3926E4E91 /* Pods-MusiciansToolkitTests.debug.xcconfig */,
 				9F87A25FE4706D6C3F5D25CF /* Pods-MusiciansToolkitTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -174,6 +184,7 @@
 				238B2429218697C700828CBF /* Sources */,
 				238B242A218697C700828CBF /* Frameworks */,
 				238B242B218697C700828CBF /* Resources */,
+				38440B24D7E80DE37149B652 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -249,7 +260,6 @@
 				238B243B218697CA00828CBF /* LaunchScreen.storyboard in Resources */,
 				238B2438218697CA00828CBF /* Assets.xcassets in Resources */,
 				238B2436218697C700828CBF /* Main.storyboard in Resources */,
-				2356DA892197A66F00D7018A /* click.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +273,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		38440B24D7E80DE37149B652 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MusiciansToolkit/Pods-MusiciansToolkit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/EZAudio/EZAudio.framework",
+				"${BUILT_PRODUCTS_DIR}/TPCircularBuffer/TPCircularBuffer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EZAudio.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPCircularBuffer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MusiciansToolkit/Pods-MusiciansToolkit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5B4683F309D943CCA8C1720C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -315,9 +349,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				23A5B1642190E20600FD2898 /* MusiciansModel.swift in Sources */,
+				23AB80A1219BF596006458BF /* TunerViewController.swift in Sources */,
 				23EAFFA82190F68D0091B0DC /* MetronomeViewController.swift in Sources */,
 				23A5B1612190E1DD00FD2898 /* HomePageCollectionViewController.swift in Sources */,
 				2356DA872197994800D7018A /* Metronome.swift in Sources */,
+				232191F3219B83C90008FD19 /* Tuner.swift in Sources */,
 				238B2433218697C700828CBF /* ViewController.swift in Sources */,
 				23EAFFA62190E8350091B0DC /* HomePageCell.swift in Sources */,
 				238B2431218697C700828CBF /* AppDelegate.swift in Sources */,

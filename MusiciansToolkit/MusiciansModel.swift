@@ -16,7 +16,7 @@ struct UserDefaultsKeys {
 class Model {
     static let sharedInstance = Model()
     static let sharedUserDefaults = UserDefaults.standard
-    let metronome = Metronome()
+    var metronome : Metronome? = nil
     
     let numberOfTools = 6
     
