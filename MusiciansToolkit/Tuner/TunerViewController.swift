@@ -11,7 +11,7 @@ import AudioKit
 
 class TunerViewController : UIViewController {
     
-    var tuner : Tuner? = nil
+    //var tuner : Tuner? = nil
     
     @IBOutlet weak var frequencyLabel: UILabel!
     
@@ -22,25 +22,42 @@ class TunerViewController : UIViewController {
         //tuner.tracker.start()
         
         //Turn of metronome if on
-        if (musicModel.metronome != nil) {
-            musicModel.metronome = nil
+        //if (musicModel.metronome != nil) {
+        //    musicModel.metronome = nil
             
             //Remove tuner if exists
-            AudioKit.disconnectAllInputs()
+        //    AudioKit.disconnectAllInputs()
             
             //Stop audio driver
-            do {
-                try AudioKit.stop()
-            } catch {
-                print("Error")
-                print(error)
-            }
-        }
+            //do {
+            //    try AudioKit.stop()
+            //} catch {
+            //    print("Error")
+            //    print(error)
+            //}
+        //}
         
-        tuner = Tuner()
-        //tuner!.tracker.start()
+        //do {
+        //    try AudioKit.stop()
+        //} catch {
+        //    print("Error")
+        //    print(error)
+        //}
+        musicModel.audioDevice.tuner!.tracker.start()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        //Stop AudioKit
+        //do {
+        //    try AudioKit.stop()
+        //} catch {
+        //    print("Error")
+        //    print(error)
+        //}
     }
     @IBAction func getFreqButtonPressed(_ sender: UIButton) {
-        frequencyLabel.text = String(tuner!.tracker.frequency)
+        frequencyLabel.text = String(Int(musicModel.audioDevice.tuner!.tracker.frequency))
     }
 }

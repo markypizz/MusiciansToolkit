@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1333929519F10E3859006536 /* Pods_MusiciansToolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C69AA564617942E90EC2D5C /* Pods_MusiciansToolkit.framework */; };
 		232191F3219B83C90008FD19 /* Tuner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232191F2219B83C90008FD19 /* Tuner.swift */; };
+		23429C5D219CDBF5000C8AC0 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23429C5C219CDBF5000C8AC0 /* Audio.swift */; };
 		2356DA872197994800D7018A /* Metronome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2356DA862197994800D7018A /* Metronome.swift */; };
 		238B2431218697C700828CBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B2430218697C700828CBF /* AppDelegate.swift */; };
 		238B2433218697C700828CBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B2432218697C700828CBF /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 /* Begin PBXFileReference section */
 		0C69AA564617942E90EC2D5C /* Pods_MusiciansToolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusiciansToolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		232191F2219B83C90008FD19 /* Tuner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tuner.swift; sourceTree = "<group>"; };
+		23429C5C219CDBF5000C8AC0 /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
 		2356DA862197994800D7018A /* Metronome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metronome.swift; sourceTree = "<group>"; };
 		238B242D218697C700828CBF /* MusiciansToolkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusiciansToolkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		238B2430218697C700828CBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				238B2432218697C700828CBF /* ViewController.swift */,
 				238B2434218697C700828CBF /* Main.storyboard */,
 				23A5B1632190E20600FD2898 /* MusiciansModel.swift */,
+				23429C5C219CDBF5000C8AC0 /* Audio.swift */,
 				23A5B1622190E1E200FD2898 /* HomePage */,
 				238B2437218697CA00828CBF /* Assets.xcassets */,
 				238B2439218697CA00828CBF /* LaunchScreen.storyboard */,
@@ -352,6 +355,7 @@
 				23AB80A1219BF596006458BF /* TunerViewController.swift in Sources */,
 				23EAFFA82190F68D0091B0DC /* MetronomeViewController.swift in Sources */,
 				23A5B1612190E1DD00FD2898 /* HomePageCollectionViewController.swift in Sources */,
+				23429C5D219CDBF5000C8AC0 /* Audio.swift in Sources */,
 				2356DA872197994800D7018A /* Metronome.swift in Sources */,
 				232191F3219B83C90008FD19 /* Tuner.swift in Sources */,
 				238B2433218697C700828CBF /* ViewController.swift in Sources */,

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import AudioKit
 
 struct UserDefaultsKeys {
     static let tempoKey = "tempo"
@@ -16,7 +17,8 @@ struct UserDefaultsKeys {
 class Model {
     static let sharedInstance = Model()
     static let sharedUserDefaults = UserDefaults.standard
-    var metronome : Metronome? = nil
+    
+    let audioDevice : Audio
     
     let numberOfTools = 6
     
@@ -35,6 +37,6 @@ class Model {
     let imageNames = ["tuningFork","woodBG1","woodBG1","woodBG1","woodBG1","woodBG1"]
     
     public init() {
-        
+        audioDevice = Audio()
     }
 }

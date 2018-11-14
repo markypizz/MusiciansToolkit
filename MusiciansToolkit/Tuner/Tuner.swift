@@ -9,35 +9,25 @@
 import Foundation
 import AudioKit
 
-
 class Tuner {
     
     let minFrequency = 30
     let maxFrequency = 2500
     
     let microphoneInput : AKMicrophone
+    let filter : AKHighPassFilter
     let tracker : AKFrequencyTracker
-    let booster : AKBooster             //Audio mixer
+    let silence : AKBooster             //Audio mixer
+    let node : AKNode
     //let test = EZAudioPlayer()
     
     init() {
         microphoneInput = AKMicrophone()
         
-        tracker = AKFrequencyTracker(microphoneInput, hopSize: minFrequency, peakCount: maxFrequency)
+        filter = AKHighPassFilter(microphoneInput, cutoffFrequency: 200, resonance: 0)
+        tracker = AKFrequencyTracker(filter)
+        silence = AKBooster(tracker, gain: 0)
         
-        //Scilence tracker. Will only monitor, not output
-        booster = AKBooster(tracker, gain: 0)
-        AudioKit.output = booster
-        
-        
-        //Crash on the audiokit start
-        
-        //do {
-            //Will this work if the metronome is already on?
-        //    try AudioKit.start()
-        //} catch {
-        //    print(error)
-        //}
-        
+        node = silence
     }
 }

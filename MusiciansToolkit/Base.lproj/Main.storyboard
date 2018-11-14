@@ -65,8 +65,8 @@
                                                 <constraint firstAttribute="width" constant="85" id="IqH-a7-wgk"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tuner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELm-o1-77o" userLabel="Name">
-                                            <rect key="frame" x="29.5" y="9.5" width="41.5" height="19.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tuner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELm-o1-77o" userLabel="Name">
+                                            <rect key="frame" x="29.5" y="75.5" width="41.5" height="19.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -77,7 +77,7 @@
                                 <constraints>
                                     <constraint firstItem="ELm-o1-77o" firstAttribute="centerX" secondItem="fEn-xF-zlT" secondAttribute="centerX" id="aiF-3A-vNk"/>
                                     <constraint firstItem="e0w-cB-z1r" firstAttribute="top" secondItem="fEn-xF-zlT" secondAttribute="top" constant="7" id="hWc-eN-fga"/>
-                                    <constraint firstAttribute="bottom" secondItem="ELm-o1-77o" secondAttribute="bottom" constant="7" id="uA7-Qw-8FY"/>
+                                    <constraint firstAttribute="bottom" secondItem="ELm-o1-77o" secondAttribute="bottom" constant="5" id="uA7-Qw-8FY"/>
                                     <constraint firstItem="e0w-cB-z1r" firstAttribute="centerX" secondItem="fEn-xF-zlT" secondAttribute="centerX" id="vDL-Vx-XyN"/>
                                 </constraints>
                                 <connections>
@@ -101,7 +101,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kj0-xq-2ZD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="200.5" y="-87.5"/>
+            <point key="canvasLocation" x="199.19999999999999" y="-87.706146926536732"/>
         </scene>
         <!--Chords-->
         <scene sceneID="4HP-rP-1CQ">
@@ -607,7 +607,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysw-0O-VvZ">
-                                <rect key="frame" x="166" y="262" width="42" height="21"/>
+                                <rect key="frame" x="139" y="262" width="96" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -629,7 +629,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BzG-UJ-Exd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1329" y="-89"/>
+            <point key="canvasLocation" x="1328.8" y="-89.505247376311857"/>
         </scene>
     </scenes>
     <resources>

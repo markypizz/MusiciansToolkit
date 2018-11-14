@@ -21,6 +21,7 @@ class Metronome {
     let upbeatToneFrequency : Double = 1000.0
     
     var metronomeOn = false
+    var node : AKNode
     
     init() {
         
@@ -31,13 +32,7 @@ class Metronome {
         metronome.frequency1 = downbeatToneFrequency
         metronome.frequency2 = upbeatToneFrequency
         
-        AudioKit.output = metronome
-        
-        do {
-            try AudioKit.start()
-        } catch {
-            print(error)
-        }
+        node = metronome
     }
     
     func startMetronome() {
