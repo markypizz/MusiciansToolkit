@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1333929519F10E3859006536 /* Pods_MusiciansToolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C69AA564617942E90EC2D5C /* Pods_MusiciansToolkit.framework */; };
+		23061916219FCA04004B9986 /* TunerData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 23061914219FCA04004B9986 /* TunerData.xcdatamodeld */; };
+		23061918219FCAEF004B9986 /* NoteInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23061917219FCAEF004B9986 /* NoteInfo.plist */; };
 		232191F3219B83C90008FD19 /* Tuner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232191F2219B83C90008FD19 /* Tuner.swift */; };
 		23429C5D219CDBF5000C8AC0 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23429C5C219CDBF5000C8AC0 /* Audio.swift */; };
 		2356DA872197994800D7018A /* Metronome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2356DA862197994800D7018A /* Metronome.swift */; };
@@ -18,7 +20,7 @@
 		238B243B218697CA00828CBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 238B2439218697CA00828CBF /* LaunchScreen.storyboard */; };
 		238B2446218697CA00828CBF /* MusiciansToolkitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B2445218697CA00828CBF /* MusiciansToolkitTests.swift */; };
 		23A5B1612190E1DD00FD2898 /* HomePageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A5B1602190E1DD00FD2898 /* HomePageCollectionViewController.swift */; };
-		23A5B1642190E20600FD2898 /* MusiciansModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A5B1632190E20600FD2898 /* MusiciansModel.swift */; };
+		23A5B1642190E20600FD2898 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A5B1632190E20600FD2898 /* Model.swift */; };
 		23AB80A1219BF596006458BF /* TunerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AB80A0219BF596006458BF /* TunerViewController.swift */; };
 		23EAFFA62190E8350091B0DC /* HomePageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EAFFA52190E8350091B0DC /* HomePageCell.swift */; };
 		23EAFFA82190F68D0091B0DC /* MetronomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EAFFA72190F68D0091B0DC /* MetronomeViewController.swift */; };
@@ -37,6 +39,8 @@
 
 /* Begin PBXFileReference section */
 		0C69AA564617942E90EC2D5C /* Pods_MusiciansToolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusiciansToolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23061915219FCA04004B9986 /* TunerData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TunerData.xcdatamodel; sourceTree = "<group>"; };
+		23061917219FCAEF004B9986 /* NoteInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = NoteInfo.plist; sourceTree = "<group>"; };
 		232191F2219B83C90008FD19 /* Tuner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tuner.swift; sourceTree = "<group>"; };
 		23429C5C219CDBF5000C8AC0 /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
 		2356DA862197994800D7018A /* Metronome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metronome.swift; sourceTree = "<group>"; };
@@ -51,7 +55,7 @@
 		238B2445218697CA00828CBF /* MusiciansToolkitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusiciansToolkitTests.swift; sourceTree = "<group>"; };
 		238B2447218697CA00828CBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23A5B1602190E1DD00FD2898 /* HomePageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCollectionViewController.swift; sourceTree = "<group>"; };
-		23A5B1632190E20600FD2898 /* MusiciansModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusiciansModel.swift; sourceTree = "<group>"; };
+		23A5B1632190E20600FD2898 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		23AB80A0219BF596006458BF /* TunerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerViewController.swift; sourceTree = "<group>"; };
 		23EAFFA52190E8350091B0DC /* HomePageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCell.swift; sourceTree = "<group>"; };
 		23EAFFA72190F68D0091B0DC /* MetronomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +89,8 @@
 		232191F4219B83D00008FD19 /* Tuner */ = {
 			isa = PBXGroup;
 			children = (
+				23061914219FCA04004B9986 /* TunerData.xcdatamodeld */,
+				23061917219FCAEF004B9986 /* NoteInfo.plist */,
 				232191F2219B83C90008FD19 /* Tuner.swift */,
 				23AB80A0219BF596006458BF /* TunerViewController.swift */,
 			);
@@ -119,7 +125,7 @@
 				238B2430218697C700828CBF /* AppDelegate.swift */,
 				238B2432218697C700828CBF /* ViewController.swift */,
 				238B2434218697C700828CBF /* Main.storyboard */,
-				23A5B1632190E20600FD2898 /* MusiciansModel.swift */,
+				23A5B1632190E20600FD2898 /* Model.swift */,
 				23429C5C219CDBF5000C8AC0 /* Audio.swift */,
 				23A5B1622190E1E200FD2898 /* HomePage */,
 				238B2437218697CA00828CBF /* Assets.xcassets */,
@@ -187,7 +193,6 @@
 				238B2429218697C700828CBF /* Sources */,
 				238B242A218697C700828CBF /* Frameworks */,
 				238B242B218697C700828CBF /* Resources */,
-				38440B24D7E80DE37149B652 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -262,6 +267,7 @@
 			files = (
 				238B243B218697CA00828CBF /* LaunchScreen.storyboard in Resources */,
 				238B2438218697CA00828CBF /* Assets.xcassets in Resources */,
+				23061918219FCAEF004B9986 /* NoteInfo.plist in Resources */,
 				238B2436218697C700828CBF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,30 +282,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		38440B24D7E80DE37149B652 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MusiciansToolkit/Pods-MusiciansToolkit-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/EZAudio/EZAudio.framework",
-				"${BUILT_PRODUCTS_DIR}/TPCircularBuffer/TPCircularBuffer.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EZAudio.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPCircularBuffer.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MusiciansToolkit/Pods-MusiciansToolkit-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5B4683F309D943CCA8C1720C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -351,7 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23A5B1642190E20600FD2898 /* MusiciansModel.swift in Sources */,
+				23A5B1642190E20600FD2898 /* Model.swift in Sources */,
 				23AB80A1219BF596006458BF /* TunerViewController.swift in Sources */,
 				23EAFFA82190F68D0091B0DC /* MetronomeViewController.swift in Sources */,
 				23A5B1612190E1DD00FD2898 /* HomePageCollectionViewController.swift in Sources */,
@@ -360,6 +342,7 @@
 				232191F3219B83C90008FD19 /* Tuner.swift in Sources */,
 				238B2433218697C700828CBF /* ViewController.swift in Sources */,
 				23EAFFA62190E8350091B0DC /* HomePageCell.swift in Sources */,
+				23061916219FCA04004B9986 /* TunerData.xcdatamodeld in Sources */,
 				238B2431218697C700828CBF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -631,6 +614,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		23061914219FCA04004B9986 /* TunerData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				23061915219FCA04004B9986 /* TunerData.xcdatamodel */,
+			);
+			currentVersion = 23061915219FCA04004B9986 /* TunerData.xcdatamodel */;
+			path = TunerData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 238B2425218697C700828CBF /* Project object */;
 }

@@ -6,8 +6,7 @@ target 'MusiciansToolkit' do
   use_frameworks!
 
   # Pods for MusiciansToolkit
-  pod 'AudioKit/Core'
-  pod 'EZAudio', '~> 1.1.4'
+  pod 'AudioKit', '~> 4.0'
 
   target 'MusiciansToolkitTests' do
     inherit! :search_paths

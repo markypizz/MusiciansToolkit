@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import AVFoundation
 import AudioKit
 
 class Metronome {
@@ -24,8 +23,6 @@ class Metronome {
     var node : AKNode
     
     init() {
-        
-        //let click = Bundle.main.url(forResource: "click", withExtension: "wav")
 
         metronome = AKMetronome()
         

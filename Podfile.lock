@@ -1,28 +1,21 @@
 PODS:
+  - AudioKit (4.5.4):
+    - AudioKit/Core (= 4.5.4)
+    - AudioKit/UI (= 4.5.4)
   - AudioKit/Core (4.5.4)
-  - EZAudio (1.1.5):
-    - EZAudio/Full (= 1.1.5)
-  - EZAudio/Core (1.1.5)
-  - EZAudio/Full (1.1.5):
-    - EZAudio/Core
-    - TPCircularBuffer (= 1.1)
-  - TPCircularBuffer (1.1)
+  - AudioKit/UI (4.5.4):
+    - AudioKit/Core
 
 DEPENDENCIES:
-  - AudioKit/Core
-  - EZAudio (~> 1.1.4)
+  - AudioKit (~> 4.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AudioKit
-    - EZAudio
-    - TPCircularBuffer
 
 SPEC CHECKSUMS:
   AudioKit: af3f5b73e22f85f3cd03076fea8afbb9658f0938
-  EZAudio: 3b1cb4b6d7ebca68f0c2478576d75940aad4aa99
-  TPCircularBuffer: 4960a919e667280f7f38963d771f45871b64fe62
 
-PODFILE CHECKSUM: c47b221544015f3050bde73aee14f7b614b72ae3
+PODFILE CHECKSUM: 40f6ade40e92571b82d8978bd51643faa67db1ea
 
 COCOAPODS: 1.6.0.beta.2
