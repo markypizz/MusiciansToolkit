@@ -12,24 +12,50 @@ import AudioKitUI
 
 class TunerViewController : UIViewController {
     
-    //var tuner : Tuner? = nil
+    @IBOutlet weak var pitchView: UIView!
+    
     @IBOutlet weak var frequencyLabel: UILabel!
     
     @IBOutlet weak var noteNameLabel: UILabel!
     
-    var updateTimer : Timer?
-    let pollingRate = TimeInterval(0.1)
-    //let defaultColor2 = CGColor(
-    let defaultColor = UIColor(red: 0.0, green: 122.0, blue: 255.0, alpha: 1.0)
-    
     @IBOutlet weak var tuningStatusLabel: UILabel!
+    
+    @IBOutlet weak var octaveLabel: UILabel!
     
     @IBOutlet weak var visualizerView: UIView!
     
     let musicModel = Model.sharedInstance
+    let pollingRate = TimeInterval(0.15)
+    let ampThreshold = 0.02
+    
+    let lowFrequencyShelf = 2.0
+    let highFrequencyShelf = 30.0
+    let notesPerOctave = 12
+    let noteFrequencyDistanceExponent : Double = 1/12
+    
+    var updateTimer : Timer?
+    var pitchPercentageView : UIView?
+    let pitchPercentageViewAnimationTime = 0.1
+    var pitchPercentage = 0.0 {
+        didSet {
+            
+            //Might need more time
+            UIView.animate(withDuration: pitchPercentageViewAnimationTime) {
+                self.pitchPercentageView?.frame.size.width = CGFloat(self.pitchPercentage) * self.pitchView.frame.width
+            }
+            if (pitchPercentage > 0.45 && pitchPercentage < 0.55) {
+                pitchPercentageView?.backgroundColor = #colorLiteral(red: 0.2352941176, green: 1, blue: 0.3333333333, alpha: 1)
+            } else {
+                pitchPercentageView?.backgroundColor = #colorLiteral(red: 0.07843137255, green: 0.5568627451, blue: 1, alpha: 1)
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        noteNameLabel.text = ""
+        octaveLabel.text = ""
+        frequencyLabel.text = ""
         musicModel.audioDevice.tuner!.tracker.start()
         
         //Setup Tuner
@@ -37,20 +63,107 @@ class TunerViewController : UIViewController {
             self.updateDisplayFromPoll()
         })
         
+        //Create view
+        pitchPercentageView = UIView(frame: CGRect.zero)
+        pitchPercentageView?.backgroundColor = #colorLiteral(red: 0.07843137255, green: 0.5568627451, blue: 1, alpha: 1)
+        pitchView.addSubview(pitchPercentageView!)
+        pitchView.sendSubview(toBack: pitchPercentageView!)
+        
         //updateTimer?.fire()
         
         setupPlot()
     }
     
-    func setupPlot() { visualizerView.addSubview(musicModel.audioDevice.tuner!.bufferPlot)
+    func setupPlot() {
+        visualizerView.addSubview(musicModel.audioDevice.tuner!.bufferPlot)
         visualizerView.sendSubview(toBack: musicModel.audioDevice.tuner!.bufferPlot)
         musicModel.audioDevice.tuner!.bufferPlot.plotType = .buffer
         musicModel.audioDevice.tuner!.bufferPlot.resume()
-
+        musicModel.audioDevice.tuner!.bufferPlot.clear() //untested
     }
     
     func updateDisplayFromPoll() {
-        frequencyLabel.text = String(Int(musicModel.audioDevice.tuner!.tracker.frequency))
+        let frequency = musicModel.audioDevice.tuner!.tracker.frequency
+        
+        frequencyLabel.text = String(Int(frequency))
+        let amplitude = musicModel.audioDevice.tuner!.tracker.amplitude
+        
+        if (amplitude > ampThreshold) {
+            //Find note and deviation
+            //If frequency is within the detectable range
+            if ((frequency < musicModel.notes[musicModel.notes.count-1].frequency + highFrequencyShelf) && (frequency > musicModel.notes[0].frequency - lowFrequencyShelf)) {
+                var noteFound = false
+                var previousIndex = 0
+                var index = 1
+                var finalIndex = 0
+                
+                var currentFrequency = musicModel.notes[index].frequency
+                var previousDeviation = 999999.0 //arbitrary large value
+                var currentDeviation = frequency - musicModel.notes[index].frequency
+                
+                //Incremental movement up
+                
+                //Previous deviation was closer to the exact value
+                if (abs(previousDeviation) < abs(currentDeviation)) {
+                    finalIndex = index
+                    noteFound = true
+                }
+                
+                while (!noteFound) {
+                    //If current frequency is twice as large, double the choice
+                    if (frequency > 2*currentFrequency) {
+                        //Add 12 to index
+                        previousIndex = index
+                        index = index + notesPerOctave
+                        currentFrequency = musicModel.notes[index].frequency
+                    } else {
+                        //Increment counters
+                        index += 1
+                        previousIndex += 1
+                    }
+                    
+                    previousDeviation = currentDeviation
+                    
+                    //Avoid edge
+                    if (index == musicModel.notes.count) {
+                        currentDeviation = 9999
+                    } else {
+                        currentDeviation = frequency - musicModel.notes[index].frequency
+                    }
+                    
+                    if (abs(previousDeviation) < abs(currentDeviation)) {
+                        finalIndex = index-1
+                        noteFound = true
+                    }
+                }
+                
+                //Note was found
+                //Find note bounds
+                //Also need to check lower bound
+                if (finalIndex != musicModel.notes.count-2) {
+                    
+                    //Multiply by 1/24th to get exact center between notes
+                    let leftFreq = musicModel.notes[finalIndex-1].frequency * pow(2,noteFrequencyDistanceExponent / 2.0)
+                    
+                    let rightFreq = musicModel.notes[finalIndex].frequency * pow(2,noteFrequencyDistanceExponent / 2.0)
+                    
+                    //Find percentage between the two
+                    let leftDist = frequency - leftFreq
+                    let rightDist = rightFreq - frequency
+                    
+                    //subtract off 1% due to slight error in the linear approximation of the exponential relationship between pitches
+                    pitchPercentage = (leftDist / (leftDist + rightDist)) - 0.01
+                    noteNameLabel.text = musicModel.notes[finalIndex].name
+                    octaveLabel.text = String(musicModel.notes[finalIndex].octave)
+                }
+            }
+        } else {
+            //Clear Display
+            noteNameLabel.text = ""
+            frequencyLabel.text = ""
+            octaveLabel.text = ""
+            //pitchPercentageView?.frame.size.width = 0.0
+        }
     }
     
     override func viewDidLayoutSubviews() {
@@ -59,7 +172,9 @@ class TunerViewController : UIViewController {
         //Match origin and size of visualizer view
         musicModel.audioDevice.tuner!.bufferPlot.frame.origin = CGPoint.zero
         musicModel.audioDevice.tuner!.bufferPlot.frame.size = visualizerView.frame.size
-
+        
+        pitchPercentageView?.frame.origin = CGPoint.zero
+        pitchPercentageView?.frame.size = CGSize(width: pitchView.frame.width * CGFloat(pitchPercentage), height: pitchView.frame.height)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -79,9 +194,5 @@ class TunerViewController : UIViewController {
         default:
             break
         }
-    }
-    
-    @IBAction func getFreqButtonPressed(_ sender: UIButton) {
-        frequencyLabel.text = String(Int(musicModel.audioDevice.tuner!.tracker.frequency))
     }
 }

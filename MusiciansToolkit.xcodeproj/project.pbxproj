@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1333929519F10E3859006536 /* Pods_MusiciansToolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C69AA564617942E90EC2D5C /* Pods_MusiciansToolkit.framework */; };
-		23061916219FCA04004B9986 /* TunerData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 23061914219FCA04004B9986 /* TunerData.xcdatamodeld */; };
 		23061918219FCAEF004B9986 /* NoteInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23061917219FCAEF004B9986 /* NoteInfo.plist */; };
 		232191F3219B83C90008FD19 /* Tuner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232191F2219B83C90008FD19 /* Tuner.swift */; };
 		23429C5D219CDBF5000C8AC0 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23429C5C219CDBF5000C8AC0 /* Audio.swift */; };
@@ -39,7 +38,6 @@
 
 /* Begin PBXFileReference section */
 		0C69AA564617942E90EC2D5C /* Pods_MusiciansToolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusiciansToolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		23061915219FCA04004B9986 /* TunerData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TunerData.xcdatamodel; sourceTree = "<group>"; };
 		23061917219FCAEF004B9986 /* NoteInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = NoteInfo.plist; sourceTree = "<group>"; };
 		232191F2219B83C90008FD19 /* Tuner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tuner.swift; sourceTree = "<group>"; };
 		23429C5C219CDBF5000C8AC0 /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
@@ -89,7 +87,6 @@
 		232191F4219B83D00008FD19 /* Tuner */ = {
 			isa = PBXGroup;
 			children = (
-				23061914219FCA04004B9986 /* TunerData.xcdatamodeld */,
 				23061917219FCAEF004B9986 /* NoteInfo.plist */,
 				232191F2219B83C90008FD19 /* Tuner.swift */,
 				23AB80A0219BF596006458BF /* TunerViewController.swift */,
@@ -342,7 +339,6 @@
 				232191F3219B83C90008FD19 /* Tuner.swift in Sources */,
 				238B2433218697C700828CBF /* ViewController.swift in Sources */,
 				23EAFFA62190E8350091B0DC /* HomePageCell.swift in Sources */,
-				23061916219FCA04004B9986 /* TunerData.xcdatamodeld in Sources */,
 				238B2431218697C700828CBF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -614,19 +610,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		23061914219FCA04004B9986 /* TunerData.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				23061915219FCA04004B9986 /* TunerData.xcdatamodel */,
-			);
-			currentVersion = 23061915219FCA04004B9986 /* TunerData.xcdatamodel */;
-			path = TunerData.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 238B2425218697C700828CBF /* Project object */;
 }

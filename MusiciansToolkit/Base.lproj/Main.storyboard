@@ -587,21 +587,6 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysw-0O-VvZ">
-                                        <rect key="frame" x="271" y="64" width="96" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avu-Gw-Hx1">
-                                        <rect key="frame" x="271" y="23" width="60" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Get Freq"/>
-                                        <connections>
-                                            <action selector="getFreqButtonPressed:" destination="OYr-3k-5Sf" eventType="touchUpInside" id="hIM-eZ-2TZ"/>
-                                        </connections>
-                                    </button>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hsu-Dl-d3h">
                                         <rect key="frame" x="135" y="8" width="105" height="29"/>
                                         <segments>
@@ -634,16 +619,57 @@
                                         <rect key="frame" x="70" y="208" width="235" height="2"/>
                                         <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
                                     </progressView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duJ-M0-0bW">
+                                        <rect key="frame" x="345" y="8" width="22" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysw-0O-VvZ">
+                                        <rect key="frame" x="297" y="8" width="42" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="lSM-5D-5Zb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="To6-lZ-XdF">
+                                        <rect key="frame" x="354" y="35" width="13" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="13" id="Rl9-iu-jTZ"/>
+                                            <constraint firstAttribute="height" constant="21" id="vSv-bH-MO8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Octave:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wo6-No-TLa">
+                                        <rect key="frame" x="287" y="35" width="59" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <constraints>
                                     <constraint firstItem="PaB-xk-THn" firstAttribute="centerX" secondItem="Tdi-3K-rKF" secondAttribute="centerX" id="2MM-ei-kan"/>
+                                    <constraint firstItem="ysw-0O-VvZ" firstAttribute="top" secondItem="Tdi-3K-rKF" secondAttribute="top" constant="8" id="34y-HI-Cua"/>
+                                    <constraint firstItem="To6-lZ-XdF" firstAttribute="top" secondItem="duJ-M0-0bW" secondAttribute="bottom" constant="6" id="4V6-k8-daJ"/>
                                     <constraint firstAttribute="trailing" secondItem="PaB-xk-THn" secondAttribute="trailing" constant="70" id="6V5-aB-Lcl"/>
                                     <constraint firstItem="GPG-pf-kg8" firstAttribute="centerY" secondItem="Tdi-3K-rKF" secondAttribute="centerY" id="7eD-RW-4B6"/>
+                                    <constraint firstItem="To6-lZ-XdF" firstAttribute="leading" secondItem="wo6-No-TLa" secondAttribute="trailing" constant="8" id="B0m-1Y-xcE"/>
                                     <constraint firstItem="GPG-pf-kg8" firstAttribute="centerX" secondItem="Tdi-3K-rKF" secondAttribute="centerX" id="MVK-Hb-hBF"/>
+                                    <constraint firstItem="ysw-0O-VvZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Tdi-3K-rKF" secondAttribute="leading" constant="20" symbolic="YES" id="X7G-1S-flG"/>
                                     <constraint firstAttribute="height" constant="220" id="eIe-aM-pYX"/>
                                     <constraint firstAttribute="bottom" secondItem="PaB-xk-THn" secondAttribute="bottom" constant="10" id="fcN-VQ-ydE"/>
+                                    <constraint firstItem="duJ-M0-0bW" firstAttribute="top" secondItem="Tdi-3K-rKF" secondAttribute="top" constant="8" id="m1F-sa-wJs"/>
+                                    <constraint firstItem="wo6-No-TLa" firstAttribute="top" secondItem="ysw-0O-VvZ" secondAttribute="bottom" constant="6" id="mfT-Bb-k4a"/>
+                                    <constraint firstItem="duJ-M0-0bW" firstAttribute="leading" secondItem="ysw-0O-VvZ" secondAttribute="trailing" constant="6" id="rpq-gf-Iya"/>
+                                    <constraint firstItem="wo6-No-TLa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Tdi-3K-rKF" secondAttribute="leading" constant="20" symbolic="YES" id="vXn-yu-A4o"/>
+                                    <constraint firstAttribute="trailing" secondItem="To6-lZ-XdF" secondAttribute="trailing" constant="8" id="vpQ-w3-gLd"/>
                                     <constraint firstItem="PaB-xk-THn" firstAttribute="leading" secondItem="Tdi-3K-rKF" secondAttribute="leading" constant="70" id="x4V-ri-VuD"/>
+                                    <constraint firstAttribute="trailing" secondItem="duJ-M0-0bW" secondAttribute="trailing" constant="8" id="z0q-ku-MpG"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -662,6 +688,8 @@
                     <connections>
                         <outlet property="frequencyLabel" destination="ysw-0O-VvZ" id="aP2-gi-sft"/>
                         <outlet property="noteNameLabel" destination="GPG-pf-kg8" id="AcK-uw-dhu"/>
+                        <outlet property="octaveLabel" destination="To6-lZ-XdF" id="qpD-Lj-xnn"/>
+                        <outlet property="pitchView" destination="Tdi-3K-rKF" id="1fW-d1-H1g"/>
                         <outlet property="tuningStatusLabel" destination="A3X-k3-oNG" id="00A-Y8-i8j"/>
                         <outlet property="visualizerView" destination="a06-Kv-8fl" id="uur-au-WTU"/>
                     </connections>

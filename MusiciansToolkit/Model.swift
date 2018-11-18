@@ -8,11 +8,20 @@
 
 import Foundation
 import AudioKit
+import CoreData
 
 struct UserDefaultsKeys {
     static let tempoKey = "tempo"
     static let subdivisionKey = "subdivision"
 }
+
+struct noteInfo : Codable {
+    var octave : Int
+    var name : String
+    var frequency : Double
+}
+
+typealias Notes = [noteInfo]
 
 class Model {
     static let sharedInstance = Model()
@@ -36,7 +45,21 @@ class Model {
     
     let imageNames = ["tuningFork","woodBG1","woodBG1","woodBG1","woodBG1","woodBG1"]
     
+    let notes : Notes
+    
     public init() {
         audioDevice = Audio()
+        
+        let mainBundle = Bundle.main
+        
+        let solutionURL = mainBundle.url(forResource: "NoteInfo", withExtension: "plist")
+        do {
+            let data = try Data(contentsOf: solutionURL!)
+            let decoder = PropertyListDecoder()
+            notes = try decoder.decode(Notes.self, from: data)
+        } catch {
+            print(error)
+            notes = []
+        }
     }
 }

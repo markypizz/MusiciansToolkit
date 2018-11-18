@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	<key>C2</key>
+<array>
 	<dict>
 		<key>octave</key>
 		<integer>2</integer>
@@ -11,7 +10,6 @@
 		<key>frequency</key>
 		<real>65.40600000000001</real>
 	</dict>
-	<key>C#2</key>
 	<dict>
 		<key>octave</key>
 		<integer>2</integer>
@@ -20,7 +18,6 @@
 		<key>frequency</key>
 		<real>69.29600000000001</real>
 	</dict>
-	<key>D2</key>
 	<dict>
 		<key>octave</key>
 		<integer>2</integer>
@@ -29,7 +26,6 @@
 		<key>frequency</key>
 		<real>73.416</real>
 	</dict>
-	<key>D#2</key>
 	<dict>
 		<key>octave</key>
 		<integer>2</integer>
@@ -38,7 +34,6 @@
 		<key>frequency</key>
 		<real>77.782</real>
 	</dict>
-	<key>E2</key>
 	<dict>
 		<key>octave</key>
 		<integer>2</integer>
@@ -47,7 +42,6 @@
 		<key>frequency</key>
 		<real>82.407</real>
 	</dict>
-	<key>F2</key>
 	<dict>
 		<key>octave</key>
 		<integer>2</integer>
@@ -56,7 +50,6 @@
 		<key>frequency</key>
 		<real>87.307</real>
 	</dict>
-	<key>F#2</key>
 	<dict>
 		<key>octave</key>
 		<integer>2</integer>
@@ -65,7 +58,6 @@
 		<key>frequency</key>
 		<real>92.499</real>
 	</dict>
-	<key>G2</key>
 	<dict>
 		<key>octave</key>
 		<integer>2</integer>
@@ -74,7 +66,6 @@
 		<key>frequency</key>
 		<real>97.999</real>
 	</dict>
-	<key>G#2</key>
 	<dict>
 		<key>octave</key>
 		<integer>2</integer>
@@ -83,7 +74,6 @@
 		<key>frequency</key>
 		<real>103.83</real>
 	</dict>
-	<key>A2</key>
 	<dict>
 		<key>octave</key>
 		<integer>2</integer>
@@ -92,7 +82,6 @@
 		<key>frequency</key>
 		<real>110</real>
 	</dict>
-	<key>A#2</key>
 	<dict>
 		<key>octave</key>
 		<integer>2</integer>
@@ -101,7 +90,6 @@
 		<key>frequency</key>
 		<real>116.54</real>
 	</dict>
-	<key>B2</key>
 	<dict>
 		<key>octave</key>
 		<integer>2</integer>
@@ -110,7 +98,6 @@
 		<key>frequency</key>
 		<real>123.47</real>
 	</dict>
-	<key>C3</key>
 	<dict>
 		<key>octave</key>
 		<integer>3</integer>
@@ -119,7 +106,6 @@
 		<key>frequency</key>
 		<real>130.81</real>
 	</dict>
-	<key>C#3</key>
 	<dict>
 		<key>octave</key>
 		<integer>3</integer>
@@ -128,7 +114,6 @@
 		<key>frequency</key>
 		<real>138.59</real>
 	</dict>
-	<key>D3</key>
 	<dict>
 		<key>octave</key>
 		<integer>3</integer>
@@ -137,7 +122,6 @@
 		<key>frequency</key>
 		<real>146.83</real>
 	</dict>
-	<key>D#3</key>
 	<dict>
 		<key>octave</key>
 		<integer>3</integer>
@@ -146,7 +130,6 @@
 		<key>frequency</key>
 		<real>155.56</real>
 	</dict>
-	<key>E3</key>
 	<dict>
 		<key>octave</key>
 		<integer>3</integer>
@@ -155,7 +138,6 @@
 		<key>frequency</key>
 		<real>164.81</real>
 	</dict>
-	<key>F3</key>
 	<dict>
 		<key>octave</key>
 		<integer>3</integer>
@@ -164,7 +146,6 @@
 		<key>frequency</key>
 		<real>174.61</real>
 	</dict>
-	<key>F#3</key>
 	<dict>
 		<key>octave</key>
 		<integer>3</integer>
@@ -173,7 +154,6 @@
 		<key>frequency</key>
 		<real>185</real>
 	</dict>
-	<key>G3</key>
 	<dict>
 		<key>octave</key>
 		<integer>3</integer>
@@ -182,7 +162,6 @@
 		<key>frequency</key>
 		<real>196</real>
 	</dict>
-	<key>G#3</key>
 	<dict>
 		<key>octave</key>
 		<integer>3</integer>
@@ -191,7 +170,6 @@
 		<key>frequency</key>
 		<real>207.65</real>
 	</dict>
-	<key>A3</key>
 	<dict>
 		<key>octave</key>
 		<integer>3</integer>
@@ -200,7 +178,6 @@
 		<key>frequency</key>
 		<real>220</real>
 	</dict>
-	<key>A#3</key>
 	<dict>
 		<key>octave</key>
 		<integer>3</integer>
@@ -209,7 +186,6 @@
 		<key>frequency</key>
 		<real>233.08</real>
 	</dict>
-	<key>B3</key>
 	<dict>
 		<key>octave</key>
 		<integer>3</integer>
@@ -218,5 +194,293 @@
 		<key>frequency</key>
 		<real>246.94</real>
 	</dict>
-</dict>
+	<dict>
+		<key>octave</key>
+		<integer>4</integer>
+		<key>name</key>
+		<string>C</string>
+		<key>frequency</key>
+		<real>261.63</real>
+	</dict>
+	<dict>
+		<key>octave</key>
+		<integer>4</integer>
+		<key>name</key>
+		<string>C#/Db</string>
+		<key>frequency</key>
+		<real>277.18</real>
+	</dict>
+	<dict>
+		<key>octave</key>
+		<integer>4</integer>
+		<key>name</key>
+		<string>D</string>
+		<key>frequency</key>
+		<real>293.66</real>
+	</dict>
+	<dict>
+		<key>octave</key>
+		<integer>4</integer>
+		<key>name</key>
+		<string>D#/Eb</string>
+		<key>frequency</key>
+		<real>311.13</real>
+	</dict>
+	<dict>
+		<key>octave</key>
+		<integer>4</integer>
+		<key>name</key>
+		<string>E</string>
+		<key>frequency</key>
+		<real>329.63</real>
+	</dict>
+	<dict>
+		<key>octave</key>
+		<integer>4</integer>
+		<key>name</key>
+		<string>F</string>
+		<key>frequency</key>
+		<real>349.23</real>
+	</dict>
+	<dict>
+		<key>octave</key>
+		<integer>4</integer>
+		<key>name</key>
+		<string>F#/Gb</string>
+		<key>frequency</key>
+		<real>369.99</real>
+	</dict>
+	<dict>
+		<key>octave</key>
+		<integer>4</integer>
+		<key>name</key>
+		<string>G</string>
+		<key>frequency</key>
+		<real>392</real>
+	</dict>
+	<dict>
+		<key>octave</key>
+		<integer>4</integer>
+		<key>name</key>
+		<string>G#/Ab</string>
+		<key>frequency</key>
+		<real>415.3</real>
+	</dict>
+	<dict>
+		<key>octave</key>
+		<integer>4</integer>
+		<key>name</key>
+		<string>A</string>
+		<key>frequency</key>
+		<real>440</real>
+	</dict>
+	<dict>
+		<key>octave</key>
+		<integer>4</integer>
+		<key>name</key>
+		<string>A#/Bb</string>
+		<key>frequency</key>
+		<real>466.16</real>
+	</dict>
+	<dict>
+		<key>octave</key>
+		<integer>4</integer>
+		<key>name</key>
+		<string>B</string>
+		<key>frequency</key>
+		<real>493.88</real>
+	</dict>
+	<dict>
+		<key>octave</key>
+		<integer>5</integer>
+		<key>name</key>
+		<string>C</string>
+		<key>frequency</key>
+		<real>523.25</real>
+	</dict>
+	<dict>
+		<key>octave</key>
+		<integer>5</integer>
+		<key>name</key>
+		<string>C#/Db</string>
+		<key>frequency</key>
+		<real>554.37</real>
+	</dict>
+	<dict>
+		<key>octave</key>
+		<integer>5</integer>
+		<key>name</key>
+		<string>D</string>
+		<key>frequency</key>
+		<real>587.33</real>
+	</dict>
+	<dict>
+		<key>octave</key>
+		<integer>5</integer>
+		<key>name</key>
+		<string>D#/Eb</string>
+		<key>frequency</key>
+		<real>622.25</real>
+	</dict>
+	<dict>
+		<key>octave</key>
+		<integer>5</integer>
+		<key>name</key>
+		<string>E</string>
+		<key>frequency</key>
+		<real>659.26</real>
+	</dict>
+	<dict>
+		<key>octave</key>
+		<integer>5</integer>
+		<key>name</key>
+		<string>F</string>
+		<key>frequency</key>
+		<real>698.46</real>
+	</dict>
+	<dict>
+		<key>octave</key>
+		<integer>5</integer>
+		<key>name</key>
+		<string>F#/Gb</string>
+		<key>frequency</key>
+		<real>739.99</real>
+	</dict>
+	<dict>
+		<key>octave</key>
+		<integer>5</integer>
+		<key>name</key>
+		<string>G</string>
+		<key>frequency</key>
+		<real>783.99</real>
+	</dict>
+	<dict>
+		<key>octave</key>
+		<integer>5</integer>
+		<key>name</key>
+		<string>G#/Ab</string>
+		<key>frequency</key>
+		<real>830.16</real>
+	</dict>
+	<dict>
+		<key>octave</key>
+		<integer>5</integer>
+		<key>name</key>
+		<string>A</string>
+		<key>frequency</key>
+		<real>880</real>
+	</dict>
+	<dict>
+		<key>octave</key>
+		<integer>5</integer>
+		<key>name</key>
+		<string>A#/Bb</string>
+		<key>frequency</key>
+		<real>932.33</real>
+	</dict>
+	<dict>
+		<key>octave</key>
+		<integer>5</integer>
+		<key>name</key>
+		<string>B</string>
+		<key>frequency</key>
+		<real>987.77</real>
+	</dict>
+	<dict>
+		<key>octave</key>
+		<integer>6</integer>
+		<key>name</key>
+		<string>C</string>
+		<key>frequency</key>
+		<real>1046.5</real>
+	</dict>
+	<dict>
+		<key>octave</key>
+		<integer>6</integer>
+		<key>name</key>
+		<string>C#/Db</string>
+		<key>frequency</key>
+		<real>1108.7</real>
+	</dict>
+	<dict>
+		<key>octave</key>
+		<integer>6</integer>
+		<key>name</key>
+		<string>D</string>
+		<key>frequency</key>
+		<real>1174.7</real>
+	</dict>
+	<dict>
+		<key>octave</key>
+		<integer>6</integer>
+		<key>name</key>
+		<string>D#/Eb</string>
+		<key>frequency</key>
+		<real>1244.5</real>
+	</dict>
+	<dict>
+		<key>octave</key>
+		<integer>6</integer>
+		<key>name</key>
+		<string>E</string>
+		<key>frequency</key>
+		<real>1318.5</real>
+	</dict>
+	<dict>
+		<key>octave</key>
+		<integer>6</integer>
+		<key>name</key>
+		<string>F</string>
+		<key>frequency</key>
+		<real>1396.9</real>
+	</dict>
+	<dict>
+		<key>octave</key>
+		<integer>6</integer>
+		<key>name</key>
+		<string>F#/Gb</string>
+		<key>frequency</key>
+		<real>1480</real>
+	</dict>
+	<dict>
+		<key>octave</key>
+		<integer>6</integer>
+		<key>name</key>
+		<string>G</string>
+		<key>frequency</key>
+		<real>1568</real>
+	</dict>
+	<dict>
+		<key>octave</key>
+		<integer>6</integer>
+		<key>name</key>
+		<string>G#/Ab</string>
+		<key>frequency</key>
+		<real>1661.2</real>
+	</dict>
+	<dict>
+		<key>octave</key>
+		<integer>6</integer>
+		<key>name</key>
+		<string>A</string>
+		<key>frequency</key>
+		<real>1760</real>
+	</dict>
+	<dict>
+		<key>octave</key>
+		<integer>6</integer>
+		<key>name</key>
+		<string>A#/Bb</string>
+		<key>frequency</key>
+		<real>1864.7</real>
+	</dict>
+	<dict>
+		<key>octave</key>
+		<integer>6</integer>
+		<key>name</key>
+		<string>B</string>
+		<key>frequency</key>
+		<real>1975.5</real>
+	</dict>
+</array>
 </plist>
