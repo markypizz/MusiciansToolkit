@@ -24,9 +24,16 @@ class TunerViewController : UIViewController {
     
     @IBOutlet weak var visualizerView: UIView!
     
+    @IBOutlet weak var hzLabel: UILabel!
+    
+    @IBOutlet weak var octaveTextLabel: UILabel!
+    
+    @IBOutlet weak var sharpFlatLabel: UILabel!
+    
+    
     let musicModel = Model.sharedInstance
     let pollingRate = TimeInterval(0.15)
-    let ampThreshold = 0.02
+    let ampThreshold = 0.013
     
     let lowFrequencyShelf = 2.0
     let highFrequencyShelf = 30.0
@@ -44,9 +51,20 @@ class TunerViewController : UIViewController {
                 self.pitchPercentageView?.frame.size.width = CGFloat(self.pitchPercentage) * self.pitchView.frame.width
             }
             if (pitchPercentage > 0.45 && pitchPercentage < 0.55) {
-                pitchPercentageView?.backgroundColor = #colorLiteral(red: 0.2352941176, green: 1, blue: 0.3333333333, alpha: 1)
+                UIView.animate(withDuration: pitchPercentageViewAnimationTime) {
+                    self.pitchPercentageView?.backgroundColor = #colorLiteral(red: 0.2352941176, green: 1, blue: 0.3333333333, alpha: 1)
+                }
+                sharpFlatLabel.text = "In Tune!"
             } else {
-                pitchPercentageView?.backgroundColor = #colorLiteral(red: 0.07843137255, green: 0.5568627451, blue: 1, alpha: 1)
+                UIView.animate(withDuration: pitchPercentageViewAnimationTime) {
+                    self.pitchPercentageView?.backgroundColor = #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1)
+                }
+                
+                if (pitchPercentage < 0.5) {
+                    sharpFlatLabel.text = "Flat"
+                } else {
+                    sharpFlatLabel.text = "Sharp"
+                }
             }
         }
     }
@@ -54,8 +72,11 @@ class TunerViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         noteNameLabel.text = ""
-        octaveLabel.text = ""
-        frequencyLabel.text = ""
+        hzLabel.isHidden = true
+        frequencyLabel.isHidden = true
+        octaveLabel.isHidden = true
+        octaveTextLabel.isHidden = true
+        sharpFlatLabel.isHidden = true
         musicModel.audioDevice.tuner!.tracker.start()
         
         //Setup Tuner
@@ -155,14 +176,24 @@ class TunerViewController : UIViewController {
                     pitchPercentage = (leftDist / (leftDist + rightDist)) - 0.01
                     noteNameLabel.text = musicModel.notes[finalIndex].name
                     octaveLabel.text = String(musicModel.notes[finalIndex].octave)
+                    
+                    hzLabel.isHidden = false
+                    frequencyLabel.isHidden = false
+                    octaveTextLabel.isHidden = false
+                    noteNameLabel.isHidden = false
+                    octaveLabel.isHidden = false
+                    sharpFlatLabel.isHidden = false
                 }
             }
         } else {
             //Clear Display
             noteNameLabel.text = ""
-            frequencyLabel.text = ""
-            octaveLabel.text = ""
-            //pitchPercentageView?.frame.size.width = 0.0
+            hzLabel.isHidden = true
+            frequencyLabel.isHidden = true
+            octaveLabel.isHidden = true
+            octaveTextLabel.isHidden = true
+            sharpFlatLabel.isHidden = true
+            pitchPercentage = 0.0
         }
     }
     
@@ -177,9 +208,8 @@ class TunerViewController : UIViewController {
         pitchPercentageView?.frame.size = CGSize(width: pitchView.frame.width * CGFloat(pitchPercentage), height: pitchView.frame.height)
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
         //Stop audio tracking
         musicModel.audioDevice.tuner!.tracker.stop()
         musicModel.audioDevice.tuner!.bufferPlot.pause()
