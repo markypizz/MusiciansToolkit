@@ -19,66 +19,66 @@
 		238B243B218697CA00828CBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 238B2439218697CA00828CBF /* LaunchScreen.storyboard */; };
 		238B2446218697CA00828CBF /* MusiciansToolkitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B2445218697CA00828CBF /* MusiciansToolkitTests.swift */; };
 		239F219421A29A2B00A497A9 /* ChordBankTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239F219321A29A2B00A497A9 /* ChordBankTableViewController.swift */; };
-		239F21EC21A29E8E00A497A9 /* min7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21A521A29E8E00A497A9 /* min7.wav */; };
-		239F21ED21A29E8E00A497A9 /* min.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21A621A29E8E00A497A9 /* min.wav */; };
-		239F21EE21A29E8E00A497A9 /* maj7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21A721A29E8E00A497A9 /* maj7.wav */; };
-		239F21EF21A29E8E00A497A9 /* 7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21A821A29E8E00A497A9 /* 7.wav */; };
-		239F21F021A29E8E00A497A9 /* maj.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21A921A29E8E00A497A9 /* maj.wav */; };
-		239F21F121A29E8E00A497A9 /* min7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21AB21A29E8E00A497A9 /* min7.wav */; };
-		239F21F221A29E8E00A497A9 /* min.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21AC21A29E8E00A497A9 /* min.wav */; };
-		239F21F321A29E8E00A497A9 /* maj7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21AD21A29E8E00A497A9 /* maj7.wav */; };
-		239F21F421A29E8E00A497A9 /* 7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21AE21A29E8E00A497A9 /* 7.wav */; };
-		239F21F521A29E8E00A497A9 /* maj.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21AF21A29E8E00A497A9 /* maj.wav */; };
-		239F21F621A29E8E00A497A9 /* min7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21B121A29E8E00A497A9 /* min7.wav */; };
-		239F21F721A29E8E00A497A9 /* min.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21B221A29E8E00A497A9 /* min.wav */; };
-		239F21F821A29E8E00A497A9 /* maj7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21B321A29E8E00A497A9 /* maj7.wav */; };
-		239F21F921A29E8E00A497A9 /* 7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21B421A29E8E00A497A9 /* 7.wav */; };
-		239F21FA21A29E8E00A497A9 /* maj.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21B521A29E8E00A497A9 /* maj.wav */; };
-		239F21FB21A29E8E00A497A9 /* min7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21B721A29E8E00A497A9 /* min7.wav */; };
-		239F21FC21A29E8E00A497A9 /* min.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21B821A29E8E00A497A9 /* min.wav */; };
-		239F21FD21A29E8E00A497A9 /* maj7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21B921A29E8E00A497A9 /* maj7.wav */; };
-		239F21FE21A29E8E00A497A9 /* 7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21BA21A29E8E00A497A9 /* 7.wav */; };
-		239F21FF21A29E8E00A497A9 /* maj.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21BB21A29E8E00A497A9 /* maj.wav */; };
-		239F220021A29E8E00A497A9 /* min7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21BD21A29E8E00A497A9 /* min7.wav */; };
-		239F220121A29E8E00A497A9 /* min.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21BE21A29E8E00A497A9 /* min.wav */; };
-		239F220221A29E8E00A497A9 /* maj7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21BF21A29E8E00A497A9 /* maj7.wav */; };
-		239F220321A29E8E00A497A9 /* 7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21C021A29E8E00A497A9 /* 7.wav */; };
-		239F220421A29E8E00A497A9 /* maj.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21C121A29E8E00A497A9 /* maj.wav */; };
-		239F220521A29E8E00A497A9 /* min7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21C321A29E8E00A497A9 /* min7.wav */; };
-		239F220621A29E8E00A497A9 /* min.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21C421A29E8E00A497A9 /* min.wav */; };
-		239F220721A29E8E00A497A9 /* maj7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21C521A29E8E00A497A9 /* maj7.wav */; };
-		239F220821A29E8E00A497A9 /* 7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21C621A29E8E00A497A9 /* 7.wav */; };
-		239F220921A29E8E00A497A9 /* maj.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21C721A29E8E00A497A9 /* maj.wav */; };
-		239F220A21A29E8E00A497A9 /* min7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21C921A29E8E00A497A9 /* min7.wav */; };
-		239F220B21A29E8E00A497A9 /* min.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21CA21A29E8E00A497A9 /* min.wav */; };
-		239F220C21A29E8E00A497A9 /* maj7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21CB21A29E8E00A497A9 /* maj7.wav */; };
-		239F220D21A29E8E00A497A9 /* 7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21CC21A29E8E00A497A9 /* 7.wav */; };
-		239F220E21A29E8E00A497A9 /* maj.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21CD21A29E8E00A497A9 /* maj.wav */; };
-		239F220F21A29E8E00A497A9 /* min7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21CF21A29E8E00A497A9 /* min7.wav */; };
-		239F221021A29E8E00A497A9 /* min.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21D021A29E8E00A497A9 /* min.wav */; };
-		239F221121A29E8E00A497A9 /* maj7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21D121A29E8E00A497A9 /* maj7.wav */; };
-		239F221221A29E8E00A497A9 /* 7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21D221A29E8E00A497A9 /* 7.wav */; };
-		239F221321A29E8E00A497A9 /* maj.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21D321A29E8E00A497A9 /* maj.wav */; };
-		239F221421A29E8E00A497A9 /* min7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21D521A29E8E00A497A9 /* min7.wav */; };
-		239F221521A29E8E00A497A9 /* min.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21D621A29E8E00A497A9 /* min.wav */; };
-		239F221621A29E8E00A497A9 /* maj7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21D721A29E8E00A497A9 /* maj7.wav */; };
-		239F221721A29E8E00A497A9 /* 7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21D821A29E8E00A497A9 /* 7.wav */; };
-		239F221821A29E8E00A497A9 /* maj.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21D921A29E8E00A497A9 /* maj.wav */; };
-		239F221921A29E8E00A497A9 /* min7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21DB21A29E8E00A497A9 /* min7.wav */; };
-		239F221A21A29E8E00A497A9 /* min.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21DC21A29E8E00A497A9 /* min.wav */; };
-		239F221B21A29E8E00A497A9 /* maj7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21DD21A29E8E00A497A9 /* maj7.wav */; };
-		239F221C21A29E8E00A497A9 /* 7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21DE21A29E8E00A497A9 /* 7.wav */; };
-		239F221D21A29E8E00A497A9 /* maj.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21DF21A29E8E00A497A9 /* maj.wav */; };
-		239F221E21A29E8E00A497A9 /* min7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21E121A29E8E00A497A9 /* min7.wav */; };
-		239F221F21A29E8E00A497A9 /* min.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21E221A29E8E00A497A9 /* min.wav */; };
-		239F222021A29E8E00A497A9 /* maj7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21E321A29E8E00A497A9 /* maj7.wav */; };
-		239F222121A29E8E00A497A9 /* 7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21E421A29E8E00A497A9 /* 7.wav */; };
-		239F222221A29E8E00A497A9 /* maj.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21E521A29E8E00A497A9 /* maj.wav */; };
-		239F222321A29E8E00A497A9 /* min7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21E721A29E8E00A497A9 /* min7.wav */; };
-		239F222421A29E8E00A497A9 /* min.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21E821A29E8E00A497A9 /* min.wav */; };
-		239F222521A29E8E00A497A9 /* maj7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21E921A29E8E00A497A9 /* maj7.wav */; };
-		239F222621A29E8E00A497A9 /* 7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21EA21A29E8E00A497A9 /* 7.wav */; };
-		239F222721A29E8E00A497A9 /* maj.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F21EB21A29E8E00A497A9 /* maj.wav */; };
+		239F227121A2A2B500A497A9 /* G#maj.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F222A21A2A2B500A497A9 /* G#maj.wav */; };
+		239F227221A2A2B500A497A9 /* G#min.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F222B21A2A2B500A497A9 /* G#min.wav */; };
+		239F227321A2A2B500A497A9 /* G#min7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F222C21A2A2B500A497A9 /* G#min7.wav */; };
+		239F227421A2A2B500A497A9 /* G#maj7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F222D21A2A2B500A497A9 /* G#maj7.wav */; };
+		239F227521A2A2B500A497A9 /* G#7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F222E21A2A2B500A497A9 /* G#7.wav */; };
+		239F227621A2A2B500A497A9 /* D#min7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F223021A2A2B500A497A9 /* D#min7.wav */; };
+		239F227721A2A2B500A497A9 /* D#maj.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F223121A2A2B500A497A9 /* D#maj.wav */; };
+		239F227821A2A2B500A497A9 /* D#maj7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F223221A2A2B500A497A9 /* D#maj7.wav */; };
+		239F227921A2A2B500A497A9 /* D#7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F223321A2A2B500A497A9 /* D#7.wav */; };
+		239F227A21A2A2B500A497A9 /* D#min.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F223421A2A2B500A497A9 /* D#min.wav */; };
+		239F227B21A2A2B500A497A9 /* C#maj7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F223621A2A2B500A497A9 /* C#maj7.wav */; };
+		239F227C21A2A2B500A497A9 /* C#min.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F223721A2A2B500A497A9 /* C#min.wav */; };
+		239F227D21A2A2B500A497A9 /* C#min7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F223821A2A2B500A497A9 /* C#min7.wav */; };
+		239F227E21A2A2B500A497A9 /* C#7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F223921A2A2B500A497A9 /* C#7.wav */; };
+		239F227F21A2A2B500A497A9 /* C#maj.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F223A21A2A2B500A497A9 /* C#maj.wav */; };
+		239F228021A2A2B500A497A9 /* G7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F223C21A2A2B500A497A9 /* G7.wav */; };
+		239F228121A2A2B500A497A9 /* Gmaj7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F223D21A2A2B500A497A9 /* Gmaj7.wav */; };
+		239F228221A2A2B500A497A9 /* Gmin7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F223E21A2A2B500A497A9 /* Gmin7.wav */; };
+		239F228321A2A2B500A497A9 /* Gmaj.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F223F21A2A2B500A497A9 /* Gmaj.wav */; };
+		239F228421A2A2B500A497A9 /* Gmin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F224021A2A2B500A497A9 /* Gmin.wav */; };
+		239F228521A2A2B500A497A9 /* Amaj.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F224221A2A2B500A497A9 /* Amaj.wav */; };
+		239F228621A2A2B500A497A9 /* A7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F224321A2A2B500A497A9 /* A7.wav */; };
+		239F228721A2A2B500A497A9 /* Amin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F224421A2A2B500A497A9 /* Amin.wav */; };
+		239F228821A2A2B500A497A9 /* Amaj7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F224521A2A2B500A497A9 /* Amaj7.wav */; };
+		239F228921A2A2B500A497A9 /* Amin7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F224621A2A2B500A497A9 /* Amin7.wav */; };
+		239F228A21A2A2B500A497A9 /* Fmaj7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F224821A2A2B500A497A9 /* Fmaj7.wav */; };
+		239F228B21A2A2B500A497A9 /* F7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F224921A2A2B500A497A9 /* F7.wav */; };
+		239F228C21A2A2B500A497A9 /* Fmin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F224A21A2A2B500A497A9 /* Fmin.wav */; };
+		239F228D21A2A2B500A497A9 /* Fmin7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F224B21A2A2B500A497A9 /* Fmin7.wav */; };
+		239F228E21A2A2B500A497A9 /* Fmaj.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F224C21A2A2B500A497A9 /* Fmaj.wav */; };
+		239F228F21A2A2B500A497A9 /* A#min.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F224E21A2A2B500A497A9 /* A#min.wav */; };
+		239F229021A2A2B500A497A9 /* A#maj7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F224F21A2A2B500A497A9 /* A#maj7.wav */; };
+		239F229121A2A2B500A497A9 /* A#maj.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F225021A2A2B500A497A9 /* A#maj.wav */; };
+		239F229221A2A2B500A497A9 /* A#7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F225121A2A2B500A497A9 /* A#7.wav */; };
+		239F229321A2A2B500A497A9 /* A#min7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F225221A2A2B500A497A9 /* A#min7.wav */; };
+		239F229421A2A2B500A497A9 /* F#maj.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F225421A2A2B500A497A9 /* F#maj.wav */; };
+		239F229521A2A2B500A497A9 /* F#min.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F225521A2A2B500A497A9 /* F#min.wav */; };
+		239F229621A2A2B500A497A9 /* F#7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F225621A2A2B500A497A9 /* F#7.wav */; };
+		239F229721A2A2B500A497A9 /* F#min7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F225721A2A2B500A497A9 /* F#min7.wav */; };
+		239F229821A2A2B500A497A9 /* F#maj7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F225821A2A2B500A497A9 /* F#maj7.wav */; };
+		239F229921A2A2B500A497A9 /* Cmaj.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F225A21A2A2B500A497A9 /* Cmaj.wav */; };
+		239F229A21A2A2B500A497A9 /* Cmin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F225B21A2A2B500A497A9 /* Cmin.wav */; };
+		239F229B21A2A2B500A497A9 /* Cmin7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F225C21A2A2B500A497A9 /* Cmin7.wav */; };
+		239F229C21A2A2B500A497A9 /* C7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F225D21A2A2B500A497A9 /* C7.wav */; };
+		239F229D21A2A2B500A497A9 /* Cmaj7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F225E21A2A2B500A497A9 /* Cmaj7.wav */; };
+		239F229E21A2A2B500A497A9 /* Dmin7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F226021A2A2B500A497A9 /* Dmin7.wav */; };
+		239F229F21A2A2B500A497A9 /* Dmin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F226121A2A2B500A497A9 /* Dmin.wav */; };
+		239F22A021A2A2B500A497A9 /* Dmaj7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F226221A2A2B500A497A9 /* Dmaj7.wav */; };
+		239F22A121A2A2B500A497A9 /* Dmaj.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F226321A2A2B500A497A9 /* Dmaj.wav */; };
+		239F22A221A2A2B500A497A9 /* D7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F226421A2A2B500A497A9 /* D7.wav */; };
+		239F22A321A2A2B500A497A9 /* Emin7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F226621A2A2B500A497A9 /* Emin7.wav */; };
+		239F22A421A2A2B500A497A9 /* Emaj.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F226721A2A2B500A497A9 /* Emaj.wav */; };
+		239F22A521A2A2B500A497A9 /* Emaj7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F226821A2A2B500A497A9 /* Emaj7.wav */; };
+		239F22A621A2A2B500A497A9 /* E7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F226921A2A2B500A497A9 /* E7.wav */; };
+		239F22A721A2A2B500A497A9 /* Emin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F226A21A2A2B500A497A9 /* Emin.wav */; };
+		239F22A821A2A2B500A497A9 /* Bmin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F226C21A2A2B500A497A9 /* Bmin.wav */; };
+		239F22A921A2A2B500A497A9 /* B7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F226D21A2A2B500A497A9 /* B7.wav */; };
+		239F22AA21A2A2B500A497A9 /* Bmaj.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F226E21A2A2B500A497A9 /* Bmaj.wav */; };
+		239F22AB21A2A2B500A497A9 /* Bmin7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F226F21A2A2B500A497A9 /* Bmin7.wav */; };
+		239F22AC21A2A2B500A497A9 /* Bmaj7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F227021A2A2B500A497A9 /* Bmaj7.wav */; };
 		23A5B1612190E1DD00FD2898 /* HomePageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A5B1602190E1DD00FD2898 /* HomePageCollectionViewController.swift */; };
 		23A5B1642190E20600FD2898 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A5B1632190E20600FD2898 /* Model.swift */; };
 		23AB80A1219BF596006458BF /* TunerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AB80A0219BF596006458BF /* TunerViewController.swift */; };
@@ -114,66 +114,66 @@
 		238B2445218697CA00828CBF /* MusiciansToolkitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusiciansToolkitTests.swift; sourceTree = "<group>"; };
 		238B2447218697CA00828CBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		239F219321A29A2B00A497A9 /* ChordBankTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordBankTableViewController.swift; sourceTree = "<group>"; };
-		239F21A521A29E8E00A497A9 /* min7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = min7.wav; sourceTree = "<group>"; };
-		239F21A621A29E8E00A497A9 /* min.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = min.wav; sourceTree = "<group>"; };
-		239F21A721A29E8E00A497A9 /* maj7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = maj7.wav; sourceTree = "<group>"; };
-		239F21A821A29E8E00A497A9 /* 7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 7.wav; sourceTree = "<group>"; };
-		239F21A921A29E8E00A497A9 /* maj.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = maj.wav; sourceTree = "<group>"; };
-		239F21AB21A29E8E00A497A9 /* min7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = min7.wav; sourceTree = "<group>"; };
-		239F21AC21A29E8E00A497A9 /* min.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = min.wav; sourceTree = "<group>"; };
-		239F21AD21A29E8E00A497A9 /* maj7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = maj7.wav; sourceTree = "<group>"; };
-		239F21AE21A29E8E00A497A9 /* 7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 7.wav; sourceTree = "<group>"; };
-		239F21AF21A29E8E00A497A9 /* maj.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = maj.wav; sourceTree = "<group>"; };
-		239F21B121A29E8E00A497A9 /* min7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = min7.wav; sourceTree = "<group>"; };
-		239F21B221A29E8E00A497A9 /* min.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = min.wav; sourceTree = "<group>"; };
-		239F21B321A29E8E00A497A9 /* maj7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = maj7.wav; sourceTree = "<group>"; };
-		239F21B421A29E8E00A497A9 /* 7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 7.wav; sourceTree = "<group>"; };
-		239F21B521A29E8E00A497A9 /* maj.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = maj.wav; sourceTree = "<group>"; };
-		239F21B721A29E8E00A497A9 /* min7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = min7.wav; sourceTree = "<group>"; };
-		239F21B821A29E8E00A497A9 /* min.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = min.wav; sourceTree = "<group>"; };
-		239F21B921A29E8E00A497A9 /* maj7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = maj7.wav; sourceTree = "<group>"; };
-		239F21BA21A29E8E00A497A9 /* 7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 7.wav; sourceTree = "<group>"; };
-		239F21BB21A29E8E00A497A9 /* maj.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = maj.wav; sourceTree = "<group>"; };
-		239F21BD21A29E8E00A497A9 /* min7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = min7.wav; sourceTree = "<group>"; };
-		239F21BE21A29E8E00A497A9 /* min.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = min.wav; sourceTree = "<group>"; };
-		239F21BF21A29E8E00A497A9 /* maj7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = maj7.wav; sourceTree = "<group>"; };
-		239F21C021A29E8E00A497A9 /* 7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 7.wav; sourceTree = "<group>"; };
-		239F21C121A29E8E00A497A9 /* maj.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = maj.wav; sourceTree = "<group>"; };
-		239F21C321A29E8E00A497A9 /* min7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = min7.wav; sourceTree = "<group>"; };
-		239F21C421A29E8E00A497A9 /* min.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = min.wav; sourceTree = "<group>"; };
-		239F21C521A29E8E00A497A9 /* maj7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = maj7.wav; sourceTree = "<group>"; };
-		239F21C621A29E8E00A497A9 /* 7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 7.wav; sourceTree = "<group>"; };
-		239F21C721A29E8E00A497A9 /* maj.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = maj.wav; sourceTree = "<group>"; };
-		239F21C921A29E8E00A497A9 /* min7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = min7.wav; sourceTree = "<group>"; };
-		239F21CA21A29E8E00A497A9 /* min.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = min.wav; sourceTree = "<group>"; };
-		239F21CB21A29E8E00A497A9 /* maj7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = maj7.wav; sourceTree = "<group>"; };
-		239F21CC21A29E8E00A497A9 /* 7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 7.wav; sourceTree = "<group>"; };
-		239F21CD21A29E8E00A497A9 /* maj.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = maj.wav; sourceTree = "<group>"; };
-		239F21CF21A29E8E00A497A9 /* min7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = min7.wav; sourceTree = "<group>"; };
-		239F21D021A29E8E00A497A9 /* min.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = min.wav; sourceTree = "<group>"; };
-		239F21D121A29E8E00A497A9 /* maj7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = maj7.wav; sourceTree = "<group>"; };
-		239F21D221A29E8E00A497A9 /* 7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 7.wav; sourceTree = "<group>"; };
-		239F21D321A29E8E00A497A9 /* maj.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = maj.wav; sourceTree = "<group>"; };
-		239F21D521A29E8E00A497A9 /* min7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = min7.wav; sourceTree = "<group>"; };
-		239F21D621A29E8E00A497A9 /* min.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = min.wav; sourceTree = "<group>"; };
-		239F21D721A29E8E00A497A9 /* maj7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = maj7.wav; sourceTree = "<group>"; };
-		239F21D821A29E8E00A497A9 /* 7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 7.wav; sourceTree = "<group>"; };
-		239F21D921A29E8E00A497A9 /* maj.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = maj.wav; sourceTree = "<group>"; };
-		239F21DB21A29E8E00A497A9 /* min7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = min7.wav; sourceTree = "<group>"; };
-		239F21DC21A29E8E00A497A9 /* min.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = min.wav; sourceTree = "<group>"; };
-		239F21DD21A29E8E00A497A9 /* maj7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = maj7.wav; sourceTree = "<group>"; };
-		239F21DE21A29E8E00A497A9 /* 7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 7.wav; sourceTree = "<group>"; };
-		239F21DF21A29E8E00A497A9 /* maj.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = maj.wav; sourceTree = "<group>"; };
-		239F21E121A29E8E00A497A9 /* min7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = min7.wav; sourceTree = "<group>"; };
-		239F21E221A29E8E00A497A9 /* min.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = min.wav; sourceTree = "<group>"; };
-		239F21E321A29E8E00A497A9 /* maj7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = maj7.wav; sourceTree = "<group>"; };
-		239F21E421A29E8E00A497A9 /* 7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 7.wav; sourceTree = "<group>"; };
-		239F21E521A29E8E00A497A9 /* maj.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = maj.wav; sourceTree = "<group>"; };
-		239F21E721A29E8E00A497A9 /* min7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = min7.wav; sourceTree = "<group>"; };
-		239F21E821A29E8E00A497A9 /* min.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = min.wav; sourceTree = "<group>"; };
-		239F21E921A29E8E00A497A9 /* maj7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = maj7.wav; sourceTree = "<group>"; };
-		239F21EA21A29E8E00A497A9 /* 7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 7.wav; sourceTree = "<group>"; };
-		239F21EB21A29E8E00A497A9 /* maj.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = maj.wav; sourceTree = "<group>"; };
+		239F222A21A2A2B500A497A9 /* G#maj.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "G#maj.wav"; sourceTree = "<group>"; };
+		239F222B21A2A2B500A497A9 /* G#min.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "G#min.wav"; sourceTree = "<group>"; };
+		239F222C21A2A2B500A497A9 /* G#min7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "G#min7.wav"; sourceTree = "<group>"; };
+		239F222D21A2A2B500A497A9 /* G#maj7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "G#maj7.wav"; sourceTree = "<group>"; };
+		239F222E21A2A2B500A497A9 /* G#7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "G#7.wav"; sourceTree = "<group>"; };
+		239F223021A2A2B500A497A9 /* D#min7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "D#min7.wav"; sourceTree = "<group>"; };
+		239F223121A2A2B500A497A9 /* D#maj.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "D#maj.wav"; sourceTree = "<group>"; };
+		239F223221A2A2B500A497A9 /* D#maj7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "D#maj7.wav"; sourceTree = "<group>"; };
+		239F223321A2A2B500A497A9 /* D#7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "D#7.wav"; sourceTree = "<group>"; };
+		239F223421A2A2B500A497A9 /* D#min.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "D#min.wav"; sourceTree = "<group>"; };
+		239F223621A2A2B500A497A9 /* C#maj7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "C#maj7.wav"; sourceTree = "<group>"; };
+		239F223721A2A2B500A497A9 /* C#min.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "C#min.wav"; sourceTree = "<group>"; };
+		239F223821A2A2B500A497A9 /* C#min7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "C#min7.wav"; sourceTree = "<group>"; };
+		239F223921A2A2B500A497A9 /* C#7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "C#7.wav"; sourceTree = "<group>"; };
+		239F223A21A2A2B500A497A9 /* C#maj.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "C#maj.wav"; sourceTree = "<group>"; };
+		239F223C21A2A2B500A497A9 /* G7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = G7.wav; sourceTree = "<group>"; };
+		239F223D21A2A2B500A497A9 /* Gmaj7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Gmaj7.wav; sourceTree = "<group>"; };
+		239F223E21A2A2B500A497A9 /* Gmin7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Gmin7.wav; sourceTree = "<group>"; };
+		239F223F21A2A2B500A497A9 /* Gmaj.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Gmaj.wav; sourceTree = "<group>"; };
+		239F224021A2A2B500A497A9 /* Gmin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Gmin.wav; sourceTree = "<group>"; };
+		239F224221A2A2B500A497A9 /* Amaj.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Amaj.wav; sourceTree = "<group>"; };
+		239F224321A2A2B500A497A9 /* A7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = A7.wav; sourceTree = "<group>"; };
+		239F224421A2A2B500A497A9 /* Amin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Amin.wav; sourceTree = "<group>"; };
+		239F224521A2A2B500A497A9 /* Amaj7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Amaj7.wav; sourceTree = "<group>"; };
+		239F224621A2A2B500A497A9 /* Amin7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Amin7.wav; sourceTree = "<group>"; };
+		239F224821A2A2B500A497A9 /* Fmaj7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Fmaj7.wav; sourceTree = "<group>"; };
+		239F224921A2A2B500A497A9 /* F7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = F7.wav; sourceTree = "<group>"; };
+		239F224A21A2A2B500A497A9 /* Fmin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Fmin.wav; sourceTree = "<group>"; };
+		239F224B21A2A2B500A497A9 /* Fmin7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Fmin7.wav; sourceTree = "<group>"; };
+		239F224C21A2A2B500A497A9 /* Fmaj.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Fmaj.wav; sourceTree = "<group>"; };
+		239F224E21A2A2B500A497A9 /* A#min.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "A#min.wav"; sourceTree = "<group>"; };
+		239F224F21A2A2B500A497A9 /* A#maj7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "A#maj7.wav"; sourceTree = "<group>"; };
+		239F225021A2A2B500A497A9 /* A#maj.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "A#maj.wav"; sourceTree = "<group>"; };
+		239F225121A2A2B500A497A9 /* A#7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "A#7.wav"; sourceTree = "<group>"; };
+		239F225221A2A2B500A497A9 /* A#min7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "A#min7.wav"; sourceTree = "<group>"; };
+		239F225421A2A2B500A497A9 /* F#maj.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "F#maj.wav"; sourceTree = "<group>"; };
+		239F225521A2A2B500A497A9 /* F#min.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "F#min.wav"; sourceTree = "<group>"; };
+		239F225621A2A2B500A497A9 /* F#7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "F#7.wav"; sourceTree = "<group>"; };
+		239F225721A2A2B500A497A9 /* F#min7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "F#min7.wav"; sourceTree = "<group>"; };
+		239F225821A2A2B500A497A9 /* F#maj7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "F#maj7.wav"; sourceTree = "<group>"; };
+		239F225A21A2A2B500A497A9 /* Cmaj.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Cmaj.wav; sourceTree = "<group>"; };
+		239F225B21A2A2B500A497A9 /* Cmin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Cmin.wav; sourceTree = "<group>"; };
+		239F225C21A2A2B500A497A9 /* Cmin7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Cmin7.wav; sourceTree = "<group>"; };
+		239F225D21A2A2B500A497A9 /* C7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = C7.wav; sourceTree = "<group>"; };
+		239F225E21A2A2B500A497A9 /* Cmaj7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Cmaj7.wav; sourceTree = "<group>"; };
+		239F226021A2A2B500A497A9 /* Dmin7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Dmin7.wav; sourceTree = "<group>"; };
+		239F226121A2A2B500A497A9 /* Dmin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Dmin.wav; sourceTree = "<group>"; };
+		239F226221A2A2B500A497A9 /* Dmaj7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Dmaj7.wav; sourceTree = "<group>"; };
+		239F226321A2A2B500A497A9 /* Dmaj.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Dmaj.wav; sourceTree = "<group>"; };
+		239F226421A2A2B500A497A9 /* D7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = D7.wav; sourceTree = "<group>"; };
+		239F226621A2A2B500A497A9 /* Emin7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Emin7.wav; sourceTree = "<group>"; };
+		239F226721A2A2B500A497A9 /* Emaj.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Emaj.wav; sourceTree = "<group>"; };
+		239F226821A2A2B500A497A9 /* Emaj7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Emaj7.wav; sourceTree = "<group>"; };
+		239F226921A2A2B500A497A9 /* E7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = E7.wav; sourceTree = "<group>"; };
+		239F226A21A2A2B500A497A9 /* Emin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Emin.wav; sourceTree = "<group>"; };
+		239F226C21A2A2B500A497A9 /* Bmin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Bmin.wav; sourceTree = "<group>"; };
+		239F226D21A2A2B500A497A9 /* B7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = B7.wav; sourceTree = "<group>"; };
+		239F226E21A2A2B500A497A9 /* Bmaj.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Bmaj.wav; sourceTree = "<group>"; };
+		239F226F21A2A2B500A497A9 /* Bmin7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Bmin7.wav; sourceTree = "<group>"; };
+		239F227021A2A2B500A497A9 /* Bmaj7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Bmaj7.wav; sourceTree = "<group>"; };
 		23A5B1602190E1DD00FD2898 /* HomePageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCollectionViewController.swift; sourceTree = "<group>"; };
 		23A5B1632190E20600FD2898 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		23AB80A0219BF596006458BF /* TunerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerViewController.swift; sourceTree = "<group>"; };
@@ -268,170 +268,170 @@
 			isa = PBXGroup;
 			children = (
 				239F219321A29A2B00A497A9 /* ChordBankTableViewController.swift */,
-				239F21A321A29E8E00A497A9 /* Sounds */,
+				239F222821A2A2B500A497A9 /* Sounds */,
 			);
 			path = "Chord Bank";
 			sourceTree = "<group>";
 		};
-		239F21A321A29E8E00A497A9 /* Sounds */ = {
+		239F222821A2A2B500A497A9 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				239F21A421A29E8E00A497A9 /* G# */,
-				239F21AA21A29E8E00A497A9 /* D# */,
-				239F21B021A29E8E00A497A9 /* C# */,
-				239F21B621A29E8E00A497A9 /* G */,
-				239F21BC21A29E8E00A497A9 /* A */,
-				239F21C221A29E8E00A497A9 /* F */,
-				239F21C821A29E8E00A497A9 /* A# */,
-				239F21CE21A29E8E00A497A9 /* F# */,
-				239F21D421A29E8E00A497A9 /* C */,
-				239F21DA21A29E8E00A497A9 /* D */,
-				239F21E021A29E8E00A497A9 /* E */,
-				239F21E621A29E8E00A497A9 /* B */,
+				239F222921A2A2B500A497A9 /* G# */,
+				239F222F21A2A2B500A497A9 /* D# */,
+				239F223521A2A2B500A497A9 /* C# */,
+				239F223B21A2A2B500A497A9 /* G */,
+				239F224121A2A2B500A497A9 /* A */,
+				239F224721A2A2B500A497A9 /* F */,
+				239F224D21A2A2B500A497A9 /* A# */,
+				239F225321A2A2B500A497A9 /* F# */,
+				239F225921A2A2B500A497A9 /* C */,
+				239F225F21A2A2B500A497A9 /* D */,
+				239F226521A2A2B500A497A9 /* E */,
+				239F226B21A2A2B500A497A9 /* B */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
 		};
-		239F21A421A29E8E00A497A9 /* G# */ = {
+		239F222921A2A2B500A497A9 /* G# */ = {
 			isa = PBXGroup;
 			children = (
-				239F21A521A29E8E00A497A9 /* min7.wav */,
-				239F21A621A29E8E00A497A9 /* min.wav */,
-				239F21A721A29E8E00A497A9 /* maj7.wav */,
-				239F21A821A29E8E00A497A9 /* 7.wav */,
-				239F21A921A29E8E00A497A9 /* maj.wav */,
+				239F222A21A2A2B500A497A9 /* G#maj.wav */,
+				239F222B21A2A2B500A497A9 /* G#min.wav */,
+				239F222C21A2A2B500A497A9 /* G#min7.wav */,
+				239F222D21A2A2B500A497A9 /* G#maj7.wav */,
+				239F222E21A2A2B500A497A9 /* G#7.wav */,
 			);
 			path = "G#";
 			sourceTree = "<group>";
 		};
-		239F21AA21A29E8E00A497A9 /* D# */ = {
+		239F222F21A2A2B500A497A9 /* D# */ = {
 			isa = PBXGroup;
 			children = (
-				239F21AB21A29E8E00A497A9 /* min7.wav */,
-				239F21AC21A29E8E00A497A9 /* min.wav */,
-				239F21AD21A29E8E00A497A9 /* maj7.wav */,
-				239F21AE21A29E8E00A497A9 /* 7.wav */,
-				239F21AF21A29E8E00A497A9 /* maj.wav */,
+				239F223021A2A2B500A497A9 /* D#min7.wav */,
+				239F223121A2A2B500A497A9 /* D#maj.wav */,
+				239F223221A2A2B500A497A9 /* D#maj7.wav */,
+				239F223321A2A2B500A497A9 /* D#7.wav */,
+				239F223421A2A2B500A497A9 /* D#min.wav */,
 			);
 			path = "D#";
 			sourceTree = "<group>";
 		};
-		239F21B021A29E8E00A497A9 /* C# */ = {
+		239F223521A2A2B500A497A9 /* C# */ = {
 			isa = PBXGroup;
 			children = (
-				239F21B121A29E8E00A497A9 /* min7.wav */,
-				239F21B221A29E8E00A497A9 /* min.wav */,
-				239F21B321A29E8E00A497A9 /* maj7.wav */,
-				239F21B421A29E8E00A497A9 /* 7.wav */,
-				239F21B521A29E8E00A497A9 /* maj.wav */,
+				239F223621A2A2B500A497A9 /* C#maj7.wav */,
+				239F223721A2A2B500A497A9 /* C#min.wav */,
+				239F223821A2A2B500A497A9 /* C#min7.wav */,
+				239F223921A2A2B500A497A9 /* C#7.wav */,
+				239F223A21A2A2B500A497A9 /* C#maj.wav */,
 			);
 			path = "C#";
 			sourceTree = "<group>";
 		};
-		239F21B621A29E8E00A497A9 /* G */ = {
+		239F223B21A2A2B500A497A9 /* G */ = {
 			isa = PBXGroup;
 			children = (
-				239F21B721A29E8E00A497A9 /* min7.wav */,
-				239F21B821A29E8E00A497A9 /* min.wav */,
-				239F21B921A29E8E00A497A9 /* maj7.wav */,
-				239F21BA21A29E8E00A497A9 /* 7.wav */,
-				239F21BB21A29E8E00A497A9 /* maj.wav */,
+				239F223C21A2A2B500A497A9 /* G7.wav */,
+				239F223D21A2A2B500A497A9 /* Gmaj7.wav */,
+				239F223E21A2A2B500A497A9 /* Gmin7.wav */,
+				239F223F21A2A2B500A497A9 /* Gmaj.wav */,
+				239F224021A2A2B500A497A9 /* Gmin.wav */,
 			);
 			path = G;
 			sourceTree = "<group>";
 		};
-		239F21BC21A29E8E00A497A9 /* A */ = {
+		239F224121A2A2B500A497A9 /* A */ = {
 			isa = PBXGroup;
 			children = (
-				239F21BD21A29E8E00A497A9 /* min7.wav */,
-				239F21BE21A29E8E00A497A9 /* min.wav */,
-				239F21BF21A29E8E00A497A9 /* maj7.wav */,
-				239F21C021A29E8E00A497A9 /* 7.wav */,
-				239F21C121A29E8E00A497A9 /* maj.wav */,
+				239F224221A2A2B500A497A9 /* Amaj.wav */,
+				239F224321A2A2B500A497A9 /* A7.wav */,
+				239F224421A2A2B500A497A9 /* Amin.wav */,
+				239F224521A2A2B500A497A9 /* Amaj7.wav */,
+				239F224621A2A2B500A497A9 /* Amin7.wav */,
 			);
 			path = A;
 			sourceTree = "<group>";
 		};
-		239F21C221A29E8E00A497A9 /* F */ = {
+		239F224721A2A2B500A497A9 /* F */ = {
 			isa = PBXGroup;
 			children = (
-				239F21C321A29E8E00A497A9 /* min7.wav */,
-				239F21C421A29E8E00A497A9 /* min.wav */,
-				239F21C521A29E8E00A497A9 /* maj7.wav */,
-				239F21C621A29E8E00A497A9 /* 7.wav */,
-				239F21C721A29E8E00A497A9 /* maj.wav */,
+				239F224821A2A2B500A497A9 /* Fmaj7.wav */,
+				239F224921A2A2B500A497A9 /* F7.wav */,
+				239F224A21A2A2B500A497A9 /* Fmin.wav */,
+				239F224B21A2A2B500A497A9 /* Fmin7.wav */,
+				239F224C21A2A2B500A497A9 /* Fmaj.wav */,
 			);
 			path = F;
 			sourceTree = "<group>";
 		};
-		239F21C821A29E8E00A497A9 /* A# */ = {
+		239F224D21A2A2B500A497A9 /* A# */ = {
 			isa = PBXGroup;
 			children = (
-				239F21C921A29E8E00A497A9 /* min7.wav */,
-				239F21CA21A29E8E00A497A9 /* min.wav */,
-				239F21CB21A29E8E00A497A9 /* maj7.wav */,
-				239F21CC21A29E8E00A497A9 /* 7.wav */,
-				239F21CD21A29E8E00A497A9 /* maj.wav */,
+				239F224E21A2A2B500A497A9 /* A#min.wav */,
+				239F224F21A2A2B500A497A9 /* A#maj7.wav */,
+				239F225021A2A2B500A497A9 /* A#maj.wav */,
+				239F225121A2A2B500A497A9 /* A#7.wav */,
+				239F225221A2A2B500A497A9 /* A#min7.wav */,
 			);
 			path = "A#";
 			sourceTree = "<group>";
 		};
-		239F21CE21A29E8E00A497A9 /* F# */ = {
+		239F225321A2A2B500A497A9 /* F# */ = {
 			isa = PBXGroup;
 			children = (
-				239F21CF21A29E8E00A497A9 /* min7.wav */,
-				239F21D021A29E8E00A497A9 /* min.wav */,
-				239F21D121A29E8E00A497A9 /* maj7.wav */,
-				239F21D221A29E8E00A497A9 /* 7.wav */,
-				239F21D321A29E8E00A497A9 /* maj.wav */,
+				239F225421A2A2B500A497A9 /* F#maj.wav */,
+				239F225521A2A2B500A497A9 /* F#min.wav */,
+				239F225621A2A2B500A497A9 /* F#7.wav */,
+				239F225721A2A2B500A497A9 /* F#min7.wav */,
+				239F225821A2A2B500A497A9 /* F#maj7.wav */,
 			);
 			path = "F#";
 			sourceTree = "<group>";
 		};
-		239F21D421A29E8E00A497A9 /* C */ = {
+		239F225921A2A2B500A497A9 /* C */ = {
 			isa = PBXGroup;
 			children = (
-				239F21D521A29E8E00A497A9 /* min7.wav */,
-				239F21D621A29E8E00A497A9 /* min.wav */,
-				239F21D721A29E8E00A497A9 /* maj7.wav */,
-				239F21D821A29E8E00A497A9 /* 7.wav */,
-				239F21D921A29E8E00A497A9 /* maj.wav */,
+				239F225A21A2A2B500A497A9 /* Cmaj.wav */,
+				239F225B21A2A2B500A497A9 /* Cmin.wav */,
+				239F225C21A2A2B500A497A9 /* Cmin7.wav */,
+				239F225D21A2A2B500A497A9 /* C7.wav */,
+				239F225E21A2A2B500A497A9 /* Cmaj7.wav */,
 			);
 			path = C;
 			sourceTree = "<group>";
 		};
-		239F21DA21A29E8E00A497A9 /* D */ = {
+		239F225F21A2A2B500A497A9 /* D */ = {
 			isa = PBXGroup;
 			children = (
-				239F21DB21A29E8E00A497A9 /* min7.wav */,
-				239F21DC21A29E8E00A497A9 /* min.wav */,
-				239F21DD21A29E8E00A497A9 /* maj7.wav */,
-				239F21DE21A29E8E00A497A9 /* 7.wav */,
-				239F21DF21A29E8E00A497A9 /* maj.wav */,
+				239F226021A2A2B500A497A9 /* Dmin7.wav */,
+				239F226121A2A2B500A497A9 /* Dmin.wav */,
+				239F226221A2A2B500A497A9 /* Dmaj7.wav */,
+				239F226321A2A2B500A497A9 /* Dmaj.wav */,
+				239F226421A2A2B500A497A9 /* D7.wav */,
 			);
 			path = D;
 			sourceTree = "<group>";
 		};
-		239F21E021A29E8E00A497A9 /* E */ = {
+		239F226521A2A2B500A497A9 /* E */ = {
 			isa = PBXGroup;
 			children = (
-				239F21E121A29E8E00A497A9 /* min7.wav */,
-				239F21E221A29E8E00A497A9 /* min.wav */,
-				239F21E321A29E8E00A497A9 /* maj7.wav */,
-				239F21E421A29E8E00A497A9 /* 7.wav */,
-				239F21E521A29E8E00A497A9 /* maj.wav */,
+				239F226621A2A2B500A497A9 /* Emin7.wav */,
+				239F226721A2A2B500A497A9 /* Emaj.wav */,
+				239F226821A2A2B500A497A9 /* Emaj7.wav */,
+				239F226921A2A2B500A497A9 /* E7.wav */,
+				239F226A21A2A2B500A497A9 /* Emin.wav */,
 			);
 			path = E;
 			sourceTree = "<group>";
 		};
-		239F21E621A29E8E00A497A9 /* B */ = {
+		239F226B21A2A2B500A497A9 /* B */ = {
 			isa = PBXGroup;
 			children = (
-				239F21E721A29E8E00A497A9 /* min7.wav */,
-				239F21E821A29E8E00A497A9 /* min.wav */,
-				239F21E921A29E8E00A497A9 /* maj7.wav */,
-				239F21EA21A29E8E00A497A9 /* 7.wav */,
-				239F21EB21A29E8E00A497A9 /* maj.wav */,
+				239F226C21A2A2B500A497A9 /* Bmin.wav */,
+				239F226D21A2A2B500A497A9 /* B7.wav */,
+				239F226E21A2A2B500A497A9 /* Bmaj.wav */,
+				239F226F21A2A2B500A497A9 /* Bmin7.wav */,
+				239F227021A2A2B500A497A9 /* Bmaj7.wav */,
 			);
 			path = B;
 			sourceTree = "<group>";
@@ -557,70 +557,70 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				239F220D21A29E8E00A497A9 /* 7.wav in Resources */,
-				239F221C21A29E8E00A497A9 /* 7.wav in Resources */,
-				239F220821A29E8E00A497A9 /* 7.wav in Resources */,
-				239F21F621A29E8E00A497A9 /* min7.wav in Resources */,
-				239F221021A29E8E00A497A9 /* min.wav in Resources */,
-				239F21EF21A29E8E00A497A9 /* 7.wav in Resources */,
-				239F222221A29E8E00A497A9 /* maj.wav in Resources */,
-				239F221921A29E8E00A497A9 /* min7.wav in Resources */,
-				239F221521A29E8E00A497A9 /* min.wav in Resources */,
-				239F220B21A29E8E00A497A9 /* min.wav in Resources */,
-				239F220921A29E8E00A497A9 /* maj.wav in Resources */,
-				239F21F421A29E8E00A497A9 /* 7.wav in Resources */,
-				239F222621A29E8E00A497A9 /* 7.wav in Resources */,
-				239F21FF21A29E8E00A497A9 /* maj.wav in Resources */,
-				239F220621A29E8E00A497A9 /* min.wav in Resources */,
-				239F21EC21A29E8E00A497A9 /* min7.wav in Resources */,
-				239F222321A29E8E00A497A9 /* min7.wav in Resources */,
-				239F220021A29E8E00A497A9 /* min7.wav in Resources */,
-				239F221D21A29E8E00A497A9 /* maj.wav in Resources */,
+				239F228621A2A2B500A497A9 /* A7.wav in Resources */,
+				239F228021A2A2B500A497A9 /* G7.wav in Resources */,
 				238B243B218697CA00828CBF /* LaunchScreen.storyboard in Resources */,
-				239F221B21A29E8E00A497A9 /* maj7.wav in Resources */,
-				239F220421A29E8E00A497A9 /* maj.wav in Resources */,
-				239F21F321A29E8E00A497A9 /* maj7.wav in Resources */,
-				239F221421A29E8E00A497A9 /* min7.wav in Resources */,
-				239F21F821A29E8E00A497A9 /* maj7.wav in Resources */,
-				239F220F21A29E8E00A497A9 /* min7.wav in Resources */,
-				239F21FE21A29E8E00A497A9 /* 7.wav in Resources */,
-				239F21FD21A29E8E00A497A9 /* maj7.wav in Resources */,
-				239F221E21A29E8E00A497A9 /* min7.wav in Resources */,
-				239F220C21A29E8E00A497A9 /* maj7.wav in Resources */,
+				239F227221A2A2B500A497A9 /* G#min.wav in Resources */,
+				239F22A721A2A2B500A497A9 /* Emin.wav in Resources */,
+				239F228A21A2A2B500A497A9 /* Fmaj7.wav in Resources */,
+				239F229021A2A2B500A497A9 /* A#maj7.wav in Resources */,
+				239F229321A2A2B500A497A9 /* A#min7.wav in Resources */,
+				239F227121A2A2B500A497A9 /* G#maj.wav in Resources */,
 				238B2438218697CA00828CBF /* Assets.xcassets in Resources */,
-				239F221A21A29E8E00A497A9 /* min.wav in Resources */,
-				239F221621A29E8E00A497A9 /* maj7.wav in Resources */,
-				239F221721A29E8E00A497A9 /* 7.wav in Resources */,
-				239F220321A29E8E00A497A9 /* 7.wav in Resources */,
-				239F21F721A29E8E00A497A9 /* min.wav in Resources */,
-				239F220521A29E8E00A497A9 /* min7.wav in Resources */,
-				239F21ED21A29E8E00A497A9 /* min.wav in Resources */,
-				239F21F521A29E8E00A497A9 /* maj.wav in Resources */,
-				239F220721A29E8E00A497A9 /* maj7.wav in Resources */,
-				239F221121A29E8E00A497A9 /* maj7.wav in Resources */,
-				239F222121A29E8E00A497A9 /* 7.wav in Resources */,
-				239F220121A29E8E00A497A9 /* min.wav in Resources */,
-				239F21F221A29E8E00A497A9 /* min.wav in Resources */,
-				239F21FC21A29E8E00A497A9 /* min.wav in Resources */,
-				239F221821A29E8E00A497A9 /* maj.wav in Resources */,
-				239F220A21A29E8E00A497A9 /* min7.wav in Resources */,
-				239F21F921A29E8E00A497A9 /* 7.wav in Resources */,
-				239F222521A29E8E00A497A9 /* maj7.wav in Resources */,
-				239F21F121A29E8E00A497A9 /* min7.wav in Resources */,
+				239F228F21A2A2B500A497A9 /* A#min.wav in Resources */,
+				239F227821A2A2B500A497A9 /* D#maj7.wav in Resources */,
+				239F228B21A2A2B500A497A9 /* F7.wav in Resources */,
+				239F22A521A2A2B500A497A9 /* Emaj7.wav in Resources */,
+				239F22A021A2A2B500A497A9 /* Dmaj7.wav in Resources */,
+				239F229D21A2A2B500A497A9 /* Cmaj7.wav in Resources */,
+				239F228321A2A2B500A497A9 /* Gmaj.wav in Resources */,
+				239F228421A2A2B500A497A9 /* Gmin.wav in Resources */,
+				239F229421A2A2B500A497A9 /* F#maj.wav in Resources */,
+				239F22A321A2A2B500A497A9 /* Emin7.wav in Resources */,
 				23061918219FCAEF004B9986 /* NoteInfo.plist in Resources */,
-				239F21FB21A29E8E00A497A9 /* min7.wav in Resources */,
-				239F221F21A29E8E00A497A9 /* min.wav in Resources */,
-				239F222021A29E8E00A497A9 /* maj7.wav in Resources */,
-				239F220E21A29E8E00A497A9 /* maj.wav in Resources */,
-				239F21F021A29E8E00A497A9 /* maj.wav in Resources */,
 				238B2436218697C700828CBF /* Main.storyboard in Resources */,
-				239F221221A29E8E00A497A9 /* 7.wav in Resources */,
-				239F222421A29E8E00A497A9 /* min.wav in Resources */,
-				239F222721A29E8E00A497A9 /* maj.wav in Resources */,
-				239F220221A29E8E00A497A9 /* maj7.wav in Resources */,
-				239F21FA21A29E8E00A497A9 /* maj.wav in Resources */,
-				239F21EE21A29E8E00A497A9 /* maj7.wav in Resources */,
-				239F221321A29E8E00A497A9 /* maj.wav in Resources */,
+				239F227B21A2A2B500A497A9 /* C#maj7.wav in Resources */,
+				239F228C21A2A2B500A497A9 /* Fmin.wav in Resources */,
+				239F229E21A2A2B500A497A9 /* Dmin7.wav in Resources */,
+				239F228521A2A2B500A497A9 /* Amaj.wav in Resources */,
+				239F228821A2A2B500A497A9 /* Amaj7.wav in Resources */,
+				239F22A621A2A2B500A497A9 /* E7.wav in Resources */,
+				239F22AA21A2A2B500A497A9 /* Bmaj.wav in Resources */,
+				239F227921A2A2B500A497A9 /* D#7.wav in Resources */,
+				239F22A121A2A2B500A497A9 /* Dmaj.wav in Resources */,
+				239F227721A2A2B500A497A9 /* D#maj.wav in Resources */,
+				239F22A221A2A2B500A497A9 /* D7.wav in Resources */,
+				239F228221A2A2B500A497A9 /* Gmin7.wav in Resources */,
+				239F227621A2A2B500A497A9 /* D#min7.wav in Resources */,
+				239F229521A2A2B500A497A9 /* F#min.wav in Resources */,
+				239F227A21A2A2B500A497A9 /* D#min.wav in Resources */,
+				239F229621A2A2B500A497A9 /* F#7.wav in Resources */,
+				239F228D21A2A2B500A497A9 /* Fmin7.wav in Resources */,
+				239F229F21A2A2B500A497A9 /* Dmin.wav in Resources */,
+				239F227F21A2A2B500A497A9 /* C#maj.wav in Resources */,
+				239F229221A2A2B500A497A9 /* A#7.wav in Resources */,
+				239F229921A2A2B500A497A9 /* Cmaj.wav in Resources */,
+				239F229B21A2A2B500A497A9 /* Cmin7.wav in Resources */,
+				239F228921A2A2B500A497A9 /* Amin7.wav in Resources */,
+				239F22AB21A2A2B500A497A9 /* Bmin7.wav in Resources */,
+				239F22A421A2A2B500A497A9 /* Emaj.wav in Resources */,
+				239F227E21A2A2B500A497A9 /* C#7.wav in Resources */,
+				239F22A821A2A2B500A497A9 /* Bmin.wav in Resources */,
+				239F227D21A2A2B500A497A9 /* C#min7.wav in Resources */,
+				239F229821A2A2B500A497A9 /* F#maj7.wav in Resources */,
+				239F227521A2A2B500A497A9 /* G#7.wav in Resources */,
+				239F229A21A2A2B500A497A9 /* Cmin.wav in Resources */,
+				239F228721A2A2B500A497A9 /* Amin.wav in Resources */,
+				239F22AC21A2A2B500A497A9 /* Bmaj7.wav in Resources */,
+				239F22A921A2A2B500A497A9 /* B7.wav in Resources */,
+				239F229721A2A2B500A497A9 /* F#min7.wav in Resources */,
+				239F227321A2A2B500A497A9 /* G#min7.wav in Resources */,
+				239F228E21A2A2B500A497A9 /* Fmaj.wav in Resources */,
+				239F227421A2A2B500A497A9 /* G#maj7.wav in Resources */,
+				239F229C21A2A2B500A497A9 /* C7.wav in Resources */,
+				239F228121A2A2B500A497A9 /* Gmaj7.wav in Resources */,
+				239F227C21A2A2B500A497A9 /* C#min.wav in Resources */,
+				239F229121A2A2B500A497A9 /* A#maj.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

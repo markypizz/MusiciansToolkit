@@ -100,7 +100,7 @@ class TunerViewController : UIViewController {
         visualizerView.sendSubview(toBack: musicModel.audioDevice.tuner!.bufferPlot)
         musicModel.audioDevice.tuner!.bufferPlot.plotType = .buffer
         musicModel.audioDevice.tuner!.bufferPlot.resume()
-        musicModel.audioDevice.tuner!.bufferPlot.clear() //untested
+        musicModel.audioDevice.tuner!.bufferPlot.clear()
     }
     
     func updateDisplayFromPoll() {
