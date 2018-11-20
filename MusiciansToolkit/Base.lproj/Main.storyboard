@@ -114,7 +114,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="gyO-6S-UfU">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="chordCell" id="gyO-6S-UfU" customClass="ChordBankCell" customModule="MusiciansToolkit" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gyO-6S-UfU" id="AxA-bo-D8e">
@@ -131,7 +131,8 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="guQ-hn-RRy" kind="show" id="jj2-fn-b8f"/>
+                                    <outlet property="chordNameLabel" destination="ugg-JU-ASr" id="sts-KD-ZVj"/>
+                                    <segue destination="guQ-hn-RRy" kind="show" identifier="chordInfoSegue" id="jj2-fn-b8f"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -146,32 +147,59 @@
             </objects>
             <point key="canvasLocation" x="1330" y="-866"/>
         </scene>
-        <!--View Controller-->
+        <!--Chord View Controller-->
         <scene sceneID="vdE-hc-Z5k">
             <objects>
-                <viewController id="guQ-hn-RRy" sceneMemberID="viewController">
+                <viewController id="guQ-hn-RRy" customClass="ChordViewController" customModule="MusiciansToolkit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1uX-IH-l9L">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CMaj-Free-Guitar-Chord-Chart" translatesAutoresizingMaskIntoConstraints="NO" id="kWu-kR-PcX">
-                                <rect key="frame" x="0.0" y="64" width="375" height="306"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="woodBG5" translatesAutoresizingMaskIntoConstraints="NO" id="Fp6-rl-pQh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fWG-Sy-ASR">
-                                <rect key="frame" x="133" y="378" width="109" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="Play Chord"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kWu-kR-PcX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="523"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fWG-Sy-ASR">
+                                <rect key="frame" x="122.5" y="543" width="130" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.83350278249999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="VGK-Z2-6l2"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="Y6r-7c-Uka"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Play Chord">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="playChordButtonPressed:" destination="guQ-hn-RRy" eventType="touchUpInside" id="bZa-Rg-v0f"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Fp6-rl-pQh" firstAttribute="leading" secondItem="EOh-Jy-r2v" secondAttribute="leading" id="1h4-fm-DzY"/>
+                            <constraint firstItem="Fp6-rl-pQh" firstAttribute="top" secondItem="EOh-Jy-r2v" secondAttribute="top" id="LAy-20-As2"/>
+                            <constraint firstItem="kWu-kR-PcX" firstAttribute="top" secondItem="EOh-Jy-r2v" secondAttribute="top" id="Qc7-WR-uaU"/>
+                            <constraint firstItem="fWG-Sy-ASR" firstAttribute="top" secondItem="kWu-kR-PcX" secondAttribute="bottom" constant="20" id="VaR-So-1qm"/>
+                            <constraint firstItem="kWu-kR-PcX" firstAttribute="trailing" secondItem="EOh-Jy-r2v" secondAttribute="trailing" id="bIj-a4-sf1"/>
+                            <constraint firstItem="kWu-kR-PcX" firstAttribute="leading" secondItem="EOh-Jy-r2v" secondAttribute="leading" id="iqV-BN-YRv"/>
+                            <constraint firstItem="EOh-Jy-r2v" firstAttribute="bottom" secondItem="fWG-Sy-ASR" secondAttribute="bottom" constant="20" id="ntD-YL-gRm"/>
+                            <constraint firstItem="EOh-Jy-r2v" firstAttribute="trailing" secondItem="Fp6-rl-pQh" secondAttribute="trailing" id="tvu-C1-AuX"/>
+                            <constraint firstItem="EOh-Jy-r2v" firstAttribute="bottom" secondItem="Fp6-rl-pQh" secondAttribute="bottom" id="u7H-Z3-a16"/>
+                            <constraint firstItem="fWG-Sy-ASR" firstAttribute="centerX" secondItem="EOh-Jy-r2v" secondAttribute="centerX" id="yzn-ea-txr"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="EOh-Jy-r2v"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="kWu-kR-PcX" id="Ldx-dg-2kA"/>
+                        <outlet property="playChordButton" destination="fWG-Sy-ASR" id="fj6-tA-JYo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gpY-lr-llq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2319" y="-867"/>
+            <point key="canvasLocation" x="2317.5999999999999" y="-867.61619190404804"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nTP-TE-hDp">
@@ -544,9 +572,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="CMaj-Free-Guitar-Chord-Chart" width="207.36000061035156" height="226.08000183105469"/>
         <image name="tuningFork" width="102.40000152587891" height="102.40000152587891"/>
         <image name="woodBG1" width="2500" height="1666"/>
         <image name="woodBG4" width="2832" height="2533"/>
+        <image name="woodBG5" width="2000" height="2000"/>
     </resources>
 </document>

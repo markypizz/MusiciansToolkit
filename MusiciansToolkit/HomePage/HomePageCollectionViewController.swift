@@ -22,7 +22,7 @@ class HomePageCollectionViewController: UICollectionViewController {
         super.viewDidLoad()
         
         //Set navigation bar appearance
-        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.navigationBar.isTranslucent = false
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: model.backgroundImages[1])!.resizableImage(withCapInsets: UIEdgeInsets.zero, resizingMode: .stretch), for: .default)
         self.collectionView?.allowsSelection = true
 

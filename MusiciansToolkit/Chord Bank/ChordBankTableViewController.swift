@@ -9,6 +9,9 @@
 import UIKit
 
 class ChordBankTableViewController: UITableViewController {
+    
+    let musicModel = Model.sharedInstance
+    let uniqueNotesCount = 12
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,23 +27,31 @@ class ChordBankTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return musicModel.uniqueNotes.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return musicModel.chordTypes.count
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return musicModel.uniqueNotes[section]
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
+        let cell = tableView.dequeueReusableCell(withIdentifier: "chordCell", for: indexPath) as! ChordBankCell
+        
+        cell.chordNameLabel.text = "\(musicModel.uniqueNotes[indexPath.section])\(musicModel.chordTypes[indexPath.row])"
 
         return cell
     }
-    */
+    
+    override func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+        return musicModel.indexTitles
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -77,14 +88,20 @@ class ChordBankTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if (segue.identifier == "chordInfoSegue") {
+            let destination = segue.destination as! ChordViewController
+            
+            let selectedCell = tableView.cellForRow(at: tableView.indexPathForSelectedRow!) as! ChordBankCell
+            
+            //Configure will row/chord name
+            destination.configure(chordName: selectedCell.chordNameLabel.text!)
+        }
     }
-    */
+    
 
 }

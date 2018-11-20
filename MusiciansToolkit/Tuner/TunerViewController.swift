@@ -90,7 +90,15 @@ class TunerViewController : UIViewController {
         pitchView.addSubview(pitchPercentageView!)
         pitchView.sendSubview(toBack: pitchPercentageView!)
         
-        //updateTimer?.fire()
+        //Ensure correct microphone input (fixes noise bug)
+        if let inputs = AudioKit.inputDevices {
+            do {
+                try AudioKit.setInputDevice(inputs[0])
+                try musicModel.audioDevice.tuner?.microphoneInput.setDevice(inputs[0])
+            } catch {
+                print(error)
+            }
+        }
         
         setupPlot()
     }
@@ -213,6 +221,7 @@ class TunerViewController : UIViewController {
         //Stop audio tracking
         musicModel.audioDevice.tuner!.tracker.stop()
         musicModel.audioDevice.tuner!.bufferPlot.pause()
+        //AKSettings.defaultToSpeaker = true
     }
     
     @IBAction func plotTypeChanged(_ sender: UISegmentedControl) {

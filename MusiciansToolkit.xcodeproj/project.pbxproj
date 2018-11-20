@@ -13,7 +13,6 @@
 		23429C5D219CDBF5000C8AC0 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23429C5C219CDBF5000C8AC0 /* Audio.swift */; };
 		2356DA872197994800D7018A /* Metronome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2356DA862197994800D7018A /* Metronome.swift */; };
 		238B2431218697C700828CBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B2430218697C700828CBF /* AppDelegate.swift */; };
-		238B2433218697C700828CBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B2432218697C700828CBF /* ViewController.swift */; };
 		238B2436218697C700828CBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 238B2434218697C700828CBF /* Main.storyboard */; };
 		238B2438218697CA00828CBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 238B2437218697CA00828CBF /* Assets.xcassets */; };
 		238B243B218697CA00828CBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 238B2439218697CA00828CBF /* LaunchScreen.storyboard */; };
@@ -79,8 +78,10 @@
 		239F22AA21A2A2B500A497A9 /* Bmaj.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F226E21A2A2B500A497A9 /* Bmaj.wav */; };
 		239F22AB21A2A2B500A497A9 /* Bmin7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F226F21A2A2B500A497A9 /* Bmin7.wav */; };
 		239F22AC21A2A2B500A497A9 /* Bmaj7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F227021A2A2B500A497A9 /* Bmaj7.wav */; };
+		239F22AE21A2A42600A497A9 /* ChordBankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239F22AD21A2A42600A497A9 /* ChordBankCell.swift */; };
 		23A5B1612190E1DD00FD2898 /* HomePageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A5B1602190E1DD00FD2898 /* HomePageCollectionViewController.swift */; };
 		23A5B1642190E20600FD2898 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A5B1632190E20600FD2898 /* Model.swift */; };
+		23A6727B21A4831000071FB2 /* ChordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A6727A21A4831000071FB2 /* ChordViewController.swift */; };
 		23AB80A1219BF596006458BF /* TunerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AB80A0219BF596006458BF /* TunerViewController.swift */; };
 		23EAFFA62190E8350091B0DC /* HomePageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EAFFA52190E8350091B0DC /* HomePageCell.swift */; };
 		23EAFFA82190F68D0091B0DC /* MetronomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EAFFA72190F68D0091B0DC /* MetronomeViewController.swift */; };
@@ -105,7 +106,6 @@
 		2356DA862197994800D7018A /* Metronome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metronome.swift; sourceTree = "<group>"; };
 		238B242D218697C700828CBF /* MusiciansToolkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusiciansToolkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		238B2430218697C700828CBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		238B2432218697C700828CBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		238B2435218697C700828CBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		238B2437218697CA00828CBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		238B243A218697CA00828CBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -174,8 +174,10 @@
 		239F226E21A2A2B500A497A9 /* Bmaj.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Bmaj.wav; sourceTree = "<group>"; };
 		239F226F21A2A2B500A497A9 /* Bmin7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Bmin7.wav; sourceTree = "<group>"; };
 		239F227021A2A2B500A497A9 /* Bmaj7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Bmaj7.wav; sourceTree = "<group>"; };
+		239F22AD21A2A42600A497A9 /* ChordBankCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordBankCell.swift; sourceTree = "<group>"; };
 		23A5B1602190E1DD00FD2898 /* HomePageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCollectionViewController.swift; sourceTree = "<group>"; };
 		23A5B1632190E20600FD2898 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		23A6727A21A4831000071FB2 /* ChordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordViewController.swift; sourceTree = "<group>"; };
 		23AB80A0219BF596006458BF /* TunerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerViewController.swift; sourceTree = "<group>"; };
 		23EAFFA52190E8350091B0DC /* HomePageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCell.swift; sourceTree = "<group>"; };
 		23EAFFA72190F68D0091B0DC /* MetronomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeViewController.swift; sourceTree = "<group>"; };
@@ -243,7 +245,6 @@
 				232191F4219B83D00008FD19 /* Tuner */,
 				23EAFFA92190F8B20091B0DC /* Metronome */,
 				238B2430218697C700828CBF /* AppDelegate.swift */,
-				238B2432218697C700828CBF /* ViewController.swift */,
 				238B2434218697C700828CBF /* Main.storyboard */,
 				23A5B1632190E20600FD2898 /* Model.swift */,
 				23429C5C219CDBF5000C8AC0 /* Audio.swift */,
@@ -267,7 +268,9 @@
 		239F219521A29A5400A497A9 /* Chord Bank */ = {
 			isa = PBXGroup;
 			children = (
+				23A6727A21A4831000071FB2 /* ChordViewController.swift */,
 				239F219321A29A2B00A497A9 /* ChordBankTableViewController.swift */,
+				239F22AD21A2A42600A497A9 /* ChordBankCell.swift */,
 				239F222821A2A2B500A497A9 /* Sounds */,
 			);
 			path = "Chord Bank";
@@ -691,9 +694,10 @@
 				23EAFFA82190F68D0091B0DC /* MetronomeViewController.swift in Sources */,
 				23A5B1612190E1DD00FD2898 /* HomePageCollectionViewController.swift in Sources */,
 				23429C5D219CDBF5000C8AC0 /* Audio.swift in Sources */,
+				239F22AE21A2A42600A497A9 /* ChordBankCell.swift in Sources */,
 				2356DA872197994800D7018A /* Metronome.swift in Sources */,
+				23A6727B21A4831000071FB2 /* ChordViewController.swift in Sources */,
 				232191F3219B83C90008FD19 /* Tuner.swift in Sources */,
-				238B2433218697C700828CBF /* ViewController.swift in Sources */,
 				23EAFFA62190E8350091B0DC /* HomePageCell.swift in Sources */,
 				238B2431218697C700828CBF /* AppDelegate.swift in Sources */,
 			);
