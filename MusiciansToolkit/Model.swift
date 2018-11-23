@@ -43,7 +43,7 @@ class Model {
     
     let segueNames = ["tunerSegue","chordSegue","scaleSegue","metSegue","recordSegue","jamSegue"]
     
-    let imageNames = ["tuningFork","woodBG1","woodBG1","woodBG1","woodBG1","woodBG1"]
+    let imageNames = ["tuningFork","chords","scales","metronome","recorder","jamsession"]
     let uniqueNotes = ["C","C#","D","D#","E","F","F#","G","G#","A","A#","B"]
     let indexTitles = ["C","#","D","#","E","F","#","G","#","A","#","B"]
     let chordTypes = ["maj","7","maj7","min","min7"]

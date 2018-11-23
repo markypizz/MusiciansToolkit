@@ -18,8 +18,10 @@ class Audio {
     var metronome : Metronome?
     var mixer : AKMixer?
     var player : AKPlayer? //Audio file player
+    let microphoneInput : AKMicrophone
     
     init() {
+        microphoneInput = AKMicrophone()
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(self.audioRouteChangeListener(notification:)),
@@ -27,7 +29,7 @@ class Audio {
             object: nil)
         
         mixer = AKMixer()
-        tuner = Tuner()
+        tuner = Tuner(microphoneInput)
         metronome = Metronome()
         player = AKPlayer()
         

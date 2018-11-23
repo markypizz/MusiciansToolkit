@@ -16,7 +16,7 @@ class Tuner {
     let maxFrequency = 2500
     var gain : Float = 2.0
     
-    let microphoneInput : AKMicrophone
+    
     let filter : AKHighPassFilter
     let tracker : AKFrequencyTracker
     let silence : AKBooster             //Audio mixer
@@ -28,18 +28,16 @@ class Tuner {
     //plot that was monitoring the same node
     let bufferPlot : AKNodeOutputPlot
     
-    init() {
+    init(_ mic:AKMicrophone) {
         
-        microphoneInput = AKMicrophone()
-        
-        filter = AKHighPassFilter(microphoneInput, cutoffFrequency: 200, resonance: 0)
+        filter = AKHighPassFilter(mic, cutoffFrequency: 200, resonance: 0)
         tracker = AKFrequencyTracker(filter)
         silence = AKBooster(tracker, gain: 0)
         
         node = silence
         
         bufferPlot = AKNodeOutputPlot()
-        bufferPlot.node = microphoneInput
+        bufferPlot.node = mic
         bufferPlot.gain = gain
         bufferPlot.plotType = .buffer
         bufferPlot.shouldFill = false

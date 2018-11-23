@@ -83,6 +83,9 @@
 		23A5B1642190E20600FD2898 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A5B1632190E20600FD2898 /* Model.swift */; };
 		23A6727B21A4831000071FB2 /* ChordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A6727A21A4831000071FB2 /* ChordViewController.swift */; };
 		23AB80A1219BF596006458BF /* TunerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AB80A0219BF596006458BF /* TunerViewController.swift */; };
+		23D5D6CE21A743FA00CEB306 /* RecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D5D6CD21A743FA00CEB306 /* RecorderViewController.swift */; };
+		23D5D6D021A747BB00CEB306 /* RecorderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D5D6CF21A747BB00CEB306 /* RecorderTableViewCell.swift */; };
+		23D5D6D221A747CC00CEB306 /* RecorderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D5D6D121A747CC00CEB306 /* RecorderTableViewController.swift */; };
 		23EAFFA62190E8350091B0DC /* HomePageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EAFFA52190E8350091B0DC /* HomePageCell.swift */; };
 		23EAFFA82190F68D0091B0DC /* MetronomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EAFFA72190F68D0091B0DC /* MetronomeViewController.swift */; };
 		2FCD986EEAA44962ED9152F1 /* Pods_MusiciansToolkitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8170211084ECC0D87012855C /* Pods_MusiciansToolkitTests.framework */; };
@@ -179,6 +182,9 @@
 		23A5B1632190E20600FD2898 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		23A6727A21A4831000071FB2 /* ChordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordViewController.swift; sourceTree = "<group>"; };
 		23AB80A0219BF596006458BF /* TunerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerViewController.swift; sourceTree = "<group>"; };
+		23D5D6CD21A743FA00CEB306 /* RecorderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderViewController.swift; sourceTree = "<group>"; };
+		23D5D6CF21A747BB00CEB306 /* RecorderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderTableViewCell.swift; sourceTree = "<group>"; };
+		23D5D6D121A747CC00CEB306 /* RecorderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderTableViewController.swift; sourceTree = "<group>"; };
 		23EAFFA52190E8350091B0DC /* HomePageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCell.swift; sourceTree = "<group>"; };
 		23EAFFA72190F68D0091B0DC /* MetronomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeViewController.swift; sourceTree = "<group>"; };
 		8170211084ECC0D87012855C /* Pods_MusiciansToolkitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusiciansToolkitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -244,6 +250,7 @@
 				239F219521A29A5400A497A9 /* Chord Bank */,
 				232191F4219B83D00008FD19 /* Tuner */,
 				23EAFFA92190F8B20091B0DC /* Metronome */,
+				23D5D6CC21A743E000CEB306 /* Recorder */,
 				238B2430218697C700828CBF /* AppDelegate.swift */,
 				238B2434218697C700828CBF /* Main.storyboard */,
 				23A5B1632190E20600FD2898 /* Model.swift */,
@@ -446,6 +453,16 @@
 				23EAFFA52190E8350091B0DC /* HomePageCell.swift */,
 			);
 			path = HomePage;
+			sourceTree = "<group>";
+		};
+		23D5D6CC21A743E000CEB306 /* Recorder */ = {
+			isa = PBXGroup;
+			children = (
+				23D5D6CF21A747BB00CEB306 /* RecorderTableViewCell.swift */,
+				23D5D6D121A747CC00CEB306 /* RecorderTableViewController.swift */,
+				23D5D6CD21A743FA00CEB306 /* RecorderViewController.swift */,
+			);
+			path = Recorder;
 			sourceTree = "<group>";
 		};
 		23EAFFA92190F8B20091B0DC /* Metronome */ = {
@@ -689,13 +706,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				23A5B1642190E20600FD2898 /* Model.swift in Sources */,
+				23D5D6D021A747BB00CEB306 /* RecorderTableViewCell.swift in Sources */,
 				239F219421A29A2B00A497A9 /* ChordBankTableViewController.swift in Sources */,
+				23D5D6D221A747CC00CEB306 /* RecorderTableViewController.swift in Sources */,
 				23AB80A1219BF596006458BF /* TunerViewController.swift in Sources */,
 				23EAFFA82190F68D0091B0DC /* MetronomeViewController.swift in Sources */,
 				23A5B1612190E1DD00FD2898 /* HomePageCollectionViewController.swift in Sources */,
 				23429C5D219CDBF5000C8AC0 /* Audio.swift in Sources */,
 				239F22AE21A2A42600A497A9 /* ChordBankCell.swift in Sources */,
 				2356DA872197994800D7018A /* Metronome.swift in Sources */,
+				23D5D6CE21A743FA00CEB306 /* RecorderViewController.swift in Sources */,
 				23A6727B21A4831000071FB2 /* ChordViewController.swift in Sources */,
 				232191F3219B83C90008FD19 /* Tuner.swift in Sources */,
 				23EAFFA62190E8350091B0DC /* HomePageCell.swift in Sources */,
@@ -863,7 +883,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CN827DJS65;
 				INFOPLIST_FILE = MusiciansToolkit/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -871,7 +891,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = mkp5284.MusiciansToolkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -883,7 +903,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CN827DJS65;
 				INFOPLIST_FILE = MusiciansToolkit/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -891,7 +911,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = mkp5284.MusiciansToolkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

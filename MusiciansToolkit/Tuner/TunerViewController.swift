@@ -94,7 +94,7 @@ class TunerViewController : UIViewController {
         if let inputs = AudioKit.inputDevices {
             do {
                 try AudioKit.setInputDevice(inputs[0])
-                try musicModel.audioDevice.tuner?.microphoneInput.setDevice(inputs[0])
+                try musicModel.audioDevice.microphoneInput.setDevice(inputs[0])
             } catch {
                 print(error)
             }
