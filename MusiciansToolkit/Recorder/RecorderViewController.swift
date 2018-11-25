@@ -25,8 +25,12 @@ class RecorderViewController : UIViewController {
     
     @IBOutlet weak var timerLabel: UILabel!
     
-    var nodeOutputPlot : AKNodeOutputPlot?
-    var recorder : AKNodeRecorder!
+    //let boostAmount : Double = 2.0
+    let gain : Float = 2.0
+    
+    var nodeOutputPlot : AKNodeOutputPlot
+    var recorder : AKNodeRecorder
+    //var plotBooster : AKBooster
     
     //Reference to instantiated table view controller
     var tableViewController : RecorderTableViewController?
@@ -36,23 +40,31 @@ class RecorderViewController : UIViewController {
     var recordingInProgress = false
     var playing = false
     
-    let gain : Float = 2.0
-    
-    
     required init?(coder aDecoder: NSCoder) {
+        nodeOutputPlot = AKNodeOutputPlot()
+        //plotBooster = AKBooster(musicModel.audioDevice.microphoneInput)
+        //plotBooster.gain = boostAmount
+        recorder = try! AKNodeRecorder(node: musicModel.audioDevice.microphoneInput)
+        
         super.init(coder: aDecoder)
         
-        nodeOutputPlot = AKNodeOutputPlot()
-        nodeOutputPlot?.node = musicModel.audioDevice.microphoneInput
-        nodeOutputPlot?.gain = gain
-        nodeOutputPlot?.plotType = .buffer
-        nodeOutputPlot?.shouldFill = true
-        nodeOutputPlot?.shouldMirror = true
-        nodeOutputPlot?.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0)
-        nodeOutputPlot?.color = #colorLiteral(red: 1, green: 0.3098039216, blue: 0.2666666667, alpha: 1)
-        nodeOutputPlot?.pause()
+        //Setup plot
+        //nodeOutputPlot.node = plotBooster
+        //
+        // Plot currently not working.
+        // Can not tap a node twice (recording and playing)
+        // Looking into alternatives. Trying to run the
+        // microphone into an additional node to tap (the booster)
+        // did not work unfortunately.
+        //
+        nodeOutputPlot.gain = gain
+        nodeOutputPlot.plotType = .rolling
+        nodeOutputPlot.shouldFill = true
+        nodeOutputPlot.shouldMirror = true
+        nodeOutputPlot.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0)
+        nodeOutputPlot.color = #colorLiteral(red: 1, green: 0.3098039216, blue: 0.2666666667, alpha: 1)
+        nodeOutputPlot.pause()
         
-        recorder = try? AKNodeRecorder(node: musicModel.audioDevice.microphoneInput)
         if let file = recorder.audioFile {
             musicModel.audioDevice.player?.load(audioFile: file)
         }
@@ -60,23 +72,25 @@ class RecorderViewController : UIViewController {
         // !
         // Nervous about this line below. Not sure if this breaks something
         // !
-        musicModel.audioDevice.player?.isLooping = true
+        //musicModel.audioDevice.player?.isLooping = true
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         playButton.isEnabled = false
-        outputPlot.addSubview(nodeOutputPlot!)
-        outputPlot.sendSubview(toBack: nodeOutputPlot!)
+        outputPlot.addSubview(nodeOutputPlot)
+        outputPlot.sendSubview(toBack: nodeOutputPlot)
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        nodeOutputPlot?.frame = CGRect(x: 0.0, y: 0.0, width: outputPlot.frame.width, height: outputPlot.frame.height)
+        nodeOutputPlot.frame = CGRect(x: 0.0, y: 0.0, width: outputPlot.frame.width, height: outputPlot.frame.height)
     }
     
     override func viewDidDisappear(_ animated: Bool) {
+        //plotBooster.disconnectInput()
+        nodeOutputPlot.node = nil //Remove reference if still existing
         if (timer != nil) {
             timer?.invalidate()
         }
@@ -106,11 +120,14 @@ class RecorderViewController : UIViewController {
         recordingIcon.isHidden = false
         
         do {
+            //nodeOutputPlot.clear()
+            //nodeOutputPlot.resume()
             try recorder.record()
         } catch {
             print(error)
         }
-        //nodeOutputPlot?.resume()
+        
+        
     }
     
     func updateTime() {
@@ -132,7 +149,7 @@ class RecorderViewController : UIViewController {
             playButton.setImage(#imageLiteral(resourceName: "play"), for: .normal)
             playButton.isEnabled = false
             
-            nodeOutputPlot?.pause()
+            nodeOutputPlot.pause()
             
             let recording = recorder.audioFile!
             musicModel.audioDevice.player?.load(audioFile: recording)

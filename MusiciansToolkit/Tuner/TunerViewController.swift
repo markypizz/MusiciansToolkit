@@ -106,6 +106,7 @@ class TunerViewController : UIViewController {
     func setupPlot() {
         visualizerView.addSubview(musicModel.audioDevice.tuner!.bufferPlot)
         visualizerView.sendSubview(toBack: musicModel.audioDevice.tuner!.bufferPlot)
+        musicModel.audioDevice.tuner!.bufferPlot.node = musicModel.audioDevice.microphoneInput
         musicModel.audioDevice.tuner!.bufferPlot.plotType = .buffer
         musicModel.audioDevice.tuner!.bufferPlot.resume()
         musicModel.audioDevice.tuner!.bufferPlot.clear()
@@ -219,6 +220,7 @@ class TunerViewController : UIViewController {
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         //Stop audio tracking
+        musicModel.audioDevice.tuner!.bufferPlot.node = nil
         musicModel.audioDevice.tuner!.tracker.stop()
         musicModel.audioDevice.tuner!.bufferPlot.pause()
         //AKSettings.defaultToSpeaker = true

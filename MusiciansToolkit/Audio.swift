@@ -22,6 +22,7 @@ class Audio {
     
     init() {
         microphoneInput = AKMicrophone()
+        
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(self.audioRouteChangeListener(notification:)),

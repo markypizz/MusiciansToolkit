@@ -127,6 +127,7 @@ class RecorderTableViewController: UITableViewController {
         }
         
         DispatchQueue.main.async {
+            //Reloading of data must be done on the main thread
             self.tableView.reloadData()
         }
     }

@@ -37,7 +37,7 @@ class Tuner {
         node = silence
         
         bufferPlot = AKNodeOutputPlot()
-        bufferPlot.node = mic
+        //bufferPlot.node = mic
         bufferPlot.gain = gain
         bufferPlot.plotType = .buffer
         bufferPlot.shouldFill = false

@@ -10,6 +10,33 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="wsy-Ut-A7H">
+            <objects>
+                <viewController id="baf-Nc-TSL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u22-Am-LyI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Implemented Yet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJE-m5-PH5">
+                                <rect key="frame" x="107" y="291" width="161" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xJE-m5-PH5" firstAttribute="centerX" secondItem="RzM-FZ-Bgp" secondAttribute="centerX" id="La1-ZH-Qx8"/>
+                            <constraint firstItem="xJE-m5-PH5" firstAttribute="centerY" secondItem="RzM-FZ-Bgp" secondAttribute="centerY" id="bkW-pD-RIE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RzM-FZ-Bgp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O6l-5z-kKe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="199" y="-833"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="NS5-jS-1kA">
             <objects>
@@ -232,6 +259,8 @@
                         <segue destination="eVW-o8-NSt" kind="show" identifier="metSegue" id="WZy-Gy-2Nk"/>
                         <segue destination="BWR-8b-1cC" kind="show" identifier="chordSegue" id="IAW-HM-zEb"/>
                         <segue destination="nZH-gy-LdT" kind="show" identifier="recordSegue" id="LRH-Ya-1Ez"/>
+                        <segue destination="baf-Nc-TSL" kind="show" identifier="scaleSegue" id="0eg-YC-o7h"/>
+                        <segue destination="baf-Nc-TSL" kind="show" identifier="jamSegue" id="eqU-hJ-fO2"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kj0-xq-2ZD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -601,4 +630,7 @@
         <image name="woodBG4" width="2832" height="2533"/>
         <image name="woodBG5" width="2000" height="2000"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="eqU-hJ-fO2"/>
+    </inferredMetricsTieBreakers>
 </document>
