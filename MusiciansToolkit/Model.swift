@@ -21,6 +21,13 @@ struct noteInfo : Codable {
     var frequency : Double
 }
 
+struct lessonInfo {
+    var title : String
+    var url : String
+    var author : String
+    var imageName : String
+}
+
 typealias Notes = [noteInfo]
 
 class Model {
@@ -46,7 +53,21 @@ class Model {
     let uniqueNotes = ["C","C#","D","D#","E","F","F#","G","G#","A","A#","B"]
     let indexTitles = ["C","#","D","#","E","F","#","G","#","A","#","B"]
     let chordTypes = ["maj","7","maj7","min","min7"]
+    
+    let lessonSections = ["Beginner","Intermediate","Advanced"]
+    let lessons : [[lessonInfo]] = [
+        
+        //Beginner
+        [lessonInfo(title: "Strumming Patterns", url: "https://www.youtube.com/watch?v=ely9LaJJJr4", author: "Marty Music", imageName: "strumming")],
+        
+        //Intermediate
+        [lessonInfo(title: "Bending", url: "https://www.youtube.com/watch?v=aSUvcux5sDM", author: "GuitarLessons365", imageName: "bending")],
+        
+        //Advanced
+        [lessonInfo(title: "Pinch Harmonics", url: "https://www.youtube.com/watch?v=5I5O8P-r5Rk", author: "JustinGuitar", imageName: "pinchharmonics")]
+    ]
     let notes : Notes
+    
     
     public init() {
         audioDevice = Audio()

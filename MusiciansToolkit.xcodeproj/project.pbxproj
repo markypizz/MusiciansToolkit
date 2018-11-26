@@ -11,6 +11,8 @@
 		23061918219FCAEF004B9986 /* NoteInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23061917219FCAEF004B9986 /* NoteInfo.plist */; };
 		232191F3219B83C90008FD19 /* Tuner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232191F2219B83C90008FD19 /* Tuner.swift */; };
 		23429C5D219CDBF5000C8AC0 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23429C5C219CDBF5000C8AC0 /* Audio.swift */; };
+		234384BE21ABB0EA00E4B61C /* LessonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234384BD21ABB0EA00E4B61C /* LessonTableViewController.swift */; };
+		234384C021ABB0FD00E4B61C /* LessonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234384BF21ABB0FD00E4B61C /* LessonTableViewCell.swift */; };
 		2356DA872197994800D7018A /* Metronome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2356DA862197994800D7018A /* Metronome.swift */; };
 		238B2431218697C700828CBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B2430218697C700828CBF /* AppDelegate.swift */; };
 		238B2436218697C700828CBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 238B2434218697C700828CBF /* Main.storyboard */; };
@@ -106,6 +108,8 @@
 		23061917219FCAEF004B9986 /* NoteInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = NoteInfo.plist; sourceTree = "<group>"; };
 		232191F2219B83C90008FD19 /* Tuner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tuner.swift; sourceTree = "<group>"; };
 		23429C5C219CDBF5000C8AC0 /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
+		234384BD21ABB0EA00E4B61C /* LessonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonTableViewController.swift; sourceTree = "<group>"; };
+		234384BF21ABB0FD00E4B61C /* LessonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonTableViewCell.swift; sourceTree = "<group>"; };
 		2356DA862197994800D7018A /* Metronome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metronome.swift; sourceTree = "<group>"; };
 		238B242D218697C700828CBF /* MusiciansToolkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusiciansToolkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		238B2430218697C700828CBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -227,6 +231,8 @@
 		234384BC21ABAF4300E4B61C /* Lessons */ = {
 			isa = PBXGroup;
 			children = (
+				234384BD21ABB0EA00E4B61C /* LessonTableViewController.swift */,
+				234384BF21ABB0FD00E4B61C /* LessonTableViewCell.swift */,
 			);
 			path = Lessons;
 			sourceTree = "<group>";
@@ -718,6 +724,7 @@
 				239F219421A29A2B00A497A9 /* ChordBankTableViewController.swift in Sources */,
 				23D5D6D221A747CC00CEB306 /* RecorderTableViewController.swift in Sources */,
 				23AB80A1219BF596006458BF /* TunerViewController.swift in Sources */,
+				234384BE21ABB0EA00E4B61C /* LessonTableViewController.swift in Sources */,
 				23EAFFA82190F68D0091B0DC /* MetronomeViewController.swift in Sources */,
 				23A5B1612190E1DD00FD2898 /* HomePageCollectionViewController.swift in Sources */,
 				23429C5D219CDBF5000C8AC0 /* Audio.swift in Sources */,
@@ -728,6 +735,7 @@
 				232191F3219B83C90008FD19 /* Tuner.swift in Sources */,
 				23EAFFA62190E8350091B0DC /* HomePageCell.swift in Sources */,
 				238B2431218697C700828CBF /* AppDelegate.swift in Sources */,
+				234384C021ABB0FD00E4B61C /* LessonTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
