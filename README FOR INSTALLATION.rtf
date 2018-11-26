@@ -18,4 +18,11 @@ Run the following command:\
 \f1\i pod install\
 \
 
-\f0\i0 Now, open the MusiciansToolkit.xcworkspace file. Be sure to open the xcworkspace file NOT the xcodeproj file.}
+\f0\i0 Now, open the MusiciansToolkit.xcworkspace file. Be sure to open the xcworkspace file NOT the xcodeproj file.\
+\
+Project notes:\
+So far implemented is the tuner, chord bank, metronome, and most of the recorder. The scale bank was put on hold as it is programmatically the same as the chord bank, but requires just a lot of mindless busy work to get samples of all of the 12*4 = 48 scales and their photos. Therefore, more emphasis was put on the more hefty programming parts of the application, especially the recorder.\
+\
+Main takeaway so far: audio in Swift is tough!! Especially with multiple units (metronome, tuner, recorder, etc.) that all need to play, record, and analyze sound. Sometimes sounds need to be played over top of each other (metronome while recording, etc.). A dedicated file for this (Audio.swift) was used to take care of this. Still I face many huge learning hurdles. For example, I currently can\'92t figure out a way to simultaneously record the microphone node and show its waveform, as a node can only be \'93tapped\'94 by one audio device at a time. Surely I will find a way around this soon enough.\
+\
+Hope you enjoy! It\'92s been a great learning experience thus far.}
