@@ -81,6 +81,9 @@ class RecorderViewController : UIViewController, AVAudioPlayerDelegate {
         playButton.isEnabled = false
         outputPlot.addSubview(nodeOutputPlot)
         outputPlot.sendSubview(toBack: nodeOutputPlot)
+        musicModel.audioDevice.player?.completionHandler = {
+            self.donePlaying()
+        }
     }
     
     override func viewDidLayoutSubviews() {
@@ -94,6 +97,15 @@ class RecorderViewController : UIViewController, AVAudioPlayerDelegate {
         if (timer != nil) {
             timer?.invalidate()
         }
+        musicModel.audioDevice.player?.completionHandler = nil
+        if (recorder.isRecording) {
+            recorder.stop()
+            do {
+                try recorder.reset()
+            } catch {
+                print("Error resetting")
+            }
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -106,6 +118,11 @@ class RecorderViewController : UIViewController, AVAudioPlayerDelegate {
             vc.recorderViewController = self
         default: break
         }
+    }
+    
+    func donePlaying() {
+        playing = false
+        playButton.setImage(#imageLiteral(resourceName: "play"), for: .normal)
     }
     
     @IBAction func newRecordingButtonPressed(_ sender: Any) {
@@ -131,9 +148,10 @@ class RecorderViewController : UIViewController, AVAudioPlayerDelegate {
         do {
             //nodeOutputPlot.clear()
             //nodeOutputPlot.resume()
+            try recorder.reset()
             try recorder.record()
         } catch {
-            print(error)
+            print("Error starting recording")
         }
         
         
@@ -176,7 +194,7 @@ class RecorderViewController : UIViewController, AVAudioPlayerDelegate {
                     textField.placeholder = "Enter Name"
                 })
                 
-                alert.addAction(UIAlertAction(title: "Confirm", style: .default, handler: { action in
+                alert.addAction(UIAlertAction(title: "Save", style: .default, handler: { action in
                     var recordingName = alert.textFields?.first?.text
                     
                     //Filter out illegal characters
@@ -230,6 +248,7 @@ class RecorderViewController : UIViewController, AVAudioPlayerDelegate {
     
     func chooseRecording(url : URL) {
         do {
+            musicModel.audioDevice.player?.stop()
             try musicModel.audioDevice.player?.load(audioFile: AVAudioFile(forReading: url))
             playButton.isEnabled = true
             playButton.setImage(#imageLiteral(resourceName: "play"), for: .normal)
