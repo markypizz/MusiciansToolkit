@@ -224,6 +224,13 @@
 			path = Tuner;
 			sourceTree = "<group>";
 		};
+		234384BC21ABAF4300E4B61C /* Lessons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lessons;
+			sourceTree = "<group>";
+		};
 		238B2424218697C700828CBF = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +254,7 @@
 		238B242F218697C700828CBF /* MusiciansToolkit */ = {
 			isa = PBXGroup;
 			children = (
+				234384BC21ABAF4300E4B61C /* Lessons */,
 				239F219521A29A5400A497A9 /* Chord Bank */,
 				232191F4219B83D00008FD19 /* Tuner */,
 				23EAFFA92190F8B20091B0DC /* Metronome */,
