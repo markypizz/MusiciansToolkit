@@ -29,8 +29,6 @@ class Model {
     
     let audioDevice : Audio
     
-    let numberOfTools = 6
-    
     let backgroundImages = ["woodBG1","woodBG2","woodBG3","woodBG4"]
     
     let toolNames =
@@ -39,11 +37,12 @@ class Model {
      "Scales",
      "Metronome",
      "Recorder",
-     "Jam Session"]
+     "Jam Session",
+     "Lessons"]
     
-    let segueNames = ["tunerSegue","chordSegue","scaleSegue","metSegue","recordSegue","jamSegue"]
+    let segueNames = ["tunerSegue","chordSegue","scaleSegue","metSegue","recordSegue","jamSegue","lessonSegue"]
     
-    let imageNames = ["tuningFork","chords","scales","metronome","recorder","jamsession"]
+    let imageNames = ["tuningFork","chords","scales","metronome","recorder","jamsession","lessons"]
     let uniqueNotes = ["C","C#","D","D#","E","F","F#","G","G#","A","A#","B"]
     let indexTitles = ["C","#","D","#","E","F","#","G","#","A","#","B"]
     let chordTypes = ["maj","7","maj7","min","min7"]

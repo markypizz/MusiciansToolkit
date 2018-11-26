@@ -261,6 +261,7 @@
                         <segue destination="nZH-gy-LdT" kind="show" identifier="recordSegue" id="LRH-Ya-1Ez"/>
                         <segue destination="baf-Nc-TSL" kind="show" identifier="scaleSegue" id="0eg-YC-o7h"/>
                         <segue destination="baf-Nc-TSL" kind="show" identifier="jamSegue" id="eqU-hJ-fO2"/>
+                        <segue destination="Pe6-s0-raB" kind="show" identifier="lessonSegue" id="cZ0-7C-x45"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kj0-xq-2ZD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -311,7 +312,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4gv-7q-sg0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1329" y="-793"/>
+            <point key="canvasLocation" x="1329" y="-936"/>
         </scene>
         <!--Chord View Controller-->
         <scene sceneID="vdE-hc-Z5k">
@@ -365,7 +366,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gpY-lr-llq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2318" y="-794"/>
+            <point key="canvasLocation" x="2318" y="-937"/>
         </scene>
         <!--Metronome-->
         <scene sceneID="0gb-RB-PgG">
@@ -619,7 +620,35 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BzG-UJ-Exd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1328.8" y="-89.505247376311857"/>
+            <point key="canvasLocation" x="1538" y="-223"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="Y7a-au-SlC">
+            <objects>
+                <tableViewController id="Pe6-s0-raB" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Vdz-qa-dcN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="v2m-1N-uzX">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="v2m-1N-uzX" id="Y3U-3A-lxx">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Pe6-s0-raB" id="PlO-yB-oPV"/>
+                            <outlet property="delegate" destination="Pe6-s0-raB" id="C3P-mk-jfd"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NLh-Tc-dm5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1879" y="453"/>
         </scene>
     </scenes>
     <resources>
