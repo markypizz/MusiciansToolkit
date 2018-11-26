@@ -10,7 +10,7 @@ import UIKit
 import AudioKit
 import AudioKitUI
 
-class RecorderViewController : UIViewController {
+class RecorderViewController : UIViewController, AVAudioPlayerDelegate {
     let musicModel = Model.sharedInstance
     
     @IBOutlet weak var newRecordingButton: UIBarButtonItem!
@@ -101,13 +101,20 @@ class RecorderViewController : UIViewController {
             
         //Get reference to table view controller
         case let vc as RecorderTableViewController:
+            //Share references
             self.tableViewController = vc
+            vc.recorderViewController = self
         default: break
-            
         }
     }
     
     @IBAction func newRecordingButtonPressed(_ sender: Any) {
+        tableViewController?.tableView.isUserInteractionEnabled = false
+        musicModel.audioDevice.player?.stop()
+        if let selectedIndex = tableViewController!.tableView.indexPathForSelectedRow{
+            tableViewController!.tableView.deselectRow(at: selectedIndex, animated: true)
+        }
+        
         timer = Timer.scheduledTimer(withTimeInterval: interval, repeats: true, block: {_ in self.updateTime() })
         
         recordingInProgress = true
@@ -118,6 +125,8 @@ class RecorderViewController : UIViewController {
         timerLabel.text? = "00:00"
         timerLabel.isHidden = false
         recordingIcon.isHidden = false
+        
+        newRecordingButton.isEnabled = false
         
         do {
             //nodeOutputPlot.clear()
@@ -148,6 +157,7 @@ class RecorderViewController : UIViewController {
             recordingIcon.isHidden = true
             playButton.setImage(#imageLiteral(resourceName: "play"), for: .normal)
             playButton.isEnabled = false
+            newRecordingButton.isEnabled = true
             
             nodeOutputPlot.pause()
             
@@ -158,20 +168,83 @@ class RecorderViewController : UIViewController {
             //Recording was successful
             if let _ = musicModel.audioDevice.player?.audioFile?.duration {
                 recorder.stop()
-                recording.exportAsynchronously(name: "Test.caf", baseDir: .documents, exportFormat: .caf) {_, error in
-                    if error != nil {
-                        print("fail")
-                    } else {
-                        print("success")
-                        self.tableViewController?.updateDocumentData()
+                
+                //Present name alert
+                let alert = UIAlertController(title: "New Recording", message: nil, preferredStyle: .alert)
+                
+                alert.addTextField(configurationHandler: { textField in
+                    textField.placeholder = "Enter Name"
+                })
+                
+                alert.addAction(UIAlertAction(title: "Confirm", style: .default, handler: { action in
+                    var recordingName = alert.textFields?.first?.text
+                    
+                    //Filter out illegal characters
+                    
+                    
+                    if (recordingName == nil || recordingName == "") {
+                        //Use date & time
+                        let currentDateTime = Date()
+                        
+                        let formatter = DateFormatter()
+                        formatter.timeStyle = .short
+                        formatter.dateStyle = .short //Avoids "/" character
+                        
+                        recordingName = formatter.string(from: currentDateTime)
                     }
-                }
+                    
+                    var invalidChars = CharacterSet(charactersIn: ",:/")
+                    invalidChars.formUnion(.newlines)
+                    invalidChars.formUnion(.illegalCharacters)
+                    invalidChars.formUnion(.symbols)
+                    invalidChars.formUnion(.controlCharacters)
+                    
+                    let finalName = recordingName!.components(separatedBy: invalidChars).joined(separator: " ").replacingOccurrences(of: " ", with: "%20")
+                    
+                    //Export recording to documents
+                    recording.exportAsynchronously(name: "\(finalName).caf", baseDir: .documents, exportFormat: .caf) {_, error in
+                        if error != nil {
+                        } else {
+                            self.tableViewController?.updateDocumentData()
+                        }
+                    }
+                    //Re-enable table view
+                    self.tableViewController?.tableView.isUserInteractionEnabled = true
+                }))
+                
+                self.present(alert, animated: true)
             }
             
         } else if (playing) {
             //Pause
+            musicModel.audioDevice.player?.pause()
+            playButton.setImage(#imageLiteral(resourceName: "play"), for: .normal)
+            playing = false
         } else { //Paused
+            musicModel.audioDevice.player?.resume()
+            playButton.setImage(#imageLiteral(resourceName: "pause"), for: .normal)
+            playing = true
             //Play
         }
+    }
+    
+    func chooseRecording(url : URL) {
+        do {
+            try musicModel.audioDevice.player?.load(audioFile: AVAudioFile(forReading: url))
+            playButton.isEnabled = true
+            playButton.setImage(#imageLiteral(resourceName: "play"), for: .normal)
+            playing = false
+        } catch {
+            print("Error. Could not load audio file")
+        }
+    }
+    
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        //
+        // Need to check for conflict with chord/scale player.
+        musicModel.audioDevice.player?.setPosition(0.0)
+        playButton.isEnabled = true
+        playButton.setImage(#imageLiteral(resourceName: "play"), for: .normal)
+        playing = false
     }
 }

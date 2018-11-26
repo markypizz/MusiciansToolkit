@@ -14,12 +14,16 @@ class RecorderTableViewController: UITableViewController {
     var documents : URL?
     var audioFileURLs : [URL]?
     var audioFileNames = [String]()
+    var recorderViewController : RecorderViewController? = nil
     
     required init?(coder aDecoder: NSCoder) {
         fileManager = FileManager.default
         documents = fileManager?.urls(for: .documentDirectory, in: .userDomainMask)[0]
         do {
-            audioFileURLs = try fileManager?.contentsOfDirectory(at: documents!, includingPropertiesForKeys: nil)
+            audioFileURLs = try fileManager?.contentsOfDirectory(at: documents!, includingPropertiesForKeys: [.contentModificationDateKey])
+            
+            //Sorted by date modified (for later)
+            //audioFileURLs?.sort{$0.1.compare($1.1) == ComparisonResult.OrderedDescending }.map{$0.0}.map{$0.lastPathComponent!}
             audioFileNames.removeAll()
             for url in audioFileURLs! {
                 audioFileNames.append(url.lastPathComponent)
@@ -56,7 +60,8 @@ class RecorderTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "recordingCell", for: indexPath) as! RecorderTableViewCell
         
-        cell.titleLabel?.text = audioFileNames[indexPath.row]
+        //Put spaces back
+        cell.titleLabel?.text = audioFileNames[indexPath.row].replacingOccurrences(of: "%20", with: " ")
 
         return cell
     }
@@ -77,10 +82,7 @@ class RecorderTableViewController: UITableViewController {
             
             // Get cell text
             let cell = tableView.cellForRow(at: indexPath) as! RecorderTableViewCell
-            let name = cell.titleLabel.text!
-            //
-            //
-            //Something like this
+            let name = cell.titleLabel.text!.replacingOccurrences(of: " ", with: "%20")
             do {
                 //Try to remove item from documents
                 if let fileURL = documents?.appendingPathComponent(name) {
@@ -102,6 +104,16 @@ class RecorderTableViewController: UITableViewController {
             tableView.deleteRows(at: [indexPath], with: .fade)
             //self.tableView.endUpdates()
             
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = self.tableView.cellForRow(at: indexPath) as! RecorderTableViewCell
+        
+        if let name = cell.titleLabel?.text?.replacingOccurrences(of: " ", with: "%20") {
+            if let url = documents?.appendingPathComponent(name) {
+                recorderViewController?.chooseRecording(url: url)
+            }
         }
     }
     

@@ -9,6 +9,8 @@
 import UIKit
 
 class RecorderTableViewCell: UITableViewCell {
+    
+    
 
     @IBOutlet weak var titleLabel: UILabel!
     
