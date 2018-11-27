@@ -10,15 +10,16 @@
 This project uses the AudioKit cocoapod, but the pod contents are too large to supply in the code.\
 Therefore, the pods will need to be built. Ensure CocoaPods is installed on the target machine.\
 \
-Using the terminal, CD to the directory of this readme file /MusiciansToolkit. The Podfile should be in this folder.\
-\
-Run the following command:\
-\
+1. Open the MusiciansToolkit.xcworkspace file\
+2. Click on the MusiciansToolkit project on the left-hand-side\
+3. Under configurations, set all to \'93None\'94 for debug and release\
+4. Using the terminal, CD to the directory of this readme file /MusiciansToolkit. The Podfile should be in this folder.\
+5. Run the following command:\
 
 \f1\i pod install\
 \
 
-\f0\i0 Now, open the MusiciansToolkit.xcworkspace file. Be sure to open the xcworkspace file NOT the xcodeproj file.\
+\f0\i0 6. Now, open the MusiciansToolkit.xcworkspace file. The project should build now.\
 \
 Project notes:\
 So far implemented is the tuner, chord bank, metronome, and most of the recorder. The scale bank was put on hold as it is programmatically the same as the chord bank, but requires just a lot of mindless busy work to get samples of all of the 12*4 = 48 scales and their photos. Therefore, more emphasis was put on the more hefty programming parts of the application, especially the recorder.\
