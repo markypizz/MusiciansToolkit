@@ -146,10 +146,14 @@ class RecorderViewController : UIViewController, AVAudioPlayerDelegate {
         newRecordingButton.isEnabled = false
         
         do {
-            //nodeOutputPlot.clear()
-            //nodeOutputPlot.resume()
+            
             try recorder.reset()
             try recorder.record()
+            //nodeOutputPlot.node =
+                //AKMixer(
+                //AKMixer(musicModel.audioDevice.microphoneInput)
+            //nodeOutputPlot.clear()
+            //nodeOutputPlot.resume()
         } catch {
             print("Error starting recording")
         }

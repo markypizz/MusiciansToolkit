@@ -41,11 +41,11 @@
                             </stackView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="4gR-cy-2MS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="36j-zd-PKl"/>
+                            <constraint firstItem="4gR-cy-2MS" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" id="36j-zd-PKl"/>
                             <constraint firstItem="ReB-x0-f6C" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="5Kf-Vh-yva"/>
                             <constraint firstItem="4gR-cy-2MS" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="8BP-6X-1Lr"/>
-                            <constraint firstItem="4gR-cy-2MS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Baa-0b-suf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4gR-cy-2MS" secondAttribute="bottom" id="L60-cz-Quh"/>
+                            <constraint firstItem="4gR-cy-2MS" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Baa-0b-suf"/>
+                            <constraint firstAttribute="bottom" secondItem="4gR-cy-2MS" secondAttribute="bottom" id="L60-cz-Quh"/>
                             <constraint firstItem="ReB-x0-f6C" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hCk-Du-PqZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
