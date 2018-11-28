@@ -40,15 +40,22 @@ class Audio {
         mixer?.connect(input: player)
         
         AudioKit.output = mixer
-        AKSettings.audioInputEnabled = true
+        //AKSettings.audioInputEnabled = true
         
         do {
             //Should default back to main speaker after headphone plug/unplug
+            
+            //Doesnt work
+            
+            try! AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayAndRecord, with:AVAudioSessionCategoryOptions.defaultToSpeaker)
+            
             //try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
             
             // Use main speaker.
             // Sometimes would default to ear speaker
-            try AKSettings.session.overrideOutputAudioPort(AVAudioSessionPortOverride.speaker)
+            
+            //Does work sort of
+            //try AKSettings.session.overrideOutputAudioPort(AVAudioSessionPortOverride.speaker)
             
             //Start audio driver
             try AudioKit.start()
@@ -63,14 +70,14 @@ class Audio {
         switch audioRouteChangeReason {
         //case AVAudioSessionRouteChangeReason.newDeviceAvailable.rawValue:
             //Headphones plugged in
-        case AVAudioSessionRouteChangeReason.oldDeviceUnavailable.rawValue:
+        //case AVAudioSessionRouteChangeReason.oldDeviceUnavailable.rawValue:
             //Headphones removed
-            do {
+            //do {
                 // Reset back to main speaker
-                try AKSettings.session.overrideOutputAudioPort(AVAudioSessionPortOverride.speaker)
-            } catch {
-                print(error)
-            }
+                //try AKSettings.session.overrideOutputAudioPort(AVAudioSessionPortOverride.speaker)
+            //} catch {
+            //    print(error)
+            //}
             
         default:
             break
