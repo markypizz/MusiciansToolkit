@@ -25,12 +25,13 @@ class RecorderViewController : UIViewController, AVAudioPlayerDelegate {
     
     @IBOutlet weak var timerLabel: UILabel!
     
-    //let boostAmount : Double = 2.0
     let gain : Float = 2.0
     
     var nodeOutputPlot : AKNodeOutputPlot
+    
+    //Lower level EZAudioPlot for file playback
+    var fileWaveform : EZAudioPlot
     var recorder : AKNodeRecorder
-    //var plotBooster : AKBooster
     
     //Reference to instantiated table view controller
     var tableViewController : RecorderTableViewController?
@@ -40,23 +41,20 @@ class RecorderViewController : UIViewController, AVAudioPlayerDelegate {
     var recordingInProgress = false
     var playing = false
     
+    var pauseTime : Double?
+    
     required init?(coder aDecoder: NSCoder) {
         nodeOutputPlot = AKNodeOutputPlot()
-        //plotBooster = AKBooster(musicModel.audioDevice.microphoneInput)
-        //plotBooster.gain = boostAmount
         recorder = try! AKNodeRecorder(node: musicModel.audioDevice.microphoneInput)
-        
+        fileWaveform = EZAudioPlot()
         super.init(coder: aDecoder)
         
-        //Setup plot
-        //nodeOutputPlot.node = plotBooster
-        //
-        // Plot currently not working.
-        // Can not tap a node twice (recording and playing)
-        // Looking into alternatives. Trying to run the
-        // microphone into an additional node to tap (the booster)
-        // did not work unfortunately.
-        //
+        // A particular node can only be tapped by one other unit. So, the
+        // output plot can not plot the microphone directly while recording.
+        // Therefore, it was chosen to plot the tuner's microphone high-pass
+        // filter, which is technically a different node.
+        nodeOutputPlot.node = musicModel.audioDevice.tuner?.filter
+        
         nodeOutputPlot.gain = gain
         nodeOutputPlot.plotType = .rolling
         nodeOutputPlot.shouldFill = true
@@ -68,11 +66,13 @@ class RecorderViewController : UIViewController, AVAudioPlayerDelegate {
         if let file = recorder.audioFile {
             musicModel.audioDevice.player?.load(audioFile: file)
         }
-        //
-        // !
-        // Nervous about this line below. Not sure if this breaks something
-        // !
-        //musicModel.audioDevice.player?.isLooping = true
+        
+        //Fit entire plot on screen
+        fileWaveform.setRollingHistoryLength(fileWaveform.maximumRollingHistoryLength())
+        fileWaveform.plotType = EZPlotType.buffer
+        fileWaveform.shouldFill = true
+        fileWaveform.shouldMirror = true
+        fileWaveform.color = UIColor.blue
     }
     
     override func viewDidLoad() {
@@ -80,6 +80,8 @@ class RecorderViewController : UIViewController, AVAudioPlayerDelegate {
         
         playButton.isEnabled = false
         outputPlot.addSubview(nodeOutputPlot)
+        outputPlot.addSubview(fileWaveform)
+        outputPlot.sendSubview(toBack: fileWaveform)
         outputPlot.sendSubview(toBack: nodeOutputPlot)
         musicModel.audioDevice.player?.completionHandler = {
             self.donePlaying()
@@ -89,6 +91,7 @@ class RecorderViewController : UIViewController, AVAudioPlayerDelegate {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         nodeOutputPlot.frame = CGRect(x: 0.0, y: 0.0, width: outputPlot.frame.width, height: outputPlot.frame.height)
+        fileWaveform.frame = CGRect(x: 0.0, y: 0.0, width: outputPlot.frame.width, height: outputPlot.frame.height)
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -122,6 +125,7 @@ class RecorderViewController : UIViewController, AVAudioPlayerDelegate {
     
     func donePlaying() {
         playing = false
+        pauseTime = 0.0
         playButton.setImage(#imageLiteral(resourceName: "play"), for: .normal)
     }
     
@@ -152,8 +156,10 @@ class RecorderViewController : UIViewController, AVAudioPlayerDelegate {
             //nodeOutputPlot.node =
                 //AKMixer(
                 //AKMixer(musicModel.audioDevice.microphoneInput)
-            //nodeOutputPlot.clear()
-            //nodeOutputPlot.resume()
+            nodeOutputPlot.isHidden = false
+            fileWaveform.isHidden = true
+            nodeOutputPlot.clear()
+            nodeOutputPlot.resume()
         } catch {
             print("Error starting recording")
         }
@@ -239,21 +245,32 @@ class RecorderViewController : UIViewController, AVAudioPlayerDelegate {
             
         } else if (playing) {
             //Pause
+            pauseTime = musicModel.audioDevice.player?.currentTime
             musicModel.audioDevice.player?.pause()
             playButton.setImage(#imageLiteral(resourceName: "play"), for: .normal)
             playing = false
-        } else { //Paused
+        } else {
+            //Play
+            musicModel.audioDevice.player?.startTime = pauseTime ?? 0.0
             musicModel.audioDevice.player?.resume()
             playButton.setImage(#imageLiteral(resourceName: "pause"), for: .normal)
             playing = true
-            //Play
+            
         }
     }
     
     func chooseRecording(url : URL) {
         do {
             musicModel.audioDevice.player?.stop()
-            try musicModel.audioDevice.player?.load(audioFile: AVAudioFile(forReading: url))
+            
+            let avFile = try AVAudioFile(forReading: url)
+            musicModel.audioDevice.player?.load(audioFile: avFile)
+            
+            let ezFile = EZAudioFile(url: url)
+            if let data = ezFile?.getWaveformData() {
+                fileWaveform.updateBuffer( data.buffers[0], withBufferSize: data.bufferSize )
+                fileWaveform.redraw()
+            }
             playButton.isEnabled = true
             playButton.setImage(#imageLiteral(resourceName: "play"), for: .normal)
             playing = false
