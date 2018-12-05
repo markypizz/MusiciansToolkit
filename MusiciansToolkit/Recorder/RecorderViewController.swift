@@ -29,6 +29,14 @@ class RecorderViewController : UIViewController, AVAudioPlayerDelegate {
     
     var nodeOutputPlot : AKNodeOutputPlot
     
+    //Elapsed time
+    var timeElapsedView = UIView()
+    let timeElapsedWidth : CGFloat = 2.0
+    var trackDuration : Double = 0
+    
+    var animationPaused = false
+    var animator = UIViewPropertyAnimator()
+    
     //Lower level EZAudioPlot for file playback
     var fileWaveform : EZAudioPlot
     var recorder : AKNodeRecorder
@@ -83,6 +91,10 @@ class RecorderViewController : UIViewController, AVAudioPlayerDelegate {
         outputPlot.addSubview(fileWaveform)
         outputPlot.sendSubview(toBack: fileWaveform)
         outputPlot.sendSubview(toBack: nodeOutputPlot)
+        timeElapsedView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.5)
+        timeElapsedView.isHidden = true
+        outputPlot.addSubview(timeElapsedView)
+        outputPlot.sendSubview(toBack: timeElapsedView)
         musicModel.audioDevice.player?.completionHandler = {
             self.donePlaying()
         }
@@ -92,6 +104,12 @@ class RecorderViewController : UIViewController, AVAudioPlayerDelegate {
         super.viewDidLayoutSubviews()
         nodeOutputPlot.frame = CGRect(x: 0.0, y: 0.0, width: outputPlot.frame.width, height: outputPlot.frame.height)
         fileWaveform.frame = CGRect(x: 0.0, y: 0.0, width: outputPlot.frame.width, height: outputPlot.frame.height)
+        
+        timeElapsedView.bounds.size = CGSize(width: timeElapsedWidth, height: outputPlot.frame.height)
+        
+        timeElapsedView.center.y = outputPlot.center.y
+        //timeElapsedView.frame.height = outputPlot.frame.height
+        //timeElapsedView.
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -126,10 +144,14 @@ class RecorderViewController : UIViewController, AVAudioPlayerDelegate {
     func donePlaying() {
         playing = false
         pauseTime = 0.0
+        
+        //For replay
+        setUpTimeElapsedAnimator()
         playButton.setImage(#imageLiteral(resourceName: "play"), for: .normal)
     }
     
     @IBAction func newRecordingButtonPressed(_ sender: Any) {
+        timeElapsedView.isHidden = true
         tableViewController?.tableView.isUserInteractionEnabled = false
         musicModel.audioDevice.player?.stop()
         if let selectedIndex = tableViewController!.tableView.indexPathForSelectedRow{
@@ -240,6 +262,10 @@ class RecorderViewController : UIViewController, AVAudioPlayerDelegate {
                     self.tableViewController?.tableView.isUserInteractionEnabled = true
                 }))
                 
+                alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { action in
+                    self.tableViewController?.tableView.isUserInteractionEnabled = true
+                }))
+                
                 self.present(alert, animated: true)
             }
             
@@ -249,13 +275,14 @@ class RecorderViewController : UIViewController, AVAudioPlayerDelegate {
             musicModel.audioDevice.player?.pause()
             playButton.setImage(#imageLiteral(resourceName: "play"), for: .normal)
             playing = false
+            animator.pauseAnimation()
         } else {
             //Play
             musicModel.audioDevice.player?.startTime = pauseTime ?? 0.0
             musicModel.audioDevice.player?.resume()
             playButton.setImage(#imageLiteral(resourceName: "pause"), for: .normal)
             playing = true
-            
+            animator.startAnimation()
         }
     }
     
@@ -268,6 +295,9 @@ class RecorderViewController : UIViewController, AVAudioPlayerDelegate {
             
             let ezFile = EZAudioFile(url: url)
             if let data = ezFile?.getWaveformData() {
+                trackDuration = (ezFile?.duration)!
+                pauseTime = 0.0
+                setUpTimeElapsedAnimator()
                 fileWaveform.updateBuffer( data.buffers[0], withBufferSize: data.bufferSize )
                 fileWaveform.redraw()
             }
@@ -283,8 +313,22 @@ class RecorderViewController : UIViewController, AVAudioPlayerDelegate {
         //
         // Need to check for conflict with chord/scale player.
         musicModel.audioDevice.player?.setPosition(0.0)
+        pauseTime = 0.0
         playButton.isEnabled = true
         playButton.setImage(#imageLiteral(resourceName: "play"), for: .normal)
         playing = false
+    }
+    
+    func setUpTimeElapsedAnimator() {
+        animator.stopAnimation(true)
+        timeElapsedView.layer.removeAllAnimations()
+        timeElapsedView.layoutIfNeeded()
+        timeElapsedView.transform = CGAffineTransform.identity
+        timeElapsedView.isHidden = false
+        
+        //Creating new property animator as
+        animator = UIViewPropertyAnimator(duration: trackDuration-pauseTime!, curve: .linear, animations: {
+            self.timeElapsedView.transform = CGAffineTransform(translationX: self.outputPlot.frame.width, y: 0.0)
+        })
     }
 }

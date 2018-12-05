@@ -21,6 +21,11 @@ class JamSessionViewController: UIViewController, UIGestureRecognizerDelegate {
     let guitarBottomOffsetPercent : CGFloat = 0.1088
     let jamSessionStringOffsetPercent : CGFloat = 0.12
     
+    let springDamping : CGFloat = 500
+    let springStartOffset : CGFloat = -5
+    let springInitialVelocity : CGFloat = 50
+    let springStiffness : CGFloat = 100
+    
     //Percentage distances from left for fret hit detection
     //Hardcoded from photo image
     let jamSessionFretPercentages = [0.0744, 0.2436, 0.412, 0.5812, 0.7496, 0.9184, 1]
@@ -87,18 +92,21 @@ class JamSessionViewController: UIViewController, UIGestureRecognizerDelegate {
                 
                 i += 1
             }
-            //let animation = CAAnimation()
-            //animation
             
             if (string != nil) {
                 //Vibrate string
+                //Animation created here each time due to
+                //the animations requiring a different start and
+                //end point depending on the string to vibrate
                 let spring = CASpringAnimation(keyPath: "position.y")
-                spring.damping = 500
-                spring.fromValue = strings[string!].position.x-5
+                spring.damping = springDamping
+                spring.fromValue = strings[string!].position.x + springStartOffset
                 spring.toValue = strings[string!].position.x
                 spring.duration = spring.settlingDuration
-                spring.initialVelocity = 50
-                spring.stiffness = 100
+                spring.initialVelocity = springInitialVelocity
+                spring.stiffness = springStiffness
+                
+                spring.isRemovedOnCompletion = true
                 strings[strings.count-string!-1].add(spring, forKey: nil)
                 
                 playSoundForNote(named: musicModel.guitarNotesPerString[string!][fret])
