@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AudioKit
 
 class JamSessionViewController: UIViewController, UIGestureRecognizerDelegate {
     
@@ -86,19 +87,22 @@ class JamSessionViewController: UIViewController, UIGestureRecognizerDelegate {
                 
                 i += 1
             }
-            
-            
-            
             //let animation = CAAnimation()
             //animation
             
-            //self.string[0].add(, forKey: <#T##String?#>)
             if (string != nil) {
-                playSoundForNote(string: string!, fret: fret)
-                print(musicModel.guitarNotesPerString[string!][fret])
+                //Vibrate string
+                let spring = CASpringAnimation(keyPath: "position.y")
+                spring.damping = 500
+                spring.fromValue = strings[string!].position.x-5
+                spring.toValue = strings[string!].position.x
+                spring.duration = spring.settlingDuration
+                spring.initialVelocity = 50
+                spring.stiffness = 100
+                strings[strings.count-string!-1].add(spring, forKey: nil)
+                
+                playSoundForNote(named: musicModel.guitarNotesPerString[string!][fret])
             }
-            
-            
         }
     }
     
@@ -229,8 +233,18 @@ class JamSessionViewController: UIViewController, UIGestureRecognizerDelegate {
         
     }
     
-    func playSoundForNote(string: Int, fret: Int) {
-        //TODO
+    func playSoundForNote(named name : String) {
+        if (musicModel.audioDevice.notePlayer?.isPlaying ?? false) {
+            musicModel.audioDevice.notePlayer?.stop()
+        }
+        do {
+            let audioFile = try AKAudioFile(readFileName: "\(name).wav")
+            musicModel.audioDevice.notePlayer?.load(audioFile: audioFile)
+            musicModel.audioDevice.notePlayer?.play()
+        } catch {
+            print(error)
+        }
+        
     }
     
     override func viewDidLayoutSubviews() {
