@@ -53,6 +53,7 @@ class Model {
     let uniqueNotes = ["C","C#","D","D#","E","F","F#","G","G#","A","A#","B"]
     let indexTitles = ["C","#","D","#","E","F","#","G","#","A","#","B"]
     let chordTypes = ["maj","7","maj7","min","min7"]
+    let scaleTypes = ["Major", "Minor", "Minor Pentatonic"]
     
     let lessonSections = ["Beginner","Intermediate","Advanced"]
     let lessons : [[lessonInfo]] = [
@@ -68,6 +69,13 @@ class Model {
     ]
     let notes : Notes
     
+    let guitarNotesPerString = [
+        /* E */                 ["E4","F4","F#4","G4","G#4","A4","A#4"],
+        /* B */                 ["B3","C4","C#4","D4","D#4","E4","F4" ],
+        /* G */                 ["G3","G#3","A3","A#3","B3","C4","C#4"],
+        /* D */                 ["D3","D#3","E3","F3","F#3","G3","G#3"],
+        /* A */                 ["A2","A#2","B2","C3","C#3","D3","D#3"],
+        /* E */                 ["E2","F2","F#2","G2","G#2","A2","A#2"]]
     
     public init() {
         audioDevice = Audio()

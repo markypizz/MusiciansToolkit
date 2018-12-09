@@ -18,7 +18,10 @@ class Audio {
     var metronome : Metronome?
     var mixer : AKMixer?
     var player : AKPlayer? //Audio file player
+    var notePlayer : AKPlayer? //Note player
+    var noteBooster : AKBooster? //Note booster
     let microphoneInput : AKMicrophone
+    let noteGain = 2.0
     
     init() {
         microphoneInput = AKMicrophone()
@@ -34,7 +37,13 @@ class Audio {
         metronome = Metronome()
         player = AKPlayer()
         
+        //Boost note levels as the files are quiet
+        notePlayer = AKPlayer()
+        noteBooster = AKBooster(notePlayer)
+        noteBooster?.gain = noteGain
+        
         //Connect tuner and metronome nodes
+        mixer?.connect(input: noteBooster)
         mixer?.connect(input: tuner?.node)
         mixer?.connect(input: metronome?.node)
         mixer?.connect(input: player)

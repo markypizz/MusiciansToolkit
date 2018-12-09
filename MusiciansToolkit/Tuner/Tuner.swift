@@ -10,12 +10,26 @@ import Foundation
 import AudioKit
 import AudioKitUI
 
+protocol TunerDelegate {
+    func tunerDidUpdate()
+}
+
 class Tuner {
     
+    var delegate : TunerDelegate? {
+        didSet {
+            if (delegate != nil) {
+            //start timer
+            } else {
+                //stop timer
+                //timer.invalidate()
+            }
+        }
+    }
     let minFrequency = 30
     let maxFrequency = 2500
     var gain : Float = 2.0
-    
+    var highPassCutoff : Double = 200.0
     
     let filter : AKHighPassFilter
     let tracker : AKFrequencyTracker
@@ -30,7 +44,7 @@ class Tuner {
     
     init(_ mic:AKMicrophone) {
         
-        filter = AKHighPassFilter(mic, cutoffFrequency: 200, resonance: 0)
+        filter = AKHighPassFilter(mic, cutoffFrequency: highPassCutoff, resonance: 0)
         tracker = AKFrequencyTracker(filter)
         silence = AKBooster(tracker, gain: 0)
         

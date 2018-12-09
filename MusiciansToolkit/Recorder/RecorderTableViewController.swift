@@ -104,6 +104,14 @@ class RecorderTableViewController: UITableViewController {
             tableView.deleteRows(at: [indexPath], with: .fade)
             //self.tableView.endUpdates()
             
+            //Disable play button
+            //Stop playing if so
+            if (recorderViewController?.playing ?? false) {
+                recorderViewController?.musicModel.audioDevice.player?.stop()
+                recorderViewController?.donePlaying()
+            }
+            recorderViewController?.playButton.isEnabled = false
+            
         }
     }
     
@@ -112,6 +120,11 @@ class RecorderTableViewController: UITableViewController {
         
         if let name = cell.titleLabel?.text?.replacingOccurrences(of: " ", with: "%20") {
             if let url = documents?.appendingPathComponent(name) {
+                recorderViewController?.pauseTime = 0.0
+                
+                //Layer must be redrawn
+                recorderViewController?.nodeOutputPlot.isHidden = true
+                recorderViewController?.fileWaveform.isHidden = false
                 recorderViewController?.chooseRecording(url: url)
             }
         }

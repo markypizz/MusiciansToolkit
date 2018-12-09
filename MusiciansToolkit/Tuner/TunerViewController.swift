@@ -10,7 +10,7 @@ import UIKit
 import AudioKit
 import AudioKitUI
 
-class TunerViewController : UIViewController {
+class TunerViewController : UIViewController, TunerDelegate {
     
     @IBOutlet weak var pitchView: UIView!
     
@@ -235,5 +235,13 @@ class TunerViewController : UIViewController {
         default:
             break
         }
+    }
+    
+    func tunerDidUpdate() {
+        //
+        //
+        // TODO
+        //
+        //
     }
 }
