@@ -21,7 +21,7 @@ struct noteInfo : Codable {
     var frequency : Double
 }
 
-struct lessonInfo {
+struct lessonInfo : Codable {
     var title : String
     var url : String
     var author : String
@@ -29,6 +29,7 @@ struct lessonInfo {
 }
 
 typealias Notes = [noteInfo]
+typealias Lessons = [[lessonInfo]]
 
 class Model {
     static let sharedInstance = Model()
@@ -56,17 +57,7 @@ class Model {
     let scaleTypes = ["Major", "Minor", "Minor Pentatonic"]
     
     let lessonSections = ["Beginner","Intermediate","Advanced"]
-    let lessons : [[lessonInfo]] = [
-        
-        //Beginner
-        [lessonInfo(title: "Strumming Patterns", url: "https://www.youtube.com/watch?v=ely9LaJJJr4", author: "Marty Music", imageName: "strumming")],
-        
-        //Intermediate
-        [lessonInfo(title: "Bending", url: "https://www.youtube.com/watch?v=aSUvcux5sDM", author: "GuitarLessons365", imageName: "bending")],
-        
-        //Advanced
-        [lessonInfo(title: "Pinch Harmonics", url: "https://www.youtube.com/watch?v=5I5O8P-r5Rk", author: "JustinGuitar", imageName: "pinchharmonics")]
-    ]
+    let lessons : Lessons
     let notes : Notes
     
     let guitarNotesPerString = [
@@ -82,14 +73,25 @@ class Model {
         
         let mainBundle = Bundle.main
         
-        let solutionURL = mainBundle.url(forResource: "NoteInfo", withExtension: "plist")
+        let noteInfoURL = mainBundle.url(forResource: "NoteInfo", withExtension: "plist")
         do {
-            let data = try Data(contentsOf: solutionURL!)
+            let data = try Data(contentsOf: noteInfoURL!)
             let decoder = PropertyListDecoder()
             notes = try decoder.decode(Notes.self, from: data)
         } catch {
             print(error)
             notes = []
+        }
+        
+        
+        let lessonURL = mainBundle.url(forResource: "lessons", withExtension: "plist")
+        do {
+            let data = try Data(contentsOf: lessonURL!)
+            let decoder = PropertyListDecoder()
+            lessons = try decoder.decode(Lessons.self, from: data)
+        } catch {
+            print(error)
+            lessons = []
         }
     }
 }

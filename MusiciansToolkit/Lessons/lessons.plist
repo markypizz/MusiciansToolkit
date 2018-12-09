@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>4 Pentatonic Exercises</string>
+			<key>url</key>
+			<string>https://www.youtube.com/watch?v=T8Ul9s_YTxg</string>
+			<key>author</key>
+			<string>GuitarJamz</string>
+			<key>imageName</key>
+			<string>pentatonicexercises</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Strumming Patterns</string>
+			<key>url</key>
+			<string>https://www.youtube.com/watch?v=ely9LaJJJr4</string>
+			<key>author</key>
+			<string>Marty Music</string>
+			<key>imageName</key>
+			<string>strumming</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>Guitar Fretboard Memorization</string>
+			<key>url</key>
+			<string>https://www.youtube.com/watch?v=sBgansfvELE</string>
+			<key>author</key>
+			<string>fretjam</string>
+			<key>imageName</key>
+			<string>memorization</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Music Theory Basics</string>
+			<key>url</key>
+			<string>https://www.youtube.com/watch?v=Mj36tEcalBs</string>
+			<key>author</key>
+			<string>Hunter MacDermut</string>
+			<key>imageName</key>
+			<string>musictheorybasics</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Bending</string>
+			<key>url</key>
+			<string>https://www.youtube.com/watch?v=aSUvcux5sDM</string>
+			<key>author</key>
+			<string>GuitarLessons365</string>
+			<key>imageName</key>
+			<string>bending</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>Advanced Improvisational Techniques</string>
+			<key>url</key>
+			<string>https://www.youtube.com/watch?v=DUmmyx0qjds</string>
+			<key>author</key>
+			<string>JamPlay</string>
+			<key>imageName</key>
+			<string>advancedimprov</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Pinch Harmonics</string>
+			<key>url</key>
+			<string>https://www.youtube.com/watch?v=5I5O8P-r5Rk</string>
+			<key>author</key>
+			<string>JustinGuitar</string>
+			<key>imageName</key>
+			<string>pinchharmonics</string>
+		</dict>
+	</array>
+</array>
+</plist>
