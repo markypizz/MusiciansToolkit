@@ -124,6 +124,42 @@
 		23D5D6D221A747CC00CEB306 /* RecorderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D5D6D121A747CC00CEB306 /* RecorderTableViewController.swift */; };
 		23EAFFA62190E8350091B0DC /* HomePageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EAFFA52190E8350091B0DC /* HomePageCell.swift */; };
 		23EAFFA82190F68D0091B0DC /* MetronomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EAFFA72190F68D0091B0DC /* MetronomeViewController.swift */; };
+		23F7C68621BCC46200EBD652 /* G# Minor Pentatonic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C65721BCC46200EBD652 /* G# Minor Pentatonic.wav */; };
+		23F7C68721BCC46200EBD652 /* G# Major.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C65821BCC46200EBD652 /* G# Major.wav */; };
+		23F7C68821BCC46200EBD652 /* G# Minor.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C65921BCC46200EBD652 /* G# Minor.wav */; };
+		23F7C68921BCC46200EBD652 /* D# Minor.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C65B21BCC46200EBD652 /* D# Minor.wav */; };
+		23F7C68A21BCC46200EBD652 /* D# Major.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C65C21BCC46200EBD652 /* D# Major.wav */; };
+		23F7C68B21BCC46200EBD652 /* D# Minor Pentatonic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C65D21BCC46200EBD652 /* D# Minor Pentatonic.wav */; };
+		23F7C68C21BCC46200EBD652 /* C# Minor Pentatonic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C65F21BCC46200EBD652 /* C# Minor Pentatonic.wav */; };
+		23F7C68D21BCC46200EBD652 /* C# Major.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C66021BCC46200EBD652 /* C# Major.wav */; };
+		23F7C68E21BCC46200EBD652 /* C# Minor.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C66121BCC46200EBD652 /* C# Minor.wav */; };
+		23F7C68F21BCC46200EBD652 /* G Major.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C66321BCC46200EBD652 /* G Major.wav */; };
+		23F7C69021BCC46200EBD652 /* G Minor.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C66421BCC46200EBD652 /* G Minor.wav */; };
+		23F7C69121BCC46200EBD652 /* G Minor Pentatonic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C66521BCC46200EBD652 /* G Minor Pentatonic.wav */; };
+		23F7C69221BCC46200EBD652 /* A Minor Pentatonic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C66721BCC46200EBD652 /* A Minor Pentatonic.wav */; };
+		23F7C69321BCC46200EBD652 /* A Major.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C66821BCC46200EBD652 /* A Major.wav */; };
+		23F7C69421BCC46200EBD652 /* A Minor.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C66921BCC46200EBD652 /* A Minor.wav */; };
+		23F7C69521BCC46200EBD652 /* F Minor.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C66B21BCC46200EBD652 /* F Minor.wav */; };
+		23F7C69621BCC46200EBD652 /* F Major.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C66C21BCC46200EBD652 /* F Major.wav */; };
+		23F7C69721BCC46200EBD652 /* F Minor Pentatonic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C66D21BCC46200EBD652 /* F Minor Pentatonic.wav */; };
+		23F7C69821BCC46200EBD652 /* A# Minor Pentatonic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C66F21BCC46200EBD652 /* A# Minor Pentatonic.wav */; };
+		23F7C69921BCC46200EBD652 /* A# Minor.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C67021BCC46200EBD652 /* A# Minor.wav */; };
+		23F7C69A21BCC46200EBD652 /* A# Major.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C67121BCC46200EBD652 /* A# Major.wav */; };
+		23F7C69B21BCC46200EBD652 /* F# Major.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C67321BCC46200EBD652 /* F# Major.wav */; };
+		23F7C69C21BCC46200EBD652 /* F# Minor.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C67421BCC46200EBD652 /* F# Minor.wav */; };
+		23F7C69D21BCC46200EBD652 /* F# Minor Pentatonic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C67521BCC46200EBD652 /* F# Minor Pentatonic.wav */; };
+		23F7C69E21BCC46200EBD652 /* C Minor Pentatonic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C67721BCC46200EBD652 /* C Minor Pentatonic.wav */; };
+		23F7C69F21BCC46200EBD652 /* C Major.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C67821BCC46200EBD652 /* C Major.wav */; };
+		23F7C6A021BCC46200EBD652 /* C Minor.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C67921BCC46200EBD652 /* C Minor.wav */; };
+		23F7C6A121BCC46200EBD652 /* D Minor Pentatonic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C67B21BCC46200EBD652 /* D Minor Pentatonic.wav */; };
+		23F7C6A221BCC46200EBD652 /* D Minor.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C67C21BCC46200EBD652 /* D Minor.wav */; };
+		23F7C6A321BCC46200EBD652 /* D Major.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C67D21BCC46200EBD652 /* D Major.wav */; };
+		23F7C6A421BCC46200EBD652 /* E Minor Pentatonic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C67F21BCC46200EBD652 /* E Minor Pentatonic.wav */; };
+		23F7C6A521BCC46200EBD652 /* E Major.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C68021BCC46200EBD652 /* E Major.wav */; };
+		23F7C6A621BCC46200EBD652 /* E Minor.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C68121BCC46200EBD652 /* E Minor.wav */; };
+		23F7C6A721BCC46200EBD652 /* B Minor.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C68321BCC46200EBD652 /* B Minor.wav */; };
+		23F7C6A821BCC46200EBD652 /* B Minor Pentatonic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C68421BCC46200EBD652 /* B Minor Pentatonic.wav */; };
+		23F7C6A921BCC46200EBD652 /* B Major.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C68521BCC46200EBD652 /* B Major.wav */; };
 		F11774C49C3303F5E2DC0FB3 /* Pods_MusiciansToolkitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28789EF72EC9473B2B125F1C /* Pods_MusiciansToolkitTests.framework */; };
 		F2A280CC31EA492D3B7DDFD7 /* Pods_MusiciansToolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20666AA2500D86D425F745C0 /* Pods_MusiciansToolkit.framework */; };
 /* End PBXBuildFile section */
@@ -262,6 +298,42 @@
 		23D5D6D121A747CC00CEB306 /* RecorderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderTableViewController.swift; sourceTree = "<group>"; };
 		23EAFFA52190E8350091B0DC /* HomePageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCell.swift; sourceTree = "<group>"; };
 		23EAFFA72190F68D0091B0DC /* MetronomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeViewController.swift; sourceTree = "<group>"; };
+		23F7C65721BCC46200EBD652 /* G# Minor Pentatonic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "G# Minor Pentatonic.wav"; sourceTree = "<group>"; };
+		23F7C65821BCC46200EBD652 /* G# Major.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "G# Major.wav"; sourceTree = "<group>"; };
+		23F7C65921BCC46200EBD652 /* G# Minor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "G# Minor.wav"; sourceTree = "<group>"; };
+		23F7C65B21BCC46200EBD652 /* D# Minor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "D# Minor.wav"; sourceTree = "<group>"; };
+		23F7C65C21BCC46200EBD652 /* D# Major.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "D# Major.wav"; sourceTree = "<group>"; };
+		23F7C65D21BCC46200EBD652 /* D# Minor Pentatonic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "D# Minor Pentatonic.wav"; sourceTree = "<group>"; };
+		23F7C65F21BCC46200EBD652 /* C# Minor Pentatonic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "C# Minor Pentatonic.wav"; sourceTree = "<group>"; };
+		23F7C66021BCC46200EBD652 /* C# Major.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "C# Major.wav"; sourceTree = "<group>"; };
+		23F7C66121BCC46200EBD652 /* C# Minor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "C# Minor.wav"; sourceTree = "<group>"; };
+		23F7C66321BCC46200EBD652 /* G Major.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "G Major.wav"; sourceTree = "<group>"; };
+		23F7C66421BCC46200EBD652 /* G Minor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "G Minor.wav"; sourceTree = "<group>"; };
+		23F7C66521BCC46200EBD652 /* G Minor Pentatonic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "G Minor Pentatonic.wav"; sourceTree = "<group>"; };
+		23F7C66721BCC46200EBD652 /* A Minor Pentatonic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "A Minor Pentatonic.wav"; sourceTree = "<group>"; };
+		23F7C66821BCC46200EBD652 /* A Major.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "A Major.wav"; sourceTree = "<group>"; };
+		23F7C66921BCC46200EBD652 /* A Minor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "A Minor.wav"; sourceTree = "<group>"; };
+		23F7C66B21BCC46200EBD652 /* F Minor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "F Minor.wav"; sourceTree = "<group>"; };
+		23F7C66C21BCC46200EBD652 /* F Major.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "F Major.wav"; sourceTree = "<group>"; };
+		23F7C66D21BCC46200EBD652 /* F Minor Pentatonic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "F Minor Pentatonic.wav"; sourceTree = "<group>"; };
+		23F7C66F21BCC46200EBD652 /* A# Minor Pentatonic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "A# Minor Pentatonic.wav"; sourceTree = "<group>"; };
+		23F7C67021BCC46200EBD652 /* A# Minor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "A# Minor.wav"; sourceTree = "<group>"; };
+		23F7C67121BCC46200EBD652 /* A# Major.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "A# Major.wav"; sourceTree = "<group>"; };
+		23F7C67321BCC46200EBD652 /* F# Major.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "F# Major.wav"; sourceTree = "<group>"; };
+		23F7C67421BCC46200EBD652 /* F# Minor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "F# Minor.wav"; sourceTree = "<group>"; };
+		23F7C67521BCC46200EBD652 /* F# Minor Pentatonic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "F# Minor Pentatonic.wav"; sourceTree = "<group>"; };
+		23F7C67721BCC46200EBD652 /* C Minor Pentatonic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "C Minor Pentatonic.wav"; sourceTree = "<group>"; };
+		23F7C67821BCC46200EBD652 /* C Major.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "C Major.wav"; sourceTree = "<group>"; };
+		23F7C67921BCC46200EBD652 /* C Minor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "C Minor.wav"; sourceTree = "<group>"; };
+		23F7C67B21BCC46200EBD652 /* D Minor Pentatonic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "D Minor Pentatonic.wav"; sourceTree = "<group>"; };
+		23F7C67C21BCC46200EBD652 /* D Minor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "D Minor.wav"; sourceTree = "<group>"; };
+		23F7C67D21BCC46200EBD652 /* D Major.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "D Major.wav"; sourceTree = "<group>"; };
+		23F7C67F21BCC46200EBD652 /* E Minor Pentatonic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "E Minor Pentatonic.wav"; sourceTree = "<group>"; };
+		23F7C68021BCC46200EBD652 /* E Major.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "E Major.wav"; sourceTree = "<group>"; };
+		23F7C68121BCC46200EBD652 /* E Minor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "E Minor.wav"; sourceTree = "<group>"; };
+		23F7C68321BCC46200EBD652 /* B Minor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "B Minor.wav"; sourceTree = "<group>"; };
+		23F7C68421BCC46200EBD652 /* B Minor Pentatonic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "B Minor Pentatonic.wav"; sourceTree = "<group>"; };
+		23F7C68521BCC46200EBD652 /* B Major.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "B Major.wav"; sourceTree = "<group>"; };
 		28789EF72EC9473B2B125F1C /* Pods_MusiciansToolkitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusiciansToolkitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BE019A6E1568995DC9CE384 /* Pods-MusiciansToolkitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusiciansToolkitTests.debug.xcconfig"; path = "Target Support Files/Pods-MusiciansToolkitTests/Pods-MusiciansToolkitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C56FAFE4E4BF389BDB69D74 /* Pods-MusiciansToolkit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusiciansToolkit.release.xcconfig"; path = "Target Support Files/Pods-MusiciansToolkit/Pods-MusiciansToolkit.release.xcconfig"; sourceTree = "<group>"; };
@@ -351,6 +423,7 @@
 				2377767C21BC6492004A3C3C /* ScaleBankTableViewController.swift */,
 				2377767E21BC64A2004A3C3C /* ScaleBankCell.swift */,
 				2377768021BC661C004A3C3C /* ScaleViewController.swift */,
+				23F7C65521BCC46200EBD652 /* Sounds */,
 			);
 			path = "Scale Bank";
 			sourceTree = "<group>";
@@ -617,6 +690,145 @@
 			path = Metronome;
 			sourceTree = "<group>";
 		};
+		23F7C65521BCC46200EBD652 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				23F7C65621BCC46200EBD652 /* G# */,
+				23F7C65A21BCC46200EBD652 /* D# */,
+				23F7C65E21BCC46200EBD652 /* C# */,
+				23F7C66221BCC46200EBD652 /* G */,
+				23F7C66621BCC46200EBD652 /* A */,
+				23F7C66A21BCC46200EBD652 /* F */,
+				23F7C66E21BCC46200EBD652 /* A# */,
+				23F7C67221BCC46200EBD652 /* F# */,
+				23F7C67621BCC46200EBD652 /* C */,
+				23F7C67A21BCC46200EBD652 /* D */,
+				23F7C67E21BCC46200EBD652 /* E */,
+				23F7C68221BCC46200EBD652 /* B */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		23F7C65621BCC46200EBD652 /* G# */ = {
+			isa = PBXGroup;
+			children = (
+				23F7C65721BCC46200EBD652 /* G# Minor Pentatonic.wav */,
+				23F7C65821BCC46200EBD652 /* G# Major.wav */,
+				23F7C65921BCC46200EBD652 /* G# Minor.wav */,
+			);
+			path = "G#";
+			sourceTree = "<group>";
+		};
+		23F7C65A21BCC46200EBD652 /* D# */ = {
+			isa = PBXGroup;
+			children = (
+				23F7C65B21BCC46200EBD652 /* D# Minor.wav */,
+				23F7C65C21BCC46200EBD652 /* D# Major.wav */,
+				23F7C65D21BCC46200EBD652 /* D# Minor Pentatonic.wav */,
+			);
+			path = "D#";
+			sourceTree = "<group>";
+		};
+		23F7C65E21BCC46200EBD652 /* C# */ = {
+			isa = PBXGroup;
+			children = (
+				23F7C65F21BCC46200EBD652 /* C# Minor Pentatonic.wav */,
+				23F7C66021BCC46200EBD652 /* C# Major.wav */,
+				23F7C66121BCC46200EBD652 /* C# Minor.wav */,
+			);
+			path = "C#";
+			sourceTree = "<group>";
+		};
+		23F7C66221BCC46200EBD652 /* G */ = {
+			isa = PBXGroup;
+			children = (
+				23F7C66321BCC46200EBD652 /* G Major.wav */,
+				23F7C66421BCC46200EBD652 /* G Minor.wav */,
+				23F7C66521BCC46200EBD652 /* G Minor Pentatonic.wav */,
+			);
+			path = G;
+			sourceTree = "<group>";
+		};
+		23F7C66621BCC46200EBD652 /* A */ = {
+			isa = PBXGroup;
+			children = (
+				23F7C66721BCC46200EBD652 /* A Minor Pentatonic.wav */,
+				23F7C66821BCC46200EBD652 /* A Major.wav */,
+				23F7C66921BCC46200EBD652 /* A Minor.wav */,
+			);
+			path = A;
+			sourceTree = "<group>";
+		};
+		23F7C66A21BCC46200EBD652 /* F */ = {
+			isa = PBXGroup;
+			children = (
+				23F7C66B21BCC46200EBD652 /* F Minor.wav */,
+				23F7C66C21BCC46200EBD652 /* F Major.wav */,
+				23F7C66D21BCC46200EBD652 /* F Minor Pentatonic.wav */,
+			);
+			path = F;
+			sourceTree = "<group>";
+		};
+		23F7C66E21BCC46200EBD652 /* A# */ = {
+			isa = PBXGroup;
+			children = (
+				23F7C66F21BCC46200EBD652 /* A# Minor Pentatonic.wav */,
+				23F7C67021BCC46200EBD652 /* A# Minor.wav */,
+				23F7C67121BCC46200EBD652 /* A# Major.wav */,
+			);
+			path = "A#";
+			sourceTree = "<group>";
+		};
+		23F7C67221BCC46200EBD652 /* F# */ = {
+			isa = PBXGroup;
+			children = (
+				23F7C67321BCC46200EBD652 /* F# Major.wav */,
+				23F7C67421BCC46200EBD652 /* F# Minor.wav */,
+				23F7C67521BCC46200EBD652 /* F# Minor Pentatonic.wav */,
+			);
+			path = "F#";
+			sourceTree = "<group>";
+		};
+		23F7C67621BCC46200EBD652 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				23F7C67721BCC46200EBD652 /* C Minor Pentatonic.wav */,
+				23F7C67821BCC46200EBD652 /* C Major.wav */,
+				23F7C67921BCC46200EBD652 /* C Minor.wav */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		23F7C67A21BCC46200EBD652 /* D */ = {
+			isa = PBXGroup;
+			children = (
+				23F7C67B21BCC46200EBD652 /* D Minor Pentatonic.wav */,
+				23F7C67C21BCC46200EBD652 /* D Minor.wav */,
+				23F7C67D21BCC46200EBD652 /* D Major.wav */,
+			);
+			path = D;
+			sourceTree = "<group>";
+		};
+		23F7C67E21BCC46200EBD652 /* E */ = {
+			isa = PBXGroup;
+			children = (
+				23F7C67F21BCC46200EBD652 /* E Minor Pentatonic.wav */,
+				23F7C68021BCC46200EBD652 /* E Major.wav */,
+				23F7C68121BCC46200EBD652 /* E Minor.wav */,
+			);
+			path = E;
+			sourceTree = "<group>";
+		};
+		23F7C68221BCC46200EBD652 /* B */ = {
+			isa = PBXGroup;
+			children = (
+				23F7C68321BCC46200EBD652 /* B Minor.wav */,
+				23F7C68421BCC46200EBD652 /* B Minor Pentatonic.wav */,
+				23F7C68521BCC46200EBD652 /* B Major.wav */,
+			);
+			path = B;
+			sourceTree = "<group>";
+		};
 		A738B33E355724291650519F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -724,6 +936,7 @@
 				23182EA921B7A51E00AA70CF /* A3.wav in Resources */,
 				239F228621A2A2B500A497A9 /* A7.wav in Resources */,
 				239F228021A2A2B500A497A9 /* G7.wav in Resources */,
+				23F7C68921BCC46200EBD652 /* D# Minor.wav in Resources */,
 				238B243B218697CA00828CBF /* LaunchScreen.storyboard in Resources */,
 				23182EB921B7A51E00AA70CF /* B3.wav in Resources */,
 				239F227221A2A2B500A497A9 /* G#min.wav in Resources */,
@@ -732,38 +945,51 @@
 				239F229021A2A2B500A497A9 /* A#maj7.wav in Resources */,
 				23182EB521B7A51E00AA70CF /* A#3.wav in Resources */,
 				239F229321A2A2B500A497A9 /* A#min7.wav in Resources */,
+				23F7C6A921BCC46200EBD652 /* B Major.wav in Resources */,
 				239F227121A2A2B500A497A9 /* G#maj.wav in Resources */,
 				238B2438218697CA00828CBF /* Assets.xcassets in Resources */,
 				239F228F21A2A2B500A497A9 /* A#min.wav in Resources */,
 				23182EBF21B7A51E00AA70CF /* F#2.wav in Resources */,
 				23182EBE21B7A51E00AA70CF /* D3.wav in Resources */,
 				239F227821A2A2B500A497A9 /* D#maj7.wav in Resources */,
+				23F7C6A721BCC46200EBD652 /* B Minor.wav in Resources */,
 				239F228B21A2A2B500A497A9 /* F7.wav in Resources */,
 				239F22A521A2A2B500A497A9 /* Emaj7.wav in Resources */,
 				23182EB121B7A51E00AA70CF /* G#3.wav in Resources */,
+				23F7C69621BCC46200EBD652 /* F Major.wav in Resources */,
 				239F22A021A2A2B500A497A9 /* Dmaj7.wav in Resources */,
 				239F229D21A2A2B500A497A9 /* Cmaj7.wav in Resources */,
 				23182EBA21B7A51E00AA70CF /* G2.wav in Resources */,
 				23182EC421B7A51E00AA70CF /* C#3.wav in Resources */,
 				239F228321A2A2B500A497A9 /* Gmaj.wav in Resources */,
 				239F228421A2A2B500A497A9 /* Gmin.wav in Resources */,
+				23F7C69721BCC46200EBD652 /* F Minor Pentatonic.wav in Resources */,
+				23F7C68A21BCC46200EBD652 /* D# Major.wav in Resources */,
+				23F7C69E21BCC46200EBD652 /* C Minor Pentatonic.wav in Resources */,
 				239F229421A2A2B500A497A9 /* F#maj.wav in Resources */,
 				239F22A321A2A2B500A497A9 /* Emin7.wav in Resources */,
+				23F7C68F21BCC46200EBD652 /* G Major.wav in Resources */,
 				23061918219FCAEF004B9986 /* NoteInfo.plist in Resources */,
 				238B2436218697C700828CBF /* Main.storyboard in Resources */,
+				23F7C69D21BCC46200EBD652 /* F# Minor Pentatonic.wav in Resources */,
 				23182EC221B7A51E00AA70CF /* D4.wav in Resources */,
 				239F227B21A2A2B500A497A9 /* C#maj7.wav in Resources */,
 				23182EBD21B7A51E00AA70CF /* C#4.wav in Resources */,
 				239F228C21A2A2B500A497A9 /* Fmin.wav in Resources */,
 				239F229E21A2A2B500A497A9 /* Dmin7.wav in Resources */,
+				23F7C69021BCC46200EBD652 /* G Minor.wav in Resources */,
 				239F228521A2A2B500A497A9 /* Amaj.wav in Resources */,
 				23182EB421B7A51E00AA70CF /* E2.wav in Resources */,
 				239F228821A2A2B500A497A9 /* Amaj7.wav in Resources */,
+				23F7C69921BCC46200EBD652 /* A# Minor.wav in Resources */,
 				239F22A621A2A2B500A497A9 /* E7.wav in Resources */,
 				239F22AA21A2A2B500A497A9 /* Bmaj.wav in Resources */,
+				23F7C68D21BCC46200EBD652 /* C# Major.wav in Resources */,
+				23F7C68B21BCC46200EBD652 /* D# Minor Pentatonic.wav in Resources */,
 				239F227921A2A2B500A497A9 /* D#7.wav in Resources */,
 				23182EC121B7A51E00AA70CF /* B2.wav in Resources */,
 				239F22A121A2A2B500A497A9 /* Dmaj.wav in Resources */,
+				23F7C6A821BCC46200EBD652 /* B Minor Pentatonic.wav in Resources */,
 				239F227721A2A2B500A497A9 /* D#maj.wav in Resources */,
 				239F22A221A2A2B500A497A9 /* D7.wav in Resources */,
 				23182EB721B7A51E00AA70CF /* G3.wav in Resources */,
@@ -773,27 +999,40 @@
 				23182EB621B7A51E00AA70CF /* G4.wav in Resources */,
 				239F228221A2A2B500A497A9 /* Gmin7.wav in Resources */,
 				239F227621A2A2B500A497A9 /* D#min7.wav in Resources */,
+				23F7C69321BCC46200EBD652 /* A Major.wav in Resources */,
 				23182EC021B7A51E00AA70CF /* G#4.wav in Resources */,
 				239F229521A2A2B500A497A9 /* F#min.wav in Resources */,
+				23F7C68E21BCC46200EBD652 /* C# Minor.wav in Resources */,
 				239F227A21A2A2B500A497A9 /* D#min.wav in Resources */,
 				239F229621A2A2B500A497A9 /* F#7.wav in Resources */,
 				239F228D21A2A2B500A497A9 /* Fmin7.wav in Resources */,
+				23F7C6A421BCC46200EBD652 /* E Minor Pentatonic.wav in Resources */,
 				239F229F21A2A2B500A497A9 /* Dmin.wav in Resources */,
 				23182EAA21B7A51E00AA70CF /* C4.wav in Resources */,
 				239F227F21A2A2B500A497A9 /* C#maj.wav in Resources */,
 				239F229221A2A2B500A497A9 /* A#7.wav in Resources */,
 				239F229921A2A2B500A497A9 /* Cmaj.wav in Resources */,
+				23F7C68821BCC46200EBD652 /* G# Minor.wav in Resources */,
+				23F7C69521BCC46200EBD652 /* F Minor.wav in Resources */,
 				239F229B21A2A2B500A497A9 /* Cmin7.wav in Resources */,
+				23F7C6A321BCC46200EBD652 /* D Major.wav in Resources */,
+				23F7C68721BCC46200EBD652 /* G# Major.wav in Resources */,
+				23F7C68C21BCC46200EBD652 /* C# Minor Pentatonic.wav in Resources */,
 				239F228921A2A2B500A497A9 /* Amin7.wav in Resources */,
 				239F22AB21A2A2B500A497A9 /* Bmin7.wav in Resources */,
 				23182EAE21B7A51E00AA70CF /* F4.wav in Resources */,
+				23F7C69821BCC46200EBD652 /* A# Minor Pentatonic.wav in Resources */,
 				239F22A421A2A2B500A497A9 /* Emaj.wav in Resources */,
 				239F227E21A2A2B500A497A9 /* C#7.wav in Resources */,
+				23F7C69A21BCC46200EBD652 /* A# Major.wav in Resources */,
+				23F7C69C21BCC46200EBD652 /* F# Minor.wav in Resources */,
 				23182EAC21B7A51E00AA70CF /* E4.wav in Resources */,
 				239F22A821A2A2B500A497A9 /* Bmin.wav in Resources */,
 				23182EC621B7A51E00AA70CF /* A#4.wav in Resources */,
 				239F227D21A2A2B500A497A9 /* C#min7.wav in Resources */,
 				239F229821A2A2B500A497A9 /* F#maj7.wav in Resources */,
+				23F7C69B21BCC46200EBD652 /* F# Major.wav in Resources */,
+				23F7C69121BCC46200EBD652 /* G Minor Pentatonic.wav in Resources */,
 				239F227521A2A2B500A497A9 /* G#7.wav in Resources */,
 				23182EBB21B7A51E00AA70CF /* D#3.wav in Resources */,
 				239F229A21A2A2B500A497A9 /* Cmin.wav in Resources */,
@@ -802,19 +1041,28 @@
 				23182EBC21B7A51E00AA70CF /* F2.wav in Resources */,
 				23182EC721B7A51E00AA70CF /* D#4.wav in Resources */,
 				239F22A921A2A2B500A497A9 /* B7.wav in Resources */,
+				23F7C6A221BCC46200EBD652 /* D Minor.wav in Resources */,
+				23F7C69221BCC46200EBD652 /* A Minor Pentatonic.wav in Resources */,
 				23182EAF21B7A51E00AA70CF /* A4.wav in Resources */,
 				23182EB221B7A51E00AA70CF /* F#4.wav in Resources */,
 				23182EB321B7A51E00AA70CF /* A2.wav in Resources */,
 				23182EB021B7A51E00AA70CF /* F#3.wav in Resources */,
 				239F229721A2A2B500A497A9 /* F#min7.wav in Resources */,
+				23F7C6A621BCC46200EBD652 /* E Minor.wav in Resources */,
+				23F7C68621BCC46200EBD652 /* G# Minor Pentatonic.wav in Resources */,
 				239F227321A2A2B500A497A9 /* G#min7.wav in Resources */,
 				23182EC321B7A51E00AA70CF /* G#2.wav in Resources */,
 				239F228E21A2A2B500A497A9 /* Fmaj.wav in Resources */,
 				239F227421A2A2B500A497A9 /* G#maj7.wav in Resources */,
+				23F7C6A121BCC46200EBD652 /* D Minor Pentatonic.wav in Resources */,
 				239F229C21A2A2B500A497A9 /* C7.wav in Resources */,
 				239F228121A2A2B500A497A9 /* Gmaj7.wav in Resources */,
 				239F227C21A2A2B500A497A9 /* C#min.wav in Resources */,
+				23F7C69F21BCC46200EBD652 /* C Major.wav in Resources */,
+				23F7C6A521BCC46200EBD652 /* E Major.wav in Resources */,
 				239F229121A2A2B500A497A9 /* A#maj.wav in Resources */,
+				23F7C69421BCC46200EBD652 /* A Minor.wav in Resources */,
+				23F7C6A021BCC46200EBD652 /* C Minor.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
