@@ -52,21 +52,11 @@ class Audio {
         //AKSettings.audioInputEnabled = true
         
         do {
-            //Should default back to main speaker after headphone plug/unplug
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayAndRecord)
             
-            //Doesnt work
-            
-            try! AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayAndRecord, with:AVAudioSessionCategoryOptions.defaultToSpeaker)
-            
-            //try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
-            
-            // Use main speaker.
-            // Sometimes would default to ear speaker
-            
-            //Does work sort of
-            //try AKSettings.session.overrideOutputAudioPort(AVAudioSessionPortOverride.speaker)
-            
-            //Start audio driver
+            if !AKSettings.headPhonesPlugged {
+                try AVAudioSession.sharedInstance().overrideOutputAudioPort(AVAudioSessionPortOverride.speaker)
+            }
             try AudioKit.start()
         } catch {
             print(error)
@@ -77,16 +67,17 @@ class Audio {
         let audioRouteChangeReason = notification.userInfo![AVAudioSessionRouteChangeReasonKey] as! UInt
         
         switch audioRouteChangeReason {
-        //case AVAudioSessionRouteChangeReason.newDeviceAvailable.rawValue:
+        case AVAudioSessionRouteChangeReason.newDeviceAvailable.rawValue:
+            break
             //Headphones plugged in
-        //case AVAudioSessionRouteChangeReason.oldDeviceUnavailable.rawValue:
+        case AVAudioSessionRouteChangeReason.oldDeviceUnavailable.rawValue:
             //Headphones removed
-            //do {
+            do {
                 // Reset back to main speaker
-                //try AKSettings.session.overrideOutputAudioPort(AVAudioSessionPortOverride.speaker)
-            //} catch {
-            //    print(error)
-            //}
+                try AVAudioSession.sharedInstance().overrideOutputAudioPort(AVAudioSessionPortOverride.speaker)
+            } catch {
+                print(error)
+            }
             
         default:
             break
