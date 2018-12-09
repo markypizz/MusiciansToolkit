@@ -358,7 +358,7 @@
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="16o-e3-wvR" userLabel="tempoBG">
                                 <rect key="frame" x="0.0" y="28" width="375" height="90"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.7534781678082193" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.7534781678082193" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="U0r-XV-2J0"/>
                                 </constraints>
@@ -463,6 +463,7 @@
                         <outlet property="slider" destination="hRV-ac-yDi" id="Tg3-4N-Yir"/>
                         <outlet property="startButton" destination="Kg5-ef-wV3" id="h7A-bT-3Wn"/>
                         <outlet property="subdivisionSegmentedControl" destination="hDe-qL-UQE" id="jU9-fn-diI"/>
+                        <outlet property="tempoBackground" destination="16o-e3-wvR" id="vho-5t-hiu"/>
                         <outlet property="tempoLabel" destination="C1U-14-AJo" id="ng0-LV-6uw"/>
                         <outlet property="tempoStepper" destination="9gC-K1-TVT" id="5EV-WM-8QK"/>
                     </connections>

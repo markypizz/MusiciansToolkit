@@ -16,6 +16,11 @@ class MetronomeViewController: UIViewController {
     let defaultTempo = 120
     let cornerRadius : CGFloat = 6.0
     
+    let blinkColor = UIColor(red: 0.2, green: 0.2, blue: 1.0, alpha: 0.75)
+    let defaultColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.75)
+    
+    let colorAnim = CABasicAnimation(keyPath: "backgroundColor")
+    
     var tempo : Int {
         didSet {
             tempoLabel.text = "\(tempo) BPM"
@@ -52,9 +57,12 @@ class MetronomeViewController: UIViewController {
     
     @IBOutlet weak var startButton: UIButton!
     
+    @IBOutlet weak var tempoBackground: UIView!
+    
     required init?(coder aDecoder: NSCoder) {
         tempo = 120
         subdivision = 1
+        
         super.init(coder: aDecoder)
     }
     
@@ -76,6 +84,14 @@ class MetronomeViewController: UIViewController {
             startButton.setTitle("Stop", for: .normal)
         }
 
+        musicModel.audioDevice.metronome!.metronome.callback = {
+            DispatchQueue.main.async {
+                self.tempoBackground.backgroundColor = self.blinkColor
+                UIView.animate(withDuration: 0.2, animations: {
+                    self.tempoBackground.backgroundColor = self.defaultColor
+                })
+            }
+        }
         // Do any additional setup after loading the view.
     }
 
