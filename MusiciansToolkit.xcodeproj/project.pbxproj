@@ -118,6 +118,7 @@
 		23A5B1642190E20600FD2898 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A5B1632190E20600FD2898 /* Model.swift */; };
 		23A6727B21A4831000071FB2 /* ChordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A6727A21A4831000071FB2 /* ChordViewController.swift */; };
 		23AB80A1219BF596006458BF /* TunerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AB80A0219BF596006458BF /* TunerViewController.swift */; };
+		23B6F65D21BECCE000DA5204 /* lessons.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23B6F65C21BECCE000DA5204 /* lessons.plist */; };
 		23C116A321B4F2DC0039F0A9 /* JamSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C116A221B4F2DC0039F0A9 /* JamSessionViewController.swift */; };
 		23D5D6CE21A743FA00CEB306 /* RecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D5D6CD21A743FA00CEB306 /* RecorderViewController.swift */; };
 		23D5D6D021A747BB00CEB306 /* RecorderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D5D6CF21A747BB00CEB306 /* RecorderTableViewCell.swift */; };
@@ -160,7 +161,6 @@
 		23F7C6A721BCC46200EBD652 /* B Minor.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C68321BCC46200EBD652 /* B Minor.wav */; };
 		23F7C6A821BCC46200EBD652 /* B Minor Pentatonic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C68421BCC46200EBD652 /* B Minor Pentatonic.wav */; };
 		23F7C6A921BCC46200EBD652 /* B Major.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C68521BCC46200EBD652 /* B Major.wav */; };
-		23F7C6AB21BCF2A300EBD652 /* lessons.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23F7C6AA21BCF2A300EBD652 /* lessons.plist */; };
 		F11774C49C3303F5E2DC0FB3 /* Pods_MusiciansToolkitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28789EF72EC9473B2B125F1C /* Pods_MusiciansToolkitTests.framework */; };
 		F2A280CC31EA492D3B7DDFD7 /* Pods_MusiciansToolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20666AA2500D86D425F745C0 /* Pods_MusiciansToolkit.framework */; };
 /* End PBXBuildFile section */
@@ -293,6 +293,7 @@
 		23A5B1632190E20600FD2898 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		23A6727A21A4831000071FB2 /* ChordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordViewController.swift; sourceTree = "<group>"; };
 		23AB80A0219BF596006458BF /* TunerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerViewController.swift; sourceTree = "<group>"; };
+		23B6F65C21BECCE000DA5204 /* lessons.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = lessons.plist; sourceTree = "<group>"; };
 		23C116A221B4F2DC0039F0A9 /* JamSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JamSessionViewController.swift; sourceTree = "<group>"; };
 		23D5D6CD21A743FA00CEB306 /* RecorderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderViewController.swift; sourceTree = "<group>"; };
 		23D5D6CF21A747BB00CEB306 /* RecorderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderTableViewCell.swift; sourceTree = "<group>"; };
@@ -335,7 +336,6 @@
 		23F7C68321BCC46200EBD652 /* B Minor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "B Minor.wav"; sourceTree = "<group>"; };
 		23F7C68421BCC46200EBD652 /* B Minor Pentatonic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "B Minor Pentatonic.wav"; sourceTree = "<group>"; };
 		23F7C68521BCC46200EBD652 /* B Major.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "B Major.wav"; sourceTree = "<group>"; };
-		23F7C6AA21BCF2A300EBD652 /* lessons.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = lessons.plist; sourceTree = "<group>"; };
 		28789EF72EC9473B2B125F1C /* Pods_MusiciansToolkitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusiciansToolkitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BE019A6E1568995DC9CE384 /* Pods-MusiciansToolkitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusiciansToolkitTests.debug.xcconfig"; path = "Target Support Files/Pods-MusiciansToolkitTests/Pods-MusiciansToolkitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C56FAFE4E4BF389BDB69D74 /* Pods-MusiciansToolkit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusiciansToolkit.release.xcconfig"; path = "Target Support Files/Pods-MusiciansToolkit/Pods-MusiciansToolkit.release.xcconfig"; sourceTree = "<group>"; };
@@ -375,7 +375,7 @@
 		234384BC21ABAF4300E4B61C /* Lessons */ = {
 			isa = PBXGroup;
 			children = (
-				23F7C6AA21BCF2A300EBD652 /* lessons.plist */,
+				23B6F65C21BECCE000DA5204 /* lessons.plist */,
 				234384BD21ABB0EA00E4B61C /* LessonTableViewController.swift */,
 				234384BF21ABB0FD00E4B61C /* LessonTableViewCell.swift */,
 			);
@@ -1029,7 +1029,7 @@
 				239F227E21A2A2B500A497A9 /* C#7.wav in Resources */,
 				23F7C69A21BCC46200EBD652 /* A# Major.wav in Resources */,
 				23F7C69C21BCC46200EBD652 /* F# Minor.wav in Resources */,
-				23F7C6AB21BCF2A300EBD652 /* lessons.plist in Resources */,
+				23B6F65D21BECCE000DA5204 /* lessons.plist in Resources */,
 				23182EAC21B7A51E00AA70CF /* E4.wav in Resources */,
 				239F22A821A2A2B500A497A9 /* Bmin.wav in Resources */,
 				23182EC621B7A51E00AA70CF /* A#4.wav in Resources */,
