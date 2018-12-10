@@ -23,6 +23,26 @@
 			<key>imageName</key>
 			<string>strumming</string>
 		</dict>
+		<dict>
+			<key>title</key>
+			<string>How To Play Your First Chord</string>
+			<key>url</key>
+			<string>https://www.youtube.com/watch?v=cUxRhesT8gY</string>
+			<key>author</key>
+			<string>Worship Tutorials</string>
+			<key>imageName</key>
+			<string>firstChord</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Fingerpicking For Beginners</string>
+			<key>url</key>
+			<string>https://www.youtube.com/watch?v=Z7xm_juNcPY</string>
+			<key>author</key>
+			<string>Acoustic Guitar Videos</string>
+			<key>imageName</key>
+			<string>fingerpicking</string>
+		</dict>
 	</array>
 	<array>
 		<dict>
@@ -76,6 +96,16 @@
 			<string>JustinGuitar</string>
 			<key>imageName</key>
 			<string>pinchharmonics</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Jazz Guitar - Phrases Not Scales</string>
+			<key>url</key>
+			<string>https://www.youtube.com/watch?v=UST4NsW9pKU</string>
+			<key>author</key>
+			<string>TrueFire</string>
+			<key>imageName</key>
+			<string>jazzguitar1</string>
 		</dict>
 	</array>
 </array>
