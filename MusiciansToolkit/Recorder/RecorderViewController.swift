@@ -89,12 +89,12 @@ class RecorderViewController : UIViewController, AVAudioPlayerDelegate {
         playButton.isEnabled = false
         outputPlot.addSubview(nodeOutputPlot)
         outputPlot.addSubview(fileWaveform)
-        outputPlot.sendSubview(toBack: fileWaveform)
-        outputPlot.sendSubview(toBack: nodeOutputPlot)
+        outputPlot.sendSubviewToBack(fileWaveform)
+        outputPlot.sendSubviewToBack(nodeOutputPlot)
         timeElapsedView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.5)
         timeElapsedView.isHidden = true
         outputPlot.addSubview(timeElapsedView)
-        outputPlot.sendSubview(toBack: timeElapsedView)
+        outputPlot.sendSubviewToBack(timeElapsedView)
         musicModel.audioDevice.player?.completionHandler = {
             self.donePlaying()
         }

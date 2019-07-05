@@ -1,6 +1,0 @@
-framework module Pods_MusiciansToolkitTests {
-  umbrella header "Pods-MusiciansToolkitTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

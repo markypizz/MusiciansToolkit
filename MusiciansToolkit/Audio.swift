@@ -20,16 +20,16 @@ class Audio {
     var player : AKPlayer? //Audio file player
     var notePlayer : AKPlayer? //Note player
     var noteBooster : AKBooster? //Note booster
-    let microphoneInput : AKMicrophone
+    let microphoneInput : AKMicrophone // Microphone
     let noteGain = 2.0
     
     init() {
-        microphoneInput = AKMicrophone()
+        microphoneInput = AKMicrophone()!
         
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(self.audioRouteChangeListener(notification:)),
-            name: NSNotification.Name.AVAudioSessionRouteChange,
+            name: AVAudioSession.routeChangeNotification,
             object: nil)
         
         mixer = AKMixer()
@@ -49,13 +49,13 @@ class Audio {
         mixer?.connect(input: player)
         
         AudioKit.output = mixer
-        //AKSettings.audioInputEnabled = true
+        AKSettings.audioInputEnabled = true
         
         do {
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayAndRecord)
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playAndRecord)
             
             if !AKSettings.headPhonesPlugged {
-                try AVAudioSession.sharedInstance().overrideOutputAudioPort(AVAudioSessionPortOverride.speaker)
+                try AVAudioSession.sharedInstance().overrideOutputAudioPort(AVAudioSession.PortOverride.speaker)
             }
             try AudioKit.start()
         } catch {
@@ -67,14 +67,14 @@ class Audio {
         let audioRouteChangeReason = notification.userInfo![AVAudioSessionRouteChangeReasonKey] as! UInt
         
         switch audioRouteChangeReason {
-        case AVAudioSessionRouteChangeReason.newDeviceAvailable.rawValue:
+        case AVAudioSession.RouteChangeReason.newDeviceAvailable.rawValue:
             break
             //Headphones plugged in
-        case AVAudioSessionRouteChangeReason.oldDeviceUnavailable.rawValue:
+        case AVAudioSession.RouteChangeReason.oldDeviceUnavailable.rawValue:
             //Headphones removed
             do {
                 // Reset back to main speaker
-                try AVAudioSession.sharedInstance().overrideOutputAudioPort(AVAudioSessionPortOverride.speaker)
+                try AVAudioSession.sharedInstance().overrideOutputAudioPort(AVAudioSession.PortOverride.speaker)
             } catch {
                 print(error)
             }
@@ -84,4 +84,9 @@ class Audio {
         }
     }
 
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromAVAudioSessionCategory(_ input: AVAudioSession.Category) -> String {
+	return input.rawValue
 }

@@ -6,9 +6,9 @@ target 'MusiciansToolkit' do
   use_frameworks!
 
   # Pods for MusiciansToolkit
-  pod 'AudioKit', '~> 4.0'
-
-  target 'MusiciansToolkitTests' do
+  pod 'AudioKit', '~> 4.7'
+ 
+target 'MusiciansToolkitTests' do
     inherit! :search_paths
     # Pods for testing
   end

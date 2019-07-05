@@ -88,7 +88,7 @@ class TunerViewController : UIViewController, TunerDelegate {
         pitchPercentageView = UIView(frame: CGRect.zero)
         pitchPercentageView?.backgroundColor = #colorLiteral(red: 0.07843137255, green: 0.5568627451, blue: 1, alpha: 1)
         pitchView.addSubview(pitchPercentageView!)
-        pitchView.sendSubview(toBack: pitchPercentageView!)
+        pitchView.sendSubviewToBack(pitchPercentageView!)
         
         //Ensure correct microphone input (fixes noise bug)
         if let inputs = AudioKit.inputDevices {
@@ -105,7 +105,7 @@ class TunerViewController : UIViewController, TunerDelegate {
     
     func setupPlot() {
         visualizerView.addSubview(musicModel.audioDevice.tuner!.bufferPlot)
-        visualizerView.sendSubview(toBack: musicModel.audioDevice.tuner!.bufferPlot)
+        visualizerView.sendSubviewToBack(musicModel.audioDevice.tuner!.bufferPlot)
         musicModel.audioDevice.tuner!.bufferPlot.node = musicModel.audioDevice.microphoneInput
         musicModel.audioDevice.tuner!.bufferPlot.plotType = .buffer
         musicModel.audioDevice.tuner!.bufferPlot.resume()
